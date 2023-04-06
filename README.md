@@ -1,14 +1,15 @@
 # toast
+
 packageless package manager for Unix systems and non-root users
 
 ## What is going on here?
 
 I first published toast in 2003, though it is somewhat older than
-that. With any luck, you can still find it in its original location
-at [toastball.net/toast](http://toastball.net/toast/). If you are
-new to toast, that page might be a good place to start. Or perhaps
-you might try reading [this blog article about
-toast](https://jf64.wordpress.com/2009/10/04/a-brief-history-of-toastball/)
+that. With any luck, you can still find it in its original home on
+the web at [toastball.net/toast](http://toastball.net/toast/). If
+you are new to toast, that page might be a good place to start. Or
+perhaps you might try reading [this blog article about toast's
+origins](https://jf64.wordpress.com/2009/10/04/a-brief-history-of-toastball/)
 that a much younger me wrote a long time ago.
 
 The repository you are looking at now is an archival copy of the
@@ -20,17 +21,16 @@ bygone era.
 
 ## Is any of this meant to be usable?
 
-Not really? If you actually want to use toast, you're much better
-off looking at the toast web site above than looking here. But, you
-know, if that site were to disappear someday and someone wanted to
-resurrect it for some reason, this might be a useful starting point
-at least.
+If you actually want to use toast, you're much better off looking
+at the toast web site above than looking at this repository. But,
+you know, if that site were to disappear someday and someone wanted
+to resurrect it for some reason, this might be a useful starting
+point at least.
 
 ## Is toast itself still useful?
 
-I haven't used it myself in years, but in principle, yeah, I think
-it's retained quite a bit of the potential usefulness it still had
-when I last used it actively. There may even still be other people
+I haven't used it myself in years, but, yes, I think it's retained
+some potential usefulness. There may even still be other people
 using it somewhere! But it's far less necessary than it was when I
 started on it. There weren't many good alternatives then. Now there
 are lots.
@@ -49,7 +49,7 @@ anything nowadays would be far more difficult than it was then.
 Because that was the first version that was able to package itself
 as a tarball for distribution. Older versions didn't know how to
 do that and thus are not forward-compatible with the current www
-script. This repository contains older, previously unreleased
+script. This repository includes older, previously unreleased
 versions of the tool.
 
 ## So the oldest version of toast dates to 2002?
@@ -74,13 +74,13 @@ including toast's portion thereof, into static pages that would be
 simpler to host than the current dynamically-generated site. Assuming
 that happens, I hope to store the static site generator in this
 repository, alongside its inputs. I'm thinking I might try to wrap
-something around the existing www script rather than try to extend
+something around the existing `www` script rather than try to extend
 or update it.
 
 ## What the heck are these foo,v files? Shouldn't the comma be a dot?
 
 There's this thing called
-(RCS)[https://en.wikipedia.org/wiki/Revision_Control_System] that
+[RCS](https://en.wikipedia.org/wiki/Revision_Control_System) that
 wangles them. It's a bit like if git could only store one file per
 repository. Pretend each `,v` file is a repository, and each
 repository contains exactly one file.
@@ -106,7 +106,8 @@ such. Plus the www script still expects to be able to use `rlog`,
 
 ## So what's the license?
 
-Great question. It's a bit of a mess! Some of these individual
-files/projects have licenses attached to them, some don't. (Many
-were never distributed.) If you would like a license for something
-in here that doesn't have one, please don't hesitate to reach out!
+Great question. It's a bit of a mess! Some versions of these
+individual files/projects definitely have licenses attached to them,
+some don't. (Many were never distributed at all.) If you would like
+a license for something in here that doesn't have one, please don't
+hesitate to reach out!
