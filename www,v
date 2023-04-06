@@ -1,0 +1,1156 @@
+head	1.21;
+access;
+symbols;
+locks
+	zaphod:1.21; strict;
+comment	@# @;
+
+
+1.21
+date	2010.01.10.22.05.27;	author zaphod;	state Exp;
+branches;
+next	1.20;
+
+1.20
+date	2010.01.10.20.03.27;	author zaphod;	state Exp;
+branches;
+next	1.19;
+
+1.19
+date	2009.01.15.05.58.09;	author zaphod;	state Exp;
+branches;
+next	1.18;
+
+1.18
+date	2008.08.22.18.32.40;	author zaphod;	state Exp;
+branches;
+next	1.17;
+
+1.17
+date	2007.03.22.19.03.27;	author zaphod;	state Exp;
+branches;
+next	1.16;
+
+1.16
+date	2005.11.25.00.55.10;	author zaphod;	state Exp;
+branches;
+next	1.15;
+
+1.15
+date	2004.09.20.03.38.58;	author zaphod;	state Exp;
+branches;
+next	1.14;
+
+1.14
+date	2004.09.06.00.05.07;	author zaphod;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2004.09.05.23.31.20;	author zaphod;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2004.09.05.01.55.48;	author zaphod;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2004.08.31.06.07.38;	author zaphod;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2004.08.08.23.41.39;	author zaphod;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2004.08.08.23.21.25;	author zaphod;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2004.02.13.08.02.30;	author zaphod;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2004.01.30.04.29.28;	author zaphod;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2003.11.28.22.02.43;	author zaphod;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2003.11.24.00.53.42;	author zaphod;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2003.10.06.22.36.40;	author zaphod;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2003.09.11.00.11.06;	author zaphod;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2003.08.24.18.16.05;	author zaphod;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2003.08.11.22.17.36;	author zaphod;	state Exp;
+branches;
+next	;
+
+
+desc
+@CGI script to serve the toast script web pages.
+@
+
+
+1.21
+log
+@tweak sendbug
+@
+text
+@#!/usr/bin/perl
+
+use warnings;
+use strict;
+use Time::Local;
+
+my($major, $minor) = (1, 169);
+
+my(%rcsnames) =
+(
+  "toast" => "/home/zaphod/toast/toast",
+  "toastlogin" => "/home/zaphod/toast/login/toastlogin",
+  "toastinit" => "/home/zaphod/toast/init/Makefile",
+  "toast-linux" => "/home/zaphod/toast/linux/configure",
+);
+
+my(%tarnames) =
+(
+  "toastlogin" => "sbin/toastlogin*",
+  "toastinit" => "toastinit-VERSION/Makefile",
+  "toast-linux" => "toast-linux-VERSION/configure*",
+);
+
+sub fullname($)
+{
+  my($shortname) = @@_;
+  return "toast-$shortname" if exists($rcsnames{"toast-$shortname"});
+  return "toast$shortname";
+}
+
+sub rcsname($)
+{
+  my($name) = @@_;
+  return $rcsnames{$name};
+}
+
+sub tarname($$)
+{
+  my($name, $ver) = @@_;
+  my($result) = $tarnames{$name};
+  $result =~ s/VERSION/$ver/g;
+  return $result;
+}
+
+sub isname($)
+{
+  my($name) = @@_;
+  my($rcsname) = rcsname(fullname($name));
+  return defined($rcsname) && -r("$rcsname,v");
+}
+
+sub pkgpage($$;$$)
+{
+  my($name, $root, $format, $limit) = @@_;
+  my($rcsname) = rcsname($name);
+  local(*RLOG, $_);
+  open(RLOG, "rlog -zLT -r$major.$minor: $rcsname |") or die("open rlog: $!");
+  my($rows, $ver, $date, $comments, $latest) = "";
+  my(@@comments, @@versions, @@dates);
+  while(<RLOG>)
+  {
+    if(/^revision (\S+)/)
+    {
+      ($ver, $comments) = ($1, "");
+      $latest = $ver unless $latest;
+    }
+    elsif(/^date: (\S+)/)
+    {
+      $date = $1;
+    }
+    elsif(/^(-{20}|={40})/ && $ver)
+    {
+      $comments =~ s/\&/&amp;/g;
+      $comments =~ s/\</&lt;/g;
+      $comments =~ s/\>/&gt;/g;
+      $comments =~ s/^\s+//;
+      $comments =~ s/\s+$//;
+      $comments =~ s/\n/<br>/g;
+      $comments =~ s/\s+/ /;
+      push(@@comments, $comments);
+      push(@@versions, $ver);
+      push(@@dates, $date);
+      $rows .=
+qq[      <tr>
+        <td><a href="$name-$ver.tar.gz">$ver<a></td>
+        <td>$date</td>
+        <td>$comments</td>
+        <td><a href="$name-$ver.tar.gz">tgz</a>
+            <a href="man-$ver">man</a>
+            <a href="$name-$ver">src</a>];
+      $rows .= qq[
+            <a href="diff-$ver">diff</a>] unless $ver eq "$major.$minor";
+      $rows .= qq[</td>
+      </tr>
+];
+    }
+    else
+    {
+      $comments .= $_;
+    }
+  }
+  close(RLOG) or die("close rlog: $!$?");
+
+  openver($name);
+  my(%pieces, $piece);
+  while(<STDIN>)
+  {
+    s/^\s+//;
+    s/\s+$//;
+    if($piece && $pieces{$piece})
+    {
+      if($_)
+      {
+        $pieces{$piece} .= " ";
+      }
+      else
+      {
+        $piece = undef;
+      }
+    }
+    $pieces{$piece} .= $_ if $piece;
+    $piece = $1 if /^=head1 (\w+)$/;
+  }
+  close(STDIN);
+
+  s!B<([^>]+)>!<b>$1</b>!g for values(%pieces);
+
+  my($maintitle) = $pieces{"NAME"};
+  my($blurb) = $pieces{"DESCRIPTION"};
+
+  if($format)
+  {
+    my($link) = "http://toastball.net/toast/"; # XXX TODO
+    s/<br>/ /g for @@comments;
+
+    my($items) = join("", map(qq[    <item>
+      <title>$name version $versions[$_] ($dates[$_])</title>
+      <link>${link}diff-$versions[$_]</link>
+      <description>$comments[$_]</description>
+    </item>
+], 0..($limit && $limit < scalar(@@comments) ? $limit-1 : $#comments)));
+
+    print qq[Content-Type: application/rss+xml
+Pragma: no-cache
+Expires: -1
+
+<?xml version="1.0" ?>
+<rss version="2.0">
+  <channel>
+    <title>$name</title>
+    <link>$link</link>
+    <description>$maintitle</description>
+
+$items
+  </channel>
+</rss>
+];
+    return;
+  }
+
+  $maintitle =~ s!^(\S+)!<b>$1</b>!;
+
+  print qq[Content-Type: text/html
+Pragma: no-cache
+Expires: -1
+
+<html>
+  <head>
+    <title>$name</title>
+    <link rel="stylesheet" type="text/css" href="${root}toast.css" />
+    <link rel="alternate" type="application/rss+xml" href="rss-15.xml" />
+  </head>
+  <body>
+    <p class="maintitle">
+      $maintitle
+    </p>
+
+    <p>The latest version of <b>$name</b> is <b>$latest</b>.</p>
+
+    <p>$blurb</p>
+
+    <p>For more information, read the latest <a href="man">man page</a>.
+    An <a type="application/rss+xml" href="rss-15.xml">RSS feed</a> is
+    available.</p>
+
+    <table>
+      <tr>
+        <th>version</th>
+        <th>date</th>
+        <th>comments</th>
+        <th>links</th>
+      </tr>
+$rows    </table>
+  </body>
+</html>
+];
+}
+
+sub formattime($)
+{
+  my($time) = @@_;
+  return scalar(gmtime($time)) . " GMT";
+}
+
+sub rawmytime()
+{
+  my(@@statres) = stat($0);
+  @@statres || die;
+  return $statres[9];
+}
+
+sub rawvertime($;$)
+{
+  my($name) = shift;
+  my($ver) = checkver(@@_);
+  my($rcsname) = rcsname($name);
+  my($rlog) = progoutput("rlog -r$ver $rcsname");
+  $rlog =~ m|date: (\d+)/(\d+)/(\d+) (\d+):(\d+):(\d+);| || die;
+  return timegm(strip0($6, $5, $4, $3, $2 - 1, $1));
+}
+
+sub mytime() { formattime(rawmytime); }
+sub vertime($;$) { formattime(rawvertime(shift, shift)); }
+
+sub myvertime($;$)
+{
+  my($mytime) = rawmytime;
+  my($vertime) = rawvertime(shift, shift);
+  return formattime($mytime > $vertime ? $mytime : $vertime);
+}
+
+sub css()
+{
+  my($mytime) = mytime;
+  print qq[Content-Type: text/css
+Last-Modified: $mytime
+
+body { background: #e6ddbb; font-family: sans-serif; margin: 2em }
+p.maintitle { background: #f7eecc; padding: 1em }
+th { background: #c4bb99 }
+td { background: #f7eecc }
+th, td { padding: 0.1em 0.5em }
+dt,dd,li { margin-bottom: 1em }
+strong.diff-break { background: #ffffbb; }
+strong.diff-removed { background: #ffbbbb; }
+strong.diff-added { background: #bbffbb; }
+];
+}
+
+sub checkver(@@)
+{
+  my($ver) = @@_;
+  return "" unless $ver;
+  $ver =~ /^(\d+)\.(\d+)$/;
+  die("bad version: $ver") unless $1 > $major || $1 == $major && $2 >= $minor;
+  return $ver;
+}
+
+sub progoutput($)
+{
+  my($prog) = @@_;
+  local(*PROG);
+  open(PROG, "-|", $prog) || die("open $prog: $!");
+  my($result) = join('', (<PROG>));
+  close(PROG) || ($? == 256 && $prog =~ /^rcsdiff /)
+      || die("close $prog: $!$?");
+  return $result;
+}
+
+sub strip0(@@) { my(@@args) = @@_; s/^0+$/0/ || s/^0+// for @@args; @@args; }
+
+sub openver($;$)
+{
+  my($name) = shift;
+  my($ver) = checkver(@@_);
+  my($rcsname) = rcsname($name);
+  open(STDIN, "co -q -p$ver $rcsname |") || die("open co: $!");
+}
+
+sub tar(;$$$) # adapted from subroutine of the same name in toast 1.342
+{
+  my($name, $contents, $mtime) = @@_;
+  $contents = "" unless defined($contents);
+  return pack("x512") unless defined($name) && $name ne "";
+  my($magic, $uid, $gid, $user, $group, $target) =
+      ("ustar  ", 0, 0, "root", "root", "");
+  my($isdir) = $name =~ m|/$|;
+  my($islink) = $name =~ s/\@@$//;
+  my($isex) = $name =~ s/\*$//;
+  my($mode) = $isdir ? 040755 : $isex ? 0100755 : $islink ? 0120777 : 0100644;
+  my($type) = $isdir ? 5 : $islink ? 2 : 0;
+  ($target, $contents) = ($contents, "") if $islink;
+  my($size) = length($contents);
+  my($pad) = "\x00" x ($size ? 512 - ($size % 512) : 0);
+  $type = " $type";
+  $_ = sprintf("%07o", $_) for($mode, $uid, $gid);
+  $_ = sprintf("%011o", $_) for($size, $mtime);
+  my($presum, $postsum) =
+      (pack("Z100 Z8 Z8 Z8 Z12 Z12", $name, $mode, $uid, $gid, $size, $mtime),
+      pack("a2 Z100 Z8 Z32 Z32 x183", $type, $target, $magic, $user, $group));
+  my($sum) = sprintf("%06o\x00", unpack("%32C*", "$presum       $postsum"));
+  return $presum . $sum . $postsum . $contents . $pad;
+}
+
+sub tarball($;$)
+{
+  my($name) = shift;
+  my($ver) = checkver(@@_);
+  openver($name, $ver);
+  print("Content-Type: application/x-tar\nLast-Modified: ",
+      vertime($name, $ver), "\n\n");
+  if($name ne "toast")
+  {
+    my($tarname) = tarname($name, $ver);
+    my($contents) = join("", (<STDIN>));
+    my($mtime) = rawvertime($name, $ver);
+    my($pid) = open(STDOUT, "|-");
+    die("fork: $!") unless defined($pid);
+    if($pid)
+    {
+      print(tar($tarname, $contents, $mtime), tar);
+    }
+    else # child
+    {
+      open(STDIN, "gzip -c -9 |") || die("open gzip: $!");
+      my($header);
+      read(STDIN, $header, 10) == 10 || die;
+      my($id, $cm, $flg, $oldmtime, $xfl, $os) =
+          unpack("a2 C C L C C", $header);
+      $flg == 0 || error("unexpected gzip flags");
+      $flg |= 0x18; # FNAME + FCOMMENT
+      my($tarfile) = defined($ver) ? "$name-$ver.tar" : "$name.tar";
+      print(pack("a2 C C L C C Z* Z*",
+          $id, $cm, $flg, $mtime, $xfl, $os, $tarfile, "toast"), (<STDIN>));
+      exit(0);
+    }
+  }
+  else
+  {
+    open(STDOUT, "| perl -x - tarself") || die("open perl: $!");
+    my($code) = "";
+    local($_);
+    while(<STDIN>)
+    {
+      print;
+      $code .= $_;
+      print $code if /^__END__$/;
+    }
+  }
+}
+
+sub manpage($$$)
+{
+  my($name) = shift;
+  my($ver) = checkver(shift);
+  my($root) = shift;
+  openver($name, $ver);
+  my($text) = progoutput("pod2html --title='man $name' --css=${root}toast.css");
+  die unless $text;
+  $text =~ s|<DT><STRONG>(.*)</STRONG><BR>|<DT>$1</DT>|gm;
+  $text =~ s|<li></li>|<li>|g;
+  print("Content-Type: text/html\nLast-Modified: ",
+      vertime($name, $ver), "\n\n", $text);
+}
+
+sub source($$$)
+{
+  my($name) = shift;
+  my($ver) = checkver(@@_);
+  my($root) = shift;
+  my($rcsname) = rcsname($name);
+  print("Content-Type: text/plain\nLast-Modified: ", vertime($name, $ver), "\n\n");
+  system("co -q -p$ver $rcsname");
+}
+
+sub prevver($)
+{
+  my($ver) = checkver(@@_);
+  die unless $ver;
+  $ver =~ /^(\d+\.)(\d+)$/ || die;
+  return checkver($1 . ($2 - 1));
+}
+
+sub diff($$$$)
+{
+  my($name, $from, $to, $root) = @@_;
+  my($rcsname) = rcsname($name);
+  $to = checkver($to) || die;
+  $from = prevver($to) unless $from;
+  $from = checkver($from) || die;
+  my($same) = $from eq $to;
+  my($diff) = $same ? "" :
+      progoutput("rcsdiff -q -kk -u -r$from -r$to $rcsname");
+  $diff =~ s/\&/&amp;/g;
+  $diff =~ s/\</&lt;/g;
+  $diff =~ s/\>/&gt;/g;
+  $diff =~ s/^(---|\+\+\+) $rcsname/$1 $name/gm;
+  $diff =~ s|^(\@@.*)$|<strong class="diff-break">$1</strong>|gm;
+  $diff =~ s|^(\-.*)$|<strong class="diff-removed">$1</strong>|gm;
+  $diff =~ s|^(\+.*)$|<strong class="diff-added">$1</strong>|gm;
+  my($vertime) = myvertime($name, $to);
+  my($body) = $same ? qq[    <p>
+      Version $to is identical to itself.
+    </p>] : "<pre>\n$diff</pre>";
+  print
+qq[Content-Type: text/html
+Last-Modified: $vertime
+
+<html>
+  <head>
+    <title>diff $name-$from $name-$to</title>
+    <link rel="stylesheet" type="text/css" href="${root}toast.css" />
+  </head>
+  <body>
+$body
+  </body>
+<html>
+];
+}
+
+sub sendbug($)
+{
+  my($name) = @@_;
+  $| = 1;
+  open(STDERR, ">&STDOUT") or die("dup 2>&1: $!");
+  print("Content-Type: text/plain\n\n");
+
+  my($body) = join('', <STDIN>);
+  my($subject) = "$name bug $ENV{REQUEST_METHOD} from $ENV{HTTP_USER_AGENT} at $ENV{REMOTE_ADDR}";
+  $subject .= " via $ENV{HTTP_REFERER}" if $ENV{HTTP_REFERER};
+  my($outdir) = rcsname($name);
+  $outdir =~ s|/[^/]+$|/bugs| or die("name=$name; outdir=$outdir");
+  my($outpath) = "$outdir/$ENV{REMOTE_ADDR}-$$-" . time;
+  if($body && -w($outdir) && !-e($outpath))
+  {
+    local(*OUT);
+    open(OUT, ">", $outpath) || die("open $outpath: $!");
+    print OUT $body or die("write $outpath: $!");
+    close(OUT) || die("close $outpath: $!");
+    $body = "[saved to $outpath]\n\n$body";
+  }
+  $subject =~ s/[\r\n]/ /g;
+
+  my($email) = qq[From: www\@@toastball.net
+To: $name-bugs\@@toastball.net
+Subject: $subject
+
+$body
+];
+
+  local(*SENDMAIL);
+  open(SENDMAIL, "|/usr/lib/sendmail -t") || die("open sendmail: $!");
+  print SENDMAIL $email;
+  close(SENDMAIL) || die("close sendmail: $!");
+  $? && die("sendmail returned $?");
+
+  print("ok");
+}
+
+sub cli()
+{
+  die("this is cgi");
+}
+
+sub main()
+{
+  my($name, $base, $root) = ("toast", "", "");
+  my($path) = $ENV{"PATH_INFO"} || "";
+  return css if $path =~ m|^/toast.css$|;
+  ($name, $path, $base, $root, $minor) = (fullname($1), $2, "$1/", "../", 1)
+      if $path =~ m|^/(\w+)(/[^/]*)$| && isname($1) && $1 ne $name;
+  return pkgpage($name, $root) if $path =~ m|^/$|;
+  return tarball($name, $2) if $path =~ m|^/$name(-(\d+\.\d+))?\.tar\.gz$|;
+  return manpage($name, $2, $root) if $path =~ m|^/man(-(\d+\.\d+))?$|;
+  return source($name, $2, $root) if $path =~ m|^/$name(-(\d+\.\d+))?$|;
+  return diff($name, $2, $3, $root)
+      if $path =~ m|^/diff-((\d+\.\d+)-)?(\d+\.\d+)$|;
+  return pkgpage($name, $root, "rss", $1)
+      if $path =~ m|/rss(?:-(\d+))?\.xml$|;
+  return sendbug($name) if $path =~ m|^/sendbug$|;
+  return cli unless defined($ENV{"SERVER_NAME"});
+  $base = "$1/" if $path =~ m|^/(\w+)$| && isname($1);
+  my($scriptname) = $ENV{SCRIPT_NAME};
+  $scriptname =~ s/\.cgi$//;
+  print("Location: http://$ENV{SERVER_NAME}$scriptname/$base\n\n");
+}
+
+chdir("/tmp"); # because pod2html seems to create temporary files
+main;
+@
+
+
+1.20
+log
+@add sendbug hook
+@
+text
+@d428 15
+a442 8
+  die("name $name") if $name !~ m(^[\-\w]+$);
+  my($stdin) = join('', <STDIN>);
+  my($method) = $ENV{REQUEST_METHOD} || "no method";
+  die("method $method") if $method !~ m(^[\w ]+$);
+  my($ip) = $ENV{REMOTE_ADDR} || "no IP";
+  die("ip $ip") if $ip !~ m(^[\w\. ]+$);
+  my($url) = $ENV{HTTP_REFERER} || "no referer";
+  die("url $url") if $url =~ m([\r\n]);
+d446 1
+a446 1
+Subject: $name bug $method from $ip via $url
+d448 1
+a448 1
+$stdin
+@
+
+
+1.19
+log
+@remove Google ads
+@
+text
+@d421 32
+d473 1
+@
+
+
+1.18
+log
+@looks like I added some Google ads a white back
+@
+text
+@a6 14
+my($ad) = q[
+<script type="text/javascript"><!--
+google_ad_client = "pub-6994983890796149";
+/* 160x600, created 6/3/08 */
+google_ad_slot = "5687422686";
+google_ad_width = 160;
+google_ad_height = 600;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+];
+
+a191 1
+        <td class="ad" rowspan=100 valign="top">$ad</td>
+a242 1
+td.ad { background: #e6ddbb; }
+@
+
+
+1.17
+log
+@added an RSS feed
+@
+text
+@d7 14
+d206 1
+d258 1
+@
+
+
+1.16
+log
+@sneakily make toast linux accessible even though it isn't really ready
+@
+text
+@d52 1
+a52 1
+sub pkgpage($$)
+d54 1
+a54 1
+  my($name, $root) = @@_;
+d59 1
+d80 3
+d131 30
+d171 1
+d182 3
+a184 1
+    <p>For more information, read the latest <a href="man">man page</a>.</p>
+d434 1
+a434 1
+  return tarball($name, $2) if $path =~ m|^/$name(-(\d+\.\d+))?.tar.gz$|;
+d439 2
+@
+
+
+1.15
+log
+@add toastinit
+@
+text
+@d14 1
+d21 1
+d27 1
+d127 1
+a127 1
+  $maintitle =~ s!^(\w+)!<b>$1</b>!;
+@
+
+
+1.14
+log
+@add tarball support for non-toast packages
+@
+text
+@d13 1
+d19 1
+@
+
+
+1.13
+log
+@toastlogin pages work now, except for tarballs
+@
+text
+@d9 11
+a25 6
+my(%rcsnames) =
+(
+  "toast" => "/home/zaphod/toast/toast",
+  "toastlogin" => "/home/zaphod/toast/login/toastlogin",
+);
+
+d32 8
+d238 25
+d270 27
+a296 4
+  open(STDOUT, "| perl -x - tarself") || die("open perl: $!");
+  my($code) = "";
+  local($_);
+  while(<STDIN>)
+d298 9
+a306 3
+    print;
+    $code .= $_;
+    print $code if /^__END__$/;
+@
+
+
+1.12
+log
+@move towards support for multiple packages;
+tinker with front page and diff color scheme
+@
+text
+@d9 1
+a9 1
+sub isname($)
+d11 2
+a12 2
+  my($name) = @@_;
+  return $name eq "toast";
+d15 6
+d24 1
+a24 1
+  return "/home/zaphod/toast/$name";
+d27 1
+a27 1
+sub pkgpage($)
+d30 7
+d118 1
+a118 1
+    <link rel="stylesheet" type="text/css" href="toast.css" />
+d243 1
+a243 1
+sub manpage($;$)
+d246 2
+a247 1
+  my($ver) = checkver(@@_);
+d249 1
+a249 1
+  my($text) = progoutput("pod2html --title='man $name' --css=toast.css");
+d257 1
+a257 1
+sub source($;$)
+d261 1
+d275 1
+a275 1
+sub diff($$$)
+d277 1
+a277 1
+  my($name, $from, $to) = @@_;
+d303 1
+a303 1
+    <link rel="stylesheet" type="text/css" href="toast.css" />
+d319 1
+a319 1
+  my($name, $base) = ("toast", "");
+d322 3
+a324 3
+  ($name, $path, $base) = ($1, $2, "$2/")
+      if $path =~ m|^/(\w+)(/[^/]*)$| && isname($1);
+  return pkgpage($name) if $path =~ m|^/$|;
+d326 4
+a329 3
+  return manpage($name, $2) if $path =~ m|^/man(-(\d+\.\d+))?$|;
+  return source($name, $2) if $path =~ m|^/$name(-(\d+\.\d+))?$|;
+  return diff($name, $2, $3) if $path =~ m|^/diff-((\d+\.\d+)-)?(\d+\.\d+)$|;
+@
+
+
+1.11
+log
+@further genericization
+@
+text
+@d9 6
+d112 1
+a112 6
+    <p>
+      The latest version of <b>$name</b> is <b>$latest</b>.  <a
+      href="$name-$latest.tar.gz">Download<a> it, read the current <a
+      href="man">man</a> page, browse the <a href="$name">source</a>
+      for this version, or refer to the table below for previous versions.
+    </p>
+d116 1
+a116 4
+    <p>
+      For more information, see the full program
+      <a href="man#description">description</a> section of the man page.
+    </p>
+d176 3
+a178 3
+strong.diff-break { background: yellow }
+strong.diff-removed { background: red }
+strong.diff-added { background: green }
+d304 1
+a304 1
+  my($name) = "toast";
+d306 3
+a309 1
+  return css if $path =~ m|^/toast.css$|;
+d315 1
+d318 1
+a318 1
+  print("Location: http://$ENV{SERVER_NAME}$scriptname/\n\n");
+d321 1
+a321 1
+chdir("/tmp"); # because pod2html is a piece of crap
+@
+
+
+1.10
+log
+@front-page blurb now comes from toast man page
+@
+text
+@d8 6
+a13 1
+my($rcsname) = "/home/zaphod/toast/toast";
+d18 1
+d63 1
+a63 1
+  openver();
+a132 5
+sub frontpage()
+{
+  pkgpage("toast");
+}
+
+d146 1
+a146 1
+sub rawvertime(;$)
+d148 1
+d150 1
+d157 1
+a157 1
+sub vertime(;$) { formattime(rawvertime(shift)); }
+d159 1
+a159 1
+sub myvertime(;$)
+d162 1
+a162 1
+  my($vertime) = rawvertime(shift);
+d206 1
+a206 1
+sub openver(;$)
+d208 1
+d210 1
+d214 1
+a214 1
+sub tarball(;$)
+d216 1
+d218 1
+a218 1
+  openver($ver);
+d220 1
+a220 1
+      vertime($ver), "\n\n");
+d232 1
+a232 1
+sub manpage(;$)
+d234 1
+d236 2
+a237 2
+  openver($ver);
+  my($text) = progoutput('pod2html --title="man toast" --css=toast.css');
+d242 1
+a242 1
+      vertime($ver), "\n\n", $text);
+d245 1
+a245 1
+sub source(;$)
+d247 1
+d249 2
+a250 1
+  print("Content-Type: text/plain\nLast-Modified: ", vertime($ver), "\n\n");
+d262 1
+a262 1
+sub diff($$)
+d264 2
+a265 1
+  my($from, $to) = @@_;
+d275 1
+a275 1
+  $diff =~ s/^(---|\+\+\+) $rcsname/$1 toast/gm;
+d279 1
+a279 1
+  my($vertime) = myvertime($to);
+d289 1
+a289 1
+    <title>diff toast-$from toast-$to</title>
+d306 1
+d308 1
+a308 1
+  return frontpage if $path =~ m|^/$|;
+d310 4
+a313 4
+  return tarball($2) if $path =~ m|^/toast(-(\d+\.\d+))?.tar.gz$|;
+  return manpage($2) if $path =~ m|^/man(-(\d+\.\d+))?$|;
+  return source($2) if $path =~ m|^/toast(-(\d+\.\d+))?$|;
+  return diff($2, $3) if $path =~ m|^/diff-((\d+\.\d+)-)?(\d+\.\d+)$|;
+@
+
+
+1.9
+log
+@move towards pulling front-page text from toast itself
+@
+text
+@d10 1
+a10 1
+sub frontpage()
+d12 1
+d38 1
+a38 1
+        <td><a href="toast-$ver.tar.gz">$ver<a></td>
+d41 1
+a41 1
+        <td><a href="toast-$ver.tar.gz">tgz</a>
+d43 1
+a43 1
+            <a href="toast-$ver">src</a>];
+d58 1
+a58 2
+  my($maintitle);
+  my($inname);
+d63 1
+a63 1
+    if($maintitle)
+d65 8
+a72 2
+      last unless $_;
+      $maintitle .= " ";
+d74 2
+a75 2
+    $maintitle .= $_ if $inname;
+    $inname ||= /^=head1 NAME$/;
+d78 6
+d92 1
+a92 1
+    <title>toast</title>
+d101 3
+a103 3
+      The latest version of toast is <b>$latest</b>.  <a
+      href="toast-$latest.tar.gz">Download<a> it, read the current <a
+      href="man">man</a> page, browse the <a href="toast">source</a>
+d107 1
+a107 19
+    <p>
+      toast is a simple package manager for Unix.  It automatically
+      locates and downloads source code, figures out how to compile it,
+      installs each package in its own private directory tree, and makes
+      the resulting binaries available through an encap/GNU stow-like
+      symlink tree, all in one short command, or several long ones if
+      you prefer.
+    </p>
+
+    <p>
+      Although it can be used as the primary package manager for a machine
+      or distribution, the most common use for toast is to quickly install
+      software in your home directory on a system where you don't have
+      root privileges or don't wish to install or upgrade a package and
+      its dependencies through normal channels.  Even if a source package
+      only knows how to install itself into a fixed location as root,
+      toast can usually convince it to behave itself without any need
+      for extra patches or user intervention.
+    </p>
+d110 2
+a111 21
+      Unlike other package managers, toast doesn't rely on a special
+      package format, central package distribution site, or army of
+      volunteers to patch every new version of every package.  Since each
+      package's installed files are stored separately, it's easy to
+      quickly install, uninstall, upgrade, recompile, or temporarily
+      disable different software packages or different versions of the
+      same packages, even if they conflict with each other.
+    </p>
+
+    <p>
+      Compiling packages from source tends to prevent problems that
+      might otherwise arise from incompatible shared library versions,
+      compiled-in paths, and other peculiarities.  However, toast includes
+      minimal support for binary RedHat and Debian packages (plus generic
+      formats, like Slackware tgz) without installing rpm or dpkg.
+    </p>
+
+    <p>
+      For more information, including how to make toast
+      download and install itself, see the program <a
+      href="man#description">description</a> section of the man page.
+d127 5
+@
+
+
+1.8
+log
+@changed a few words
+@
+text
+@d56 18
+d85 1
+a85 2
+      <b>toast</b> - a simple source-and-symlinks package
+      manager for root and non-root users
+d309 5
+d323 1
+a323 1
+  die("this is cgi") unless defined($ENV{"SERVER_NAME"});
+@
+
+
+1.7
+log
+@replaced super-secret disclaimer with extended blurb
+@
+text
+@d117 2
+a118 1
+      For more information, see the program <a
+@
+
+
+1.6
+log
+@directory name has changed
+@
+text
+@d14 1
+a14 1
+  my($rows, $ver, $date, $comments) = "";
+d20 1
+d66 42
+d109 5
+a113 4
+      Welcome to the secret pre-release toast distribution site!
+      If you don't know what this "toast" thing is, you should probably
+      either run away screaming or have a look at the program <a
+      href="man#description">description</a> in the man page.
+d115 6
+d172 3
+a174 2
+th { background: #c4bb99; }
+td { background: #f7eecc; }
+d217 1
+a217 1
+  open(STDOUT, "| perl - tarself") || die("open perl: $!");
+@
+
+
+1.5
+log
+@fix numbered lists on man page
+@
+text
+@d8 1
+a8 1
+my($rcsname) = "/home/zaphod/toast2/toast";
+@
+
+
+1.4
+log
+@minor tweak for latest apache
+@
+text
+@d184 1
+@
+
+
+1.3
+log
+@break >2-line comments correctly
+@
+text
+@d249 3
+a251 1
+  print("Location: http://$ENV{SERVER_NAME}$ENV{SCRIPT_NAME}/\n\n");
+@
+
+
+1.2
+log
+@added pre-release explanatory blurb paragraph to front page
+@
+text
+@d32 1
+a32 1
+      $comments =~ s/\n/<br>/;
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@d65 6
+@

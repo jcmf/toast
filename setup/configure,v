@@ -1,0 +1,7861 @@
+head	1.65;
+access;
+symbols;
+locks
+	zaphod:1.65; strict;
+comment	@# @;
+
+
+1.65
+date	2005.02.05.06.12.30;	author zaphod;	state Exp;
+branches;
+next	1.64;
+
+1.64
+date	2005.01.27.05.12.01;	author zaphod;	state Exp;
+branches;
+next	1.63;
+
+1.63
+date	2005.01.19.05.04.58;	author zaphod;	state Exp;
+branches;
+next	1.62;
+
+1.62
+date	2005.01.18.07.51.48;	author zaphod;	state Exp;
+branches;
+next	1.61;
+
+1.61
+date	2005.01.17.07.16.52;	author zaphod;	state Exp;
+branches;
+next	1.60;
+
+1.60
+date	2005.01.17.06.32.50;	author zaphod;	state Exp;
+branches;
+next	1.59;
+
+1.59
+date	2005.01.17.00.46.27;	author zaphod;	state Exp;
+branches;
+next	1.58;
+
+1.58
+date	2005.01.15.22.17.22;	author zaphod;	state Exp;
+branches;
+next	1.57;
+
+1.57
+date	2004.12.26.07.02.12;	author zaphod;	state Exp;
+branches;
+next	1.56;
+
+1.56
+date	2004.12.26.05.33.57;	author zaphod;	state Exp;
+branches;
+next	1.55;
+
+1.55
+date	2004.12.26.04.52.38;	author zaphod;	state Exp;
+branches;
+next	1.54;
+
+1.54
+date	2004.12.22.07.51.16;	author zaphod;	state Exp;
+branches;
+next	1.53;
+
+1.53
+date	2004.12.19.20.53.58;	author zaphod;	state Exp;
+branches;
+next	1.52;
+
+1.52
+date	2004.12.19.05.48.05;	author zaphod;	state Exp;
+branches;
+next	1.51;
+
+1.51
+date	2004.12.17.05.33.02;	author zaphod;	state Exp;
+branches;
+next	1.50;
+
+1.50
+date	2004.12.08.06.34.17;	author zaphod;	state Exp;
+branches;
+next	1.49;
+
+1.49
+date	2004.12.05.08.01.12;	author zaphod;	state Exp;
+branches;
+next	1.48;
+
+1.48
+date	2004.12.04.20.07.25;	author zaphod;	state Exp;
+branches;
+next	1.47;
+
+1.47
+date	2004.12.01.05.16.30;	author zaphod;	state Exp;
+branches;
+next	1.46;
+
+1.46
+date	2004.11.29.08.10.49;	author zaphod;	state Exp;
+branches;
+next	1.45;
+
+1.45
+date	2004.11.29.06.25.49;	author zaphod;	state Exp;
+branches;
+next	1.44;
+
+1.44
+date	2004.11.29.05.23.32;	author zaphod;	state Exp;
+branches;
+next	1.43;
+
+1.43
+date	2004.11.28.22.40.58;	author zaphod;	state Exp;
+branches;
+next	1.42;
+
+1.42
+date	2004.11.28.07.17.20;	author zaphod;	state Exp;
+branches;
+next	1.41;
+
+1.41
+date	2004.11.27.23.05.04;	author zaphod;	state Exp;
+branches;
+next	1.40;
+
+1.40
+date	2004.11.26.21.37.53;	author zaphod;	state Exp;
+branches;
+next	1.39;
+
+1.39
+date	2004.11.26.19.36.19;	author zaphod;	state Exp;
+branches;
+next	1.38;
+
+1.38
+date	2004.11.26.06.29.52;	author zaphod;	state Exp;
+branches;
+next	1.37;
+
+1.37
+date	2004.11.25.06.17.32;	author zaphod;	state Exp;
+branches;
+next	1.36;
+
+1.36
+date	2004.11.24.08.03.27;	author zaphod;	state Exp;
+branches;
+next	1.35;
+
+1.35
+date	2004.11.24.05.54.24;	author zaphod;	state Exp;
+branches;
+next	1.34;
+
+1.34
+date	2004.11.22.00.43.19;	author zaphod;	state Exp;
+branches;
+next	1.33;
+
+1.33
+date	2004.11.21.23.58.17;	author zaphod;	state Exp;
+branches;
+next	1.32;
+
+1.32
+date	2004.11.21.19.37.31;	author zaphod;	state Exp;
+branches;
+next	1.31;
+
+1.31
+date	2004.11.21.01.45.28;	author zaphod;	state Exp;
+branches;
+next	1.30;
+
+1.30
+date	2004.11.17.07.42.21;	author zaphod;	state Exp;
+branches;
+next	1.29;
+
+1.29
+date	2004.11.15.06.49.15;	author zaphod;	state Exp;
+branches;
+next	1.28;
+
+1.28
+date	2004.11.14.05.39.31;	author zaphod;	state Exp;
+branches;
+next	1.27;
+
+1.27
+date	2004.11.14.00.50.27;	author zaphod;	state Exp;
+branches;
+next	1.26;
+
+1.26
+date	2004.11.13.21.32.00;	author zaphod;	state Exp;
+branches;
+next	1.25;
+
+1.25
+date	2004.11.11.04.49.01;	author zaphod;	state Exp;
+branches;
+next	1.24;
+
+1.24
+date	2004.11.08.04.31.00;	author zaphod;	state Exp;
+branches;
+next	1.23;
+
+1.23
+date	2004.11.07.05.55.14;	author zaphod;	state Exp;
+branches;
+next	1.22;
+
+1.22
+date	2004.11.04.06.31.42;	author zaphod;	state Exp;
+branches;
+next	1.21;
+
+1.21
+date	2004.11.02.23.37.49;	author zaphod;	state Exp;
+branches;
+next	1.20;
+
+1.20
+date	2004.11.02.23.22.37;	author zaphod;	state Exp;
+branches;
+next	1.19;
+
+1.19
+date	2004.11.01.04.33.15;	author zaphod;	state Exp;
+branches;
+next	1.18;
+
+1.18
+date	2004.10.27.05.30.21;	author zaphod;	state Exp;
+branches;
+next	1.17;
+
+1.17
+date	2004.10.13.05.16.35;	author zaphod;	state Exp;
+branches;
+next	1.16;
+
+1.16
+date	2004.10.10.02.07.16;	author zaphod;	state Exp;
+branches;
+next	1.15;
+
+1.15
+date	2004.10.10.01.58.32;	author zaphod;	state Exp;
+branches;
+next	1.14;
+
+1.14
+date	2004.10.04.05.22.02;	author zaphod;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2004.10.03.20.51.38;	author zaphod;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2004.10.03.18.18.27;	author zaphod;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2004.10.03.05.53.25;	author zaphod;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2004.10.03.04.03.36;	author zaphod;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2004.10.02.21.02.43;	author zaphod;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2004.10.01.04.53.18;	author zaphod;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2004.09.28.05.56.13;	author zaphod;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2004.09.26.22.17.14;	author zaphod;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2004.09.26.05.43.25;	author zaphod;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2004.09.22.04.29.59;	author zaphod;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2004.09.21.04.39.28;	author zaphod;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2004.09.20.07.18.10;	author zaphod;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2004.09.20.06.29.42;	author zaphod;	state Exp;
+branches;
+next	;
+
+
+desc
+@toast linux installer stage 2
+@
+
+
+1.65
+log
+@all one file
+@
+text
+@#!/bin/sh
+
+case "$1" in
+  create-files) topdir=.; mkdir -p sbin tmp;;
+  1.[1-9]*) topdir=/;;
+  *) perl -pe 's/^  /\t/' > Makefile << EOF || exit 1
+all sbin/setup:
+  sh $0 create-files
+
+chroot: sbin/setup
+  TOAST_NICE=5 sbin/setup
+
+clean:
+  [ ! -S mnt/dev/log ] || umount mnt/dev
+  [ ! -d mnt/proc/1 ] || umount mnt/proc
+  [ ! -d mnt/sys/block ] || umount mnt/sys
+  rm -fr sbin tmp mnt *.log
+
+distclean: clean
+  rm Makefile
+EOF
+  exec echo "wrote Makefile";;
+esac
+
+set -e
+: > sbin/setup
+chmod +x sbin/setup
+for i in toast help; do ln -s setup "sbin/$i"; done
+sed -e "s,TOPDIR,$topdir,g" > "sbin/setup" << "---"
+#!/bin/sh
+
+export http_proxy=http://67.126.59.194:8080/
+
+export PATH=/sbin:/bin:/usr/sbin:/usr/bin
+export HOME=/
+export SHELL=/bin/sh
+
+# es = estimated download size (in 1024-byte blocks, as per du -s); 0 = none
+# eb = estimated build time (where 10000 = median)
+# flags = zero or more of the following letters, mashed together:
+#   c = critical task; don't bother to continue if this fails
+#   n = nonrepresentative task; don't factor install time into estimates
+# as = actual download _time_ (not size!) in seconds (on this machine)
+# ab = actual build time in seconds (on this machine)
+
+topdir="tmp/setup"
+namedir="$topdir/name"
+numdir="$topdir/num"
+efile="$topdir/event"
+ufile="$topdir/updated"
+ffile="$topdir/failed"
+
+statuslines="5"
+
+color_stats="1;44"
+color_bar="1;36;46"
+
+color_pending="41"
+color_getting="40"
+color_missing="43"
+color_stored="1;41"
+color_building="1;40"
+color_broken="1;43"
+color_done="1;42"
+
+color_fkey="30;47"
+color_fkey_selected="1;37;47"
+color_fkey_eol="37;47"
+
+# solid block:     '\33(U\333\17'
+# left half block: '\33(U\335\17'
+# halftone block:  '\33(U\261\17'
+# up arrow:        '\33[3h\30\33[3l'
+# down arrow:      '\33[3h\31\33[3l'
+
+case "$TERM" in
+  *xterm*)
+    char_solid_block='\16a\17'
+    char_half_block=' '
+    ;;
+  *)
+    char_solid_block='\33(U\333\17'
+    char_half_block='\33(U\335\17'
+    ;;
+esac
+
+timeout()
+{
+  seconds="$1"
+  save="`stty -g`"
+  key=""
+  while [ "$seconds" -gt 0 -a -z "$key" ]; do
+    echo -ne '\r'"$seconds "
+    stty raw -echo time 10 min 0 || exit $?
+    key="`dd bs=1 count=1 2>/dev/null`"
+    stty "$save"
+    let seconds="$seconds - 1"
+  done
+  echo -ne '\r          \r'
+  [ -z "$key" ]
+}
+
+resize()
+{
+  save="`stty -g`"
+  stty raw -echo time 1 min 0
+  echo -ne '\33[s\33[255;255H\33[6n\33[u'
+  eval "`dd bs=1 count=128 2>/dev/null | sed -ne 's/.*\[\([0-9]\+\);\([0-9]\+\)R.*/LINES=\1;COLUMNS=\2;/p'`"
+  stty "$save"
+  [ -z "$LINES" ] && LINES=50
+  [ -z "$COLUMNS" ] && COLUMNS=80
+  export LINES COLUMNS
+}
+
+refresh()
+{
+  echo -ne "\33[0;${2}m " > "$1/display.tmp"
+  echo -n `cat $1/name` '' >> "$1/display.tmp"
+  if [ ! -d "$1/next" -o -r "$1/next/newline" ]; then
+    echo -e "\33[0;${3}m\33[K" >> "$1/display.tmp"
+  fi
+  mv "$1/display.tmp" "$1/display"
+}
+
+error()
+{
+  echo "$*" >&2
+  rm -f "$tmpfile"
+  exit 1
+}
+
+valid_disk_name()
+{
+  case "$1" in
+    */*) return 1 ;;
+    *[0-9]) return 1 ;;
+    [hs]d[a-z]*) return 0 ;;
+    *) return 1 ;;
+  esac
+}
+
+partition()
+{
+  # Environment variables:
+  # DISKS
+  # DESTROY
+
+  # Number of partitions to create on each disk.
+  # Each partition will be an LVM2 physical volume (PE).
+  # We split each disk into multiple partitions/PEs because there is no way
+  # to resize a PE once it has been created.  It would be very difficult
+  # to make room for another OS later on if we used only one PV per disk.
+  # Linux only allocates 15 minor numbers for SCSI disk partitions;
+  # if 1 is primary, 2 is extended, and 5-15 are logical, then there is a
+  # maximum of 12 usable partitions per disk.
+  slices=8
+
+  # LVM2 physical extent (PE) size, in megabytes.  This must be a power of two!
+  # Once the volume group (VG) has been created, its PE size can't be changed.
+  # The maximum logical volume (LV) size for the VG is about 64k times PE size.
+  # A PE size of 32 MB gets you a maximum LV size of 2 terabytes, which is
+  # the maximum allowed, so there is no point in using a value larger than 32.
+  # Each partition must be large enough to fit at least one PE (plus overhead),
+  # or it won't be very useful.
+  # Since each PV stores data in multiples of the PE size, smaller values might
+  # waste a bit less space, especially on smaller drives.
+  pemegs=16
+
+  # Number of megabytes to allocate to the /boot logical volume.
+  # /boot needs to be on a separate LV because current versions of lilo
+  # seem to panic if the LV spans multiple PVs (even if they're on the
+  # same disk!), so we need a special LV that is explicitly restricted to
+  # one PV.
+  bootmegs=128
+
+  # Number of megabytes to allocate for swap space.
+  # This gets its own logical volume.
+  swapmegs=1024
+
+  # Percentage of the total space in the volume group to allocate to the
+  # root logical volume we'll be creating.
+  # Remaining space in the VG will be used for /boot, swap (if any),
+  # by snapshots (for fsck or backups) and/or any other logical volumes
+  # the user might decide to create later.
+  lvpercent=80
+
+  # Volume group name.  If we want to be able to coexist peacefully with an
+  # existing Linux setup that also uses LVM, this shouldn't conflict with any
+  # existing volume group names.
+  vgname="toast"
+
+  # Temporary file used to store munged parted output.
+  tmpfile=/tmp/parted.munge.$$
+
+  # get/validate list of disks
+  if [ -n "$DISKS" ]; then
+    for disk in $DISKS; do
+      valid_disk_name "$disk" || error "bad disk name: $disk"
+    done
+  else
+    while read major minor blocks name rest; do
+      valid_disk_name "$name" && DISKS="$DISKS $name"
+    done < /proc/partitions
+    [ -z "$DISKS" ] && error "no disks found"
+  fi
+
+  # check block device nodes for all disks
+  for disk in $DISKS; do
+    path="/dev/$disk"
+    [ -b "$path" ] || error "not a block device: $path"
+    [ -r "$path" ] || error "can't read disk: $disk"
+    [ -w "$path" ] || error "can't write disk: $disk"
+  done
+
+  # create partitions
+  pvpaths=""
+  let pecount=0
+  for disk in $DISKS; do
+    path="/dev/$disk"
+    parted="parted -s $path --"
+    diskmajor=""
+    diskminor=""
+    totalm=""
+    totalk=""
+    overwrite=""
+    lastminor=0
+    extminor=0
+    labeltype=""
+    primary1exists=""
+    primary2exists=""
+    primary3exists=""
+    primary4exists=""
+
+    case "$disk" in
+      h*) maxminor=63 ;; # IDE
+      s*) maxminor=15 ;; # SCSI
+      *) error "assertion failed: $disk"
+    esac
+
+    while read major minor blocks name rest; do
+      if [ "$name" = "$disk" ]; then
+        diskmajor="$major"
+        diskminor="$minor"
+        let totalm="$blocks/1024"
+        let totalk="($blocks%1024)*1000/1024"
+        case "$totalk" in
+          [0-9]) totalk="00$totalk" ;;
+          [1-9][0-9]) totalk="0$totalk" ;;
+          [1-9][0-9][0-9]) ;;
+          *) error "assertion failed: disk=$disk blocks=$blocks k=$totalk"
+        esac
+      fi
+    done < /proc/partitions
+
+    [ -z "$totalm" ] && error "assertion failed: disk=$disk totalm=$totalm"
+    [ -z "$totalk" ] && error "assertion failed: disk=$disk totalk=$totalk"
+    [ -z "$diskmajor" ] && error "assertion failed: no major for disk=$disk"
+    [ -z "$diskminor" ] && error "assertion failed: no minor for disk=$disk"
+
+    sum=bf619eac0cdf3f68d496ea9344137e8b # md5sum of 512 zero bytes
+
+    if [ "$DESTROY" = "yes" ]; then
+      echo "# Entire disk $disk will be overwritten unconditionally."
+      overwrite="yes"
+    elif dd if="$path" bs=512 count=1 2>/dev/null | md5sum | grep -q "$sum"; then
+      echo "# Disk $disk appears to be empty; entire disk will be overwritten."
+      overwrite="yes"
+    else
+      echo "# Contents of disk $disk may be accidentally destroyed."
+      # TODO: tell user what partitions will go on this disk, if any
+      $parted print | sed -e 's/0\.000-//; s/\./ /g' > "$tmpfile"
+      while read one two three four five six rest; do
+        if [ "$one $two $three" = "Disk geometry for" ]; then
+          totalm="$five"
+          totalk="$six"
+        fi
+        [ "$one $two $three" = "Disk label type:" ] && labeltype="$one"
+        case "$one" in
+          [0-9]*)
+            [ "$one" -gt "$lastminor" ] && lastminor="$one"
+            [ "$six" = "extended" ] && extminor="$one"
+            [ "$six" = "primary" ] && eval "primary${one}exists=yes"
+            ;;
+        esac
+      done < "$tmpfile"
+      rm -f "$tmpfile"
+    fi
+
+    freeslot=0
+    for slot in 4 3 2; do
+      eval "[ -n \$primary{$slot}used ]" && freeslot="$slot"
+    done
+
+    if [ -n "$overwrite" ]; then
+      lastminor=0
+      extminor=0
+      labeltype="msdos"
+      echo "dd if=/dev/zero of=$path bs=512 count=1"
+      echo "$parted mklabel $labeltype"
+    fi
+
+    if [ "$labeltype" = "msdos" ] && [ "$extminor" -gt 0 -o "$freeslot" -gt 0 ]; then
+      let slicemegs="$totalm/$slices"
+      [ "$slicemegs" -le "$pemegs" ] && slicemegs=$totalm
+      let splitmegs="$slicemegs*2"
+      lastm=0
+      lastk=000
+      {
+        if [ -z "$overwrite" ]; then
+          $parted print | grep "^[0-9]" | cut -c 3- | sort -n | sed -e 's/\./ /g'
+        fi
+        echo "$totalm $totalk END END END END END"
+      } > "$tmpfile"
+      while read startm startk endm endk type fs flags; do
+        let gapmegs="($startm$startk-$lastm$lastk)/1000"
+        create=yes
+        while [ "$gapmegs" -gt "$pemegs" -a "$lastminor" -lt "$maxminor" -a -n "$create" ]; do
+          if [ "$gapmegs" -gt "$splitmegs" ]; then
+            let newendm="$lastm+$slicemegs"
+            newendk="$lastk"
+            let gapmegs="$gapmegs-$slicemegs"
+          else
+            newendm="$startm"
+            newendk="$startk"
+            gapmegs="0"
+          fi
+          let newminor="1+$lastminor"
+          if [ "$newminor" -eq 1 ]; then
+            newtype="primary"
+          else
+            newtype="logical"
+            [ "$newminor" -le 4 ] && newminor=5
+            if [ "$extminor" -eq 0 ]; then
+              extminor="$freeslot"
+              echo "$parted mkpart extended $lastm.$lastk -0"
+              echo "$parted set $extminor lba on"
+            fi
+          fi
+          echo "$parted mkpart $newtype ext2 $lastm.$lastk $newendm.$newendk"
+          echo "$parted set $newminor lvm on"
+          pvpaths="$pvpaths $path$newminor"
+          let newpecount="($newendm$newendk-$lastm$lastk)/($pemegs*1000)"
+          let pecount="$pecount+$newpecount"
+          lastm="$newendm"
+          lastk="$newendk"
+          lastminor="$newminor"
+        done
+        lastm="$endm"
+        lastk="$endk"
+      done < "$tmpfile"
+      rm -f "$tmpfile"
+    fi
+  done
+
+  # create filesystems on the new partitions
+  [ -z "$pvpaths" -o "$pecount" -eq 0 ] && error "no room for new partitions"
+  let lvextents="$pecount*$lvpercent/100"
+  echo "devices"
+  for pvpath in $pvpaths; do
+    echo "dd if=/dev/zero of=$pvpath bs=512 count=10"
+  done
+  echo "pvcreate -fy -M2 $pvpaths"
+  echo "vgcreate -s $pemegs $vgname $pvpaths"
+  echo "lvcreate -L "$bootmegs"m -n boot $vgname" # TODO: restrict to first PV
+  echo "lvcreate -l $lvextents -n root $vgname"
+  echo "lvcreate -L "$swapmegs"m -n swap $vgname"
+  echo "vgchange -ay $vgname"
+  for lvname in boot root; do
+    lvpath="/dev/$vgname/$lvname"
+    echo "parted -s $lvpath -- mklabel loop"
+    echo "parted -s $lvpath -- mkpartfs primary ext2 0 -0"
+    echo "tune2fs -j $lvpath"
+  done
+  echo "mount -t ext2 /dev/toast/root /mnt"
+  echo "mkdir /mnt/boot"
+  echo "mount -t ext2 /dev/toast/boot /mnt/boot"
+  echo "mkswap /dev/$vgname/swap"
+  echo "swapon /dev/toast/swap"
+}
+
+prepare()
+{
+  if [ "TOPDIR" = "." ]; then
+    export TOASTINIT_NO_LILO=1
+    echo "mkdir mnt mnt/boot mnt/lost+found" > tmp/partition
+    return 0
+  else
+    echo "0" > /proc/sys/kernel/printk
+    echo ""
+    echo "Figuring out how to (re)partition your disk(s):"
+    partition > tmp/partition || return 1
+    grep '^# ' tmp/partition
+    echo -e "Press any key to abort.  \33[1;31mThis is your last chance!\33[0m"
+    timeout 20 || exit 1
+  fi
+
+  echo -n "Preparing to install; please wait..."
+  resize
+  for i in `seq 1 $statuslines`; do echo; done
+  let scroll="$LINES-$statuslines"
+
+  cat > tmp/tasks << "EOF"
+partition 0 0 cn
+rootfs 17468 596 cn
+perl 9500 10345 c
+toast 88 170 c
+add 0 553 cn
+wget 1312 766 
+glibc 47632 152580 c sbin/toast build glibc
+binutils 11280 9663 c
+gcc 26832 15879 c sbin/toast --confappend="--enable-languages=c" arm gcc
+glibc 0 143043 c sbin/toast arm glibc && sbin/toast rebuild glibc
+binutils 0 10387 c sbin/toast rebuild binutils
+gcc 0 96299 c sbin/toast rebuild gcc
+make 920 1106 c
+perl 0 12729 c
+toast 0 42 c
+gawk 1616 1319 c
+coreutils 3884 3831 c
+flex 664 766 
+ncurses 2124 5619 
+readline 960 681 
+bash 2384 2980 c
+sed 772 808 c
+grep 568 681 
+gzip 236 127 
+tar 1076 1277 c
+remove 0 425 c sbin/toast remove rootfs
+openssl 2992 7237 
+wget 0 1021 - sbin/toast rebuild wget
+diffutils 784 1106 
+bzip2 672 383 
+zlib 444 255 
+util-linux 1352 1873 
+module-init-tools 140 766 
+gettext 6428 8855 
+procps 292 596 
+patch 204 340 
+findutils 780 1362 
+sysvinit 112 170 
+sysklogd 116 127 
+linux 33936 21712 
+device-mapper 648 340 
+LVM2 452 1702 
+bin86 168 212 
+nasm 556 723 
+lilo 436 340 
+e2fsprogs 3100 1915 
+devfsd 56 127 
+udev 372 255 
+genext2fs 48 85 
+toastinit 24 127 
+toastlogin 24 0 
+iana-etc 180 42 
+zsh 2012 3788 
+net-tools 220 425 
+dhcpcd 168 298 
+openssh 856 2894 
+vim 3216 2639 
+inetutils 1040 2043 
+less 280 510 
+parted 1408 1660 
+groff 2380 3065 
+man 220 170 
+man-pages 1776 255 
+texinfo 1868 1404 
+cpio 204 212 
+hdparm 56 127 
+m4 332 255 
+bison 816 1192 
+autoconf 1228 298 
+automake 856 255 
+file 428 723 
+libtool 2612 1064 
+kbd 888 468 
+ed 204 255 
+pkgconfig 500 1447 
+tetex 11504 13793 
+Python 7056 6343 
+db 5812 6641 - LDFLAGS=-lpthread sbin/toast arm db # for postfix 2.1.5
+gdbm 244 681 
+bind 4476 4640 
+autofs 144 255 
+curl 1124 2554 
+figlet 192 85 
+adns 232 681 
+gc 756 1149 
+genromfs 40 85 
+gmp 1664 5534 
+httpd 6788 6811 
+libelf 152 766 
+ltrace 140 298 
+strace 432 851 
+minicom 616 936 
+bc 296 298 
+miscfiles 2176 127 
+mtools 280 979 
+mtr 112 298 
+gnupg 2344 2596 
+mutt 2572 1788 
+nmap 1248 3278 
+ntp 2476 2682 
+ocaml 2024 5491 
+pciutils 128 170 
+postfix 1948 1745 
+procmail 244 979 
+vsftpd 164 212 
+rcs 424 766 
+samba 14860 12984 
+smartmontools 192 0 
+valgrind 964  
+zip 728 255 
+unzip 1108 425 
+popt 584 766 
+pcre 364 638 
+subversion 6008 12303 
+cdrtools 1624 2809 
+libogg 300 553 
+libvorbis 1212 1660 
+lame 1248 2554 
+jpeg 620 766 
+libpng 392 979 
+tiff 1068 766 
+netpbm 2060 5066 
+alsa-lib 576 2426 
+alsa-utils 160 553 
+alsa-tools 740  
+libmng 520 2256 
+syslinux 432  
+units 224 170 
+espgs 5304 7577 
+cvs 2344 2256 
+gale 396 2426 - LIBS=-ldl sbin/toast arm gale
+ExtUtils-Depends 28 42 
+ExtUtils-PkgConfig 24 42 
+libxml2 2740 6896 
+libxslt 1748 2426 
+OpenSP 1412 11452 
+openjade 1056 9110 
+docbook-xml 104 0 
+docbook-xsl 1528 85 
+XML-Parser 248 212 
+XFree86 53032 78546 
+doctools 1400 298 
+fvwm 1380 3831 
+lua 208 340 
+ion 412 1830 
+xscreensaver 4288 6598 
+xdaliclock 204 298 
+freetype 852 1788 
+fam 336  
+t1lib 1516  
+xpdf 544 2000 
+lesstif 3404 6854 
+SDL 2564 5023 
+xine-lib 7212  
+xine-ui 2572  
+cdparanoia 136  
+glib 2120 3490 
+libIDL 340 1277 
+ORBit2 672 4640 
+intltool 144 170 
+libbonobo 1448 4895 
+pango 952 2809 
+atk 512 1064 
+gtk+ 9408 15496 
+mozilla 29072 99151 
+GConf 1712 2937 
+desktop-file-utils 356 596 
+gnome-mime-data 660 425 
+gnome-vfs 1840 9280 
+audiofile 296 1873 
+esound 332 894 
+libgnome 1160 1575 
+libart_lgpl 280 1192 
+libglade 324 936 
+libgnomecanvas 588 1745 
+libbonoboui 968 5832 
+hicolor-icon-theme 48 85 
+gnome-icon-theme 2824 1788 
+gnome-keyring 360 1021 
+libgnomeui 1608 4895 
+startup-notification 244 723 
+gtk-engines 416 681 
+gnome-themes 2680 4001 
+scrollkeeper 556 1362 
+gnome-desktop 1112 1575 
+libwnck 404 1830 
+libsoup 416 1660 
+evolution-data-server 4924 13325 
+gnome-panel 3152 5406 
+gnome-session 872 1915 
+vte 888  
+gnome-terminal 2040  
+libgtop 1032 2894 
+gail 560 3703 
+libxklavier 312  
+gnome-applets 6280  
+metacity 2140 3192 
+librsvg 376 2298 
+eel 624 3192 
+nautilus 5668 9834 
+libgtkhtml 440 5491 
+yelp 644 1362 
+bug-buddy 716 766 
+libgnomeprint 756 3490 
+libgnomeprintui 588 1915 
+gtksourceview 696 1319 
+gedit 2444 3874 
+eog 808 1404 
+ggv 1272 2469 
+gconf-editor 516 936 
+gnome-utils 1720 1915 
+gstreamer 1376 8769 
+gst-plugins 1980 15879 
+gnome-media 3120 4640 
+nautilus-media 432 1830 
+gnome-netstatus 504 1021 
+gcalctool 908 1192 
+gpdf 1044 3788 
+gucharmap 1468 1702 
+nautilus-cd-burner 524 1277 
+zenity 732 596 
+at-spi 516 3618 
+libgail-gnome 160 808 
+gnome-speech 272 851 
+gnome-mag 324 1064 
+gnopernicus 1788 4342 
+gok 1220 3703 
+epiphany 3324  
+gnome-games 5812 6556 
+file-roller 1368 2426 
+gnome-system-tools 2676 2639 
+gnome-nettool 516 1064 
+vino 536 1702 
+dbus 1240 2724 
+hal 1300  
+gnome-volume-manager 200  
+gal 1140 8812 
+gtkhtml 1308 8514 
+evolution 14672  
+evolution-webcal 156 425 
+pwlib 1080  
+gnomemeeting 2892  
+libsigc++ 1404 2767 
+glibmm 812 3959 
+gtkmm 3864 47553 
+libgnomemm 260 979 
+libgnomecanvasmm 328 4299 
+libglademm 508 2086 
+gconfmm 276 1617 
+gnome-vfsmm 332 3405 
+libgnomeuimm 332 7705 
+libgtk-java 460  
+libgconf-java 76  
+libglade-java 92  
+libgnome-java 176  
+Glib 220 510 
+Gtk2 560 6002 
+Gnome2-Canvas 84 340 
+Gnome2-VFS 64 510 
+Gnome2-GConf 44 255 
+Gnome2 100 2086 
+Gtk2-GladeXML 48 127 
+pygtk 636 2724 
+qt-x11-free 14124 132145 - LD_LIBRARY_PATH=/toast/pkg/qt-x11-free/v3.3.3/1/src/qt-x11-free-3.3.3/lib sbin/toast arm qt-x11-free
+arts 968 13367 
+kdelibs 15296 133677 
+kdebase 19568 138445 
+kde-i18n 190996 63262 
+kdeaccessibility 1236 5747 
+kdeadmin 1544 19327 
+kdeartwork 17600 14517 
+kdebindings 6996 111454 
+kdeedu 21600 72671 
+kdegames 9152 46574 
+kdegraphics 6120 58835 
+kdemultimedia 5288 77992 
+kdenetwork 6828 78631 
+kdepim 9792 147641 
+kdesdk 4288  
+kdetoys 2720 7194 
+kdeutils 2180 38868 
+kdevelop 7796 114349 
+kdewebdev 4716 64284 
+kdeaddons 1548 30609 
+firefox 31976  
+xmms 2384  
+gimp 13520  
+gkrellm 656 1660 
+EOF
+
+  mkdir -p "$numdir" "$namedir"
+  i=0
+  line=""
+  prev=""
+  while read name size time flags icmd; do
+    line="$line $name "
+    if echo "$line" | egrep -q "..{$COLUMNS}"; then
+      newline=1
+      line=" $name "
+      echo ""
+      let scroll="$scroll-1"
+    else
+      newline=""
+    fi
+    echo -n " $name "
+
+    let i="$i+1"
+    num="`printf %08d $i`"
+    dir="$numdir/$num"
+    ddir="$dir/download"
+    idir="$dir/install"
+
+    mkdir "$dir" "$ddir" "$idir"
+    echo "$num" > "$dir/num"
+    echo "$name" > "$dir/name"
+    [ -n "$size" ] || size=1000 # guess about one megabyte of source
+    echo "$size" > "$ddir/estimate"
+    [ -n "$time" ] || time=10000 # defined to be the median time
+    echo "$time" > "$idir/estimate"
+    case "$flags" in *c*) : > "$dir/critical";; esac
+    case "$flags" in *n*) : > "$idir/nonrepresentative";; esac
+    [ -n "$newline" ] && : > "$dir/newline"
+
+    if [ "$size" = "0" ]; then
+      dcmd="echo no download necessary"
+      : > "$ddir/precondition"
+    else
+      dcmd="exec sbin/toast get $name"
+      ln -s "../../../name/wget/install/time" "$ddir/precondition"
+    fi
+    ln -s "../../../../../mnt/toast/pkg/$name" "$ddir/progress"
+    echo -e "#!/bin/sh\12$dcmd" > "$ddir/command"
+    chmod +x "$ddir/command"
+
+    [ -n "$icmd" ] || icmd="exec sbin/toast arm $name"
+    echo -e "#!/bin/sh\12$icmd" > "$idir/command"
+    chmod +x "$idir/command"
+    ln -s "../download/time" "$idir/precondition"
+    ln -s "../download/failed" "$idir/skip"
+
+    if [ ! -d "$namedir/$name" ]; then
+      ln -s "../num/$num" "$namedir/$name"
+    else
+      let suffix=2
+      while [ -d "$namedir/$name.$suffix" ]; do let suffix="1+$suffix"; done
+      ln -s "../num/$num" "$namedir/$name.$suffix"
+    fi
+
+    if [ -n "$prev" ]; then
+      ln -s "../$prev" "$dir/prev"
+      ln -s "../$num" "$dir/prev/next"
+    fi
+    prev="$num"
+  done < tmp/tasks
+
+  for i in `seq 2 $scroll`; do echo; done
+  echo -ne "\33[H\33[${statuslines}B"
+
+  for dir in "$numdir/"*; do
+    refresh "$dir" "$color_pending" "$color_pending"
+    cat "$dir/display"
+  done
+
+  # special commands:
+
+  echo "#!/bin/sh -ex" > "$namedir/partition/install/command"
+  cat tmp/partition >> "$namedir/partition/install/command"
+  rm tmp/partition
+
+  cat > "$namedir/rootfs/download/command" << "EOF"
+#!/bin/sh -ex
+if [ "`cd mnt; echo *`" != "boot lost+found" ]; then
+  echo "unexpected filesystem contents" >&2
+  exit 1
+fi
+mkdir -p mnt/toast/pkg/rootfs/v0/archive
+cd mnt/toast/pkg/rootfs/v0/archive
+wget http://www.kernel.org/pub/linux/libs/uclibc/root_fs_i386.bz2
+EOF
+  ln -sf "../../../name/partition/install/time" "$namedir/rootfs/download/precondition"
+
+  cat > "$namedir/rootfs/install/command" << "EOF"
+#!/bin/sh -ex
+
+if [ "`cd mnt; echo *`" != "boot lost+found toast" ]; then
+  echo "unexpected filesystem contents" >&2
+  exit 1
+fi
+
+for i in boot dev dev/pts etc/dhcpc etc/xml home media/floppy media/cdrom mnt proc root sys toast tmp usr/bin var/empty var/lock var/run var/log var/spool/mail; do
+  mkdir -p "mnt/$i"
+done
+chmod 1777 "mnt/tmp"
+
+if grep -q '[^b]devfs' /proc/filesystems; then
+  mount -t devfs dev mnt/dev
+elif [ -d dev ]; then
+  tar -c -C / dev | tar -x -C mnt
+  chmod go-w mnt/dev
+else
+  mknod mnt/dev/null c 1 3
+  mknod mnt/dev/zero c 1 5
+  mknod mnt/dev/random c 1 8
+  mknod mnt/dev/urandom c 1 9
+  chmod 666 mnt/dev/null
+fi
+
+for i in bin lib sbin; do ln -sf "usr/$i" "mnt/$i"; done
+cp /etc/resolv.conf mnt/etc/
+[ -r /etc/TZ -a -z "$TZ" ] && TZ="`cat /etc/TZ`"
+[ -z "$TZ" ] && TZ="PST8PDT"
+ln -s "../usr/share/zoneinfo/$TZ" mnt/etc/localtime
+ln -s "../../usr/etc/xml/toast-xml-catalog" mnt/etc/xml/catalog
+ln -s bash mnt/bin/sh
+ln -s gcc mnt/bin/cc
+echo "/lib" > mnt/etc/ld.so.conf
+
+cat > mnt/etc/passwd << 'END'
+root:x:0:0:root:/root:/bin/zsh
+bin:x:1:1:bin:/bin:/bin/false
+daemon:x:2:2:daemon:/sbin:/bin/false
+adm:x:3:4:adm:/var/adm:/bin/false
+lp:x:4:7:lp:/var/spool/lpd:/bin/false
+sync:x:5:0:sync:/sbin:/bin/sync
+shutdown:x:6:0:shutdown:/sbin:/sbin/shutdown
+halt:x:7:0:halt:/sbin:/sbin/halt
+mail:x:8:12:mail:/var/spool/mail:/bin/false
+news:x:9:13:news:/var/spool/news:/bin/false
+uucp:x:10:14:uucp:/var/spool/uucp:/bin/false
+operator:x:11:0:operator:/root:/bin/false
+games:x:12:100:games:/usr/games:/bin/false
+ftp:x:14:50:FTP User:/home/ftp:/bin/false
+toast:x:42:42:toast:/toast:/bin/zsh
+nobody:x:99:99:nobody:/:/bin/false
+END
+
+cat > mnt/etc/group << 'END'
+root:x:0:root
+bin:x:1:bin
+daemon:x:2:daemon
+sys:x:3:sys
+adm:x:4:adm
+tty:x:5:
+disk:x:6:
+lp:x:7:lp
+mem:x:8:
+kmem:x:9:
+wheel:x:10:
+mail:x:12:mail
+news:x:13:news
+uucp:x:14:uucp
+man:x:15:
+floppy:x:19:
+games:x:20:games
+slocate:x:21:
+utmp:x:22:
+squid:x:23:
+gopher:x:30:
+toast:x:42:toast
+ftp:x:50:
+nobody:x:99:
+users:x:100:
+nofiles:x:65533:
+END
+
+[ -z "$USERS" ] && USERS=user
+USERS="`echo \"$USERS\" | sed -e 's/[^a-z0-9]/ /g; s/^  *//; s/  *$//'`"
+uid=500
+for i in $USERS; do
+  echo "$i:x:$uid:$uid:$i:/home/$i:/bin/zsh" >> mnt/etc/passwd
+  echo "$i:x:$uid:" >> mnt/etc/group
+  [ -r mnt/etc/user ] || echo $i > mnt/etc/user
+  mkdir "mnt/home/$i"
+  chown $uid.$uid "mnt/home/$i"
+  let uid="1+$uid"
+done
+
+mount -t proc proc mnt/proc
+mount -t sysfs sys mnt/sys
+
+bunzip2 mnt/toast/pkg/rootfs/v0/archive/*
+mount -t ext2 -o loop mnt/toast/pkg/rootfs/v0/archive/* mnt/mnt
+mkdir -p mnt/toast/pkg/rootfs/v0/1/root
+tar -c -C mnt/mnt . | tar -x -C mnt/toast/pkg/rootfs/v0/1/root
+umount mnt/mnt
+rm -fr mnt/toast/pkg/rootfs/v0/archive
+EOF
+
+  cat > "$namedir/perl/download/command" << "EOF"
+#!/bin/sh -ex
+version=5.8.6
+url=http://www.cpan.org/src/5.0/perl-$version.tar.bz2
+adir=mnt/toast/pkg/perl/v$version/archive
+set -e
+mkdir -p "$adir"
+cd "$adir"
+echo "$url" > ../url
+wget "$url"
+EOF
+  ln -sf . "$namedir/perl/download/precondition"
+  cat > "$namedir/perl/install/command" << "EOF"
+#!/bin/sh -ex
+bdir="mnt/toast/pkg/rootfs/v0/1"
+ln mnt/toast/pkg/perl/*/archive/* "$bdir/root/tmp/"
+chroot "$bdir/root" sh -ex << "END" | tee "$bdir/build.log"
+cd /tmp
+tar xjf perl-*.tar.bz2
+rm -f perl-*.tar.bz2 /usr/lib/*.so
+cd perl-*
+sh Configure -des -Dprefix=/usr -Dextensions="Errno File/Glob" -Uusevfork -Uuseperlio -Uusefaststdio -Uusenm -Uusedl -Uuselargefiles
+make all install
+rm -f /usr/bin/cc
+END
+EOF
+
+  cat > "$namedir/toast/download/command" << "EOF"
+#!/bin/sh -ex
+mkdir -p mnt/toast/pkg/toast/vlatest/archive
+cd mnt/toast/pkg/toast/vlatest/archive
+wget http://toastball.net/toast/toast.tar.gz
+EOF
+  ln -sf . "$namedir/toast/download/precondition"
+  cat > "$namedir/toast/install/command" << "EOF"
+#!/bin/sh -ex
+export TOAST_ARMDIR=/usr TOAST_PRELOAD=false
+rdir="/toast/pkg/rootfs/v0/1/root"
+tar xzf mnt/toast/pkg/toast/vlatest/archive/toast.tar.gz -C "mnt$rdir/tmp/"
+ln mnt$rdir/tmp/toast-*/toast mnt$rdir/bin/
+chroot mnt "$rdir/usr/bin/perl" -x "$rdir/bin/toast" arm rootfs
+version="`toast version | cut -c 7-`"
+sbin/toast rename toast/latest "toast/$version"
+sbin/toast change "http://toastball.net/toast/toast-$version.tar.gz"
+EOF
+
+  cat > "$namedir/add/install/command" << "EOF"
+#!/bin/sh
+sed 's/\#.*//' << "END" | grep . | while read x; do sbin/toast add $x; done
+
+# oddball essentials:
+
+# URLs for glibc are in get-glibc script
+
+[ http://kernel.org/pub/linux/kernel/v2.6/linux-2.6.5.tar.bz2 http://toastball.net/toast-linux-tmp/linux-2.6.5-config.tar.gz ]
+
+#lilo/22.5.9-devmapper: [ http://lilo.go.dyndns.org/pub/linux/lilo/obsolete/lilo-22.5.9.tar.gz http://www.saout.de/misc/lilo-22.5.9-devmapper.patch ]
+http://home.san.rr.com/johninsd/pub/linux/lilo/
+
+genext2fs/1.3-7.1: [ http://http.us.debian.org/debian/pool/main/g/genext2fs/genext2fs_1.3.orig.tar.gz http://http.us.debian.org/debian/pool/main/g/genext2fs/genext2fs_1.3-7.1.diff.gz ]
+
+sysklogd/1.4.1: [ http://www.infodrom.org/projects/sysklogd/download/sysklogd-1.4.1.tar.gz http://ep09.pld-linux.org/~mmazur/linux-libc-headers/patches/sysklogd.patch ]
+# http://mirrors.angelinacounty.net/pub/lfs/lfs-packages/testing/sysklogd-1.4.1-kernel_headers-1.patch
+
+[ http://www.tazenda.demon.co.uk/phil/net-tools/net-tools-1.60.tar.bz2 http://toastball.net/toast-linux-tmp/net-tools-1.60-toast.patch ]
+
+# other required packages:
+ftp://ftp.cistron.nl/pub/people/miquels/sysvinit/sysvinit-2.85.tar.gz
+http://ftp.gnu.org/gnu/bash/bash-3.0.tar.gz
+http://ftp.gnu.org/gnu/binutils/binutils-2.15.tar.bz2
+http://ftp.gnu.org/gnu/coreutils/coreutils-5.0.tar.bz2
+http://ftp.gnu.org/gnu/diffutils/diffutils-2.8.1.tar.gz
+http://ftp.gnu.org/gnu/findutils/
+http://ftp.gnu.org/gnu/gawk/gawk-3.1.3.tar.bz2
+http://ftp.gnu.org/gnu/gcc/gcc-3.4.3/gcc-3.4.3.tar.bz2
+http://ftp.gnu.org/gnu/gettext/gettext-0.14.1.tar.gz
+http://ftp.gnu.org/gnu/grep/grep-2.5.tar.bz2
+http://ftp.gnu.org/gnu/gzip/gzip-1.2.4a.tar.gz
+http://ftp.gnu.org/gnu/make/
+http://ftp.gnu.org/gnu/ncurses/ncurses-5.4.tar.gz
+http://ftp.gnu.org/gnu/patch/patch-2.5.4.tar.gz
+http://ftp.gnu.org/gnu/readline/readline-4.3.tar.gz
+http://ftp.gnu.org/gnu/sed/sed-4.0.9.tar.gz
+http://ftp.gnu.org/gnu/tar/tar-1.14.tar.bz2
+http://ftp.gnu.org/gnu/wget/wget-1.9.1.tar.gz
+http://kernel.org/pub/linux/daemons/devfsd/devfsd-v1.3.25.tar.bz2
+http://kernel.org/pub/linux/utils/kernel/hotplug/
+http://kernel.org/pub/linux/utils/kernel/module-init-tools/module-init-tools-3.0.tar.bz2
+http://kernel.org/pub/linux/utils/util-linux/
+http://mirrors.kernel.org/sources.redhat.com/bzip2/v102/bzip2-1.0.2.tar.gz
+http://mirrors.kernel.org/sources.redhat.com/dm/
+http://mirrors.kernel.org/sources.redhat.com/lvm2/
+http://prdownloads.sourceforge.net/e2fsprogs/e2fsprogs-1.35.tar.gz
+http://prdownloads.sourceforge.net/infozip/unzip551.tar.gz
+http://prdownloads.sourceforge.net/infozip/zip23.tar.gz
+http://prdownloads.sourceforge.net/nasm/nasm-0.98.38.tar.bz2
+http://toastball.net/toast/init/
+http://toastball.net/toast/login/
+http://www.phystech.com/ftp/dhcpcd-1.3.22-pl4.tar.gz
+http://www.sethwklein.net/projects/iana-etc/downloads/iana-etc-0.99.tar.bz2
+http://www.zsh.org/pub/
+
+# tricky optional packages:
+[ http://ftp.xfree86.org/pub/XFree86/4.4.0/source/XFree86-4.4.0-src-1.tgz http://ftp.xfree86.org/pub/XFree86/4.4.0/source/XFree86-4.4.0-src-2.tgz http://ftp.xfree86.org/pub/XFree86/4.4.0/source/XFree86-4.4.0-src-3.tgz http://ftp.xfree86.org/pub/XFree86/4.4.0/source/XFree86-4.4.0-src-4.tgz http://ftp.xfree86.org/pub/XFree86/4.4.0/source/XFree86-4.4.0-src-5.tgz http://ftp.xfree86.org/pub/XFree86/4.4.0/source/XFree86-4.4.0-src-6.tgz http://ftp.xfree86.org/pub/XFree86/4.4.0/source/XFree86-4.4.0-src-7.tgz ]
+http://prdownloads.sourceforge.net/lex/flex-2.5.27.tar.bz2 # flex 2.5.31 is broken and can't build XFree86 4.4.0, for instance
+http://prdownloads.sourceforge.net/freetype/freetype-2.1.5.tar.bz2 # 2.1.7 seems to cause include problems with xft 2.1.2
+# [ http://prdownloads.sourceforge.net/openjade/OpenSP-1.5.1.tar.gz http://belfs.linux-phreak.net/belfs/blfs-patches/OpenSP-1.5.1-gcc34-2.patch ]
+[ http://prdownloads.sourceforge.net/openjade/OpenSP-1.5.1.tar.gz http://toastball.net/toast-linux-tmp/OpenSP-1.5.1-gcc34-2.patch ]
+adns/1.1: [ ftp://ftp.chiark.greenend.org.uk/users/ian/adns/adns-1.1.tar.gz http://www.bytebot.net/rrjcode/adns-ppc.patch ]
+https://ccvs.cvshome.org/files/documents/19/534/cvs-1.11.18.tar.bz2 # requires openssl to download; see special case at the end of prepare()
+
+# Gnome 2.8.0, KDE 3.3.2:
+http://ftp.gnome.org/pub/GNOME/bindings/2.8/2.8.0/sources/c++/
+http://ftp.gnome.org/pub/GNOME/bindings/2.8/2.8.0/sources/java/
+http://ftp.gnome.org/pub/GNOME/bindings/2.8/2.8.0/sources/perl/
+http://ftp.gnome.org/pub/GNOME/bindings/2.8/2.8.0/sources/python/
+http://ftp.gnome.org/pub/GNOME/desktop/2.8/2.8.0/sources/
+http://ftp.gnome.org/pub/GNOME/platform/2.8/2.8.0/sources/
+http://ibiblio.org/pub/mirrors/kde/stable/3.3.2/src/
+
+# additional GNOMEy-looking stuff
+http://freedesktop.org/software/dbus/releases/
+http://freedesktop.org/software/desktop-file-utils/releases/
+http://freedesktop.org/software/icon-theme/releases/hicolor-icon-theme-0.5.tar.gz
+http://freedesktop.org/software/shared-mime-info/shared-mime-info-0.14.tar.gz
+http://freedesktop.org/~david/hal-0.4.2.tar.gz
+http://freedesktop.org/~fontconfig/release/fontconfig-2.2.93.tar.gz
+http://freedesktop.org/~fontconfig/release/xft-2.1.2.tar.gz
+http://freedesktop.org/~xlibs/release/render-0.8.tar.gz
+http://freedesktop.org/~xlibs/release/xrender-0.8.3.tar.gz
+http://ftp.gnome.org/pub/GNOME/sources/gal/2.1/gal-2.1.7.tar.bz2
+http://ftp.gnome.org/pub/GNOME/sources/libcroco/0.5/libcroco-0.5.0.tar.bz2
+http://ftp.gnome.org/pub/GNOME/sources/libgsf/1.8/libgsf-1.8.2.tar.bz2
+http://ftp.gnome.org/pub/GNOME/sources/libsigc++/2.0/
+http://www.openh323.org/bin/pwlib_1.5.2.tar.gz
+
+# everything else:
+ftp://ftp.berlios.de/pub/cdrecord/cdrtools-2.00.3.tar.gz
+ftp://ftp.bitwizard.nl/mtr/mtr-0.58.tar.gz
+ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/pcre-4.5.tar.bz2
+ftp://ftp.foolabs.com/pub/xpdf/t1lib-1.3.tar.gz
+ftp://ftp.foolabs.com/pub/xpdf/xpdf-3.00.tar.gz
+ftp://ftp.fvwm.org/pub/fvwm/version-2/fvwm-2.4.19.tar.bz2
+ftp://ftp.gnupg.org/gcrypt/gnupg/gnupg-1.2.4.tar.bz2
+ftp://ftp.isc.org/isc/bind9/9.2.3/bind-9.2.3.tar.gz
+ftp://ftp.rpm.org/pub/rpm/dist/rpm-4.1.x/popt-1.7.tar.gz
+ftp://ftp.uu.net/graphics/jpeg/jpegsrc.v6b.tar.gz
+ftp://ftp.vim.org/pub/vim/unix/vim-6.2.tar.bz2
+ftp://ftp.win.tue.nl/pub/linux-local/utils/kbd/kbd-1.12.tar.gz
+ftp://oss.sgi.com/projects/fam/download/fam-2.6.10.tar.gz
+http://alioth.debian.org/download.php/123/minicom-2.1.tar.gz
+http://caml.inria.fr/distrib/ocaml-3.08/ocaml-3.08.1.tar.bz2
+http://curl.haxx.se/download/curl-7.11.1.tar.bz2
+http://developer.kde.org/~sewardj/valgrind-2.2.0.tar.bz2
+http://dl.maptools.org/dl/libtiff/tiff-v3.6.1.tar.gz
+http://download.insecure.org/nmap/dist/nmap-3.50.tar.bz2
+http://download.ofb.net/gale/gale-0.99fruit.tar.bz2
+http://fresh.t-systems-sfr.com/fresh/unix/src/misc/file-4.12.tar.gz
+http://ftp.figlet.org/pub/figlet/program/unix/figlet221.tar.gz
+http://ftp.gnu.org/gnu/autoconf/autoconf-2.59.tar.gz
+http://ftp.gnu.org/gnu/automake/automake-1.8.2.tar.gz
+http://ftp.gnu.org/gnu/bc/bc-1.06.tar.gz
+http://ftp.gnu.org/gnu/bison/bison-1.875.tar.bz2
+http://ftp.gnu.org/gnu/cpio/cpio-2.5.tar.gz
+http://ftp.gnu.org/gnu/ed/ed-0.2.tar.gz
+http://ftp.gnu.org/gnu/gdbm/gdbm-1.8.3.tar.gz
+http://ftp.gnu.org/gnu/gmp/
+http://ftp.gnu.org/gnu/groff/groff-1.19.tar.gz
+http://ftp.gnu.org/gnu/inetutils/inetutils-1.4.2.tar.gz
+http://ftp.gnu.org/gnu/libtool/libtool-1.5.2.tar.gz
+http://ftp.gnu.org/gnu/m4/m4-1.4.tar.gz
+http://ftp.gnu.org/gnu/miscfiles/miscfiles-1.3.tar.gz
+http://ftp.gnu.org/gnu/parted/
+http://ftp.gnu.org/gnu/texinfo/texinfo-4.6.tar.gz
+http://ftp.gnu.org/gnu/units/units-1.80.tar.gz
+http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/1.0/source/firefox-1.0-source.tar.bz2
+http://ftp.mozilla.org/pub/mozilla.org/mozilla/releases/mozilla1.7.3/src/mozilla-source-1.7.3.tar.bz2
+http://ftp.silug.org/mirrors/ftp.trolltech.com/qt/source/qt-x11-free-3.3.3.tar.bz2
+http://ftp.xfree86.org/pub/XFree86/4.4.0/source/doctools-1.3.2.tgz
+http://kernel.org/pub/linux/daemons/autofs/v4/autofs-4.1.2.tar.bz2
+http://kernel.org/pub/linux/docs/manpages/man-pages-1.65.tar.bz2
+http://kernel.org/pub/linux/utils/boot/syslinux/
+http://kernel.org/pub/linux/utils/man/man-1.5m2.tar.bz2
+http://kernel.org/pub/software/utils/pciutils/pciutils-2.1.11.tar.bz2
+http://mirrors.isc.org/pub/postfix/official/postfix-2.1.5.tar.gz
+http://mtools.linux.lu/mtools-3.9.9.tar.bz2
+http://openbsd.md5.com.ar/pub/OpenBSD/OpenSSH/portable/
+http://prdownloads.sourceforge.net/docbook/docbook-xsl-1.65.1.tar.gz
+http://prdownloads.sourceforge.net/espgs/espgs-7.07.1-source.tar.bz2
+http://prdownloads.sourceforge.net/lame/lame-3.96.tar.gz
+http://prdownloads.sourceforge.net/lesstif/lesstif-0.93.94.tar.bz2
+http://prdownloads.sourceforge.net/libpng/zlib-1.2.2.tar.gz
+http://prdownloads.sourceforge.net/netpbm/netpbm-10.19.tgz
+http://prdownloads.sourceforge.net/png-mng/libpng-1.2.5.tar.bz2
+http://prdownloads.sourceforge.net/romfs/genromfs-0.5.1.tar.gz
+http://prdownloads.sourceforge.net/strace/strace-4.5.8.tar.bz2
+http://prdownloads.sourceforge.net/xine/xine-lib-1-rc8.tar.gz
+http://prdownloads.sourceforge.net/xine/xine-ui-0.99.3.tar.gz
+http://www.perl.com/CPAN/authors/id/M/MS/MSERGEANT/XML-Parser-2.34.tar.gz
+http://www.perl.com/CPAN/authors/id/T/TS/TSCH/ExtUtils-Depends-0.204.tar.gz
+http://www.perl.com/CPAN/authors/id/T/TS/TSCH/ExtUtils-PkgConfig-1.06.tar.gz
+http://subversion.tigris.org/tarballs/subversion-1.0.1.tar.bz2
+http://tug.ctan.org/tex-archive/systems/unix/teTeX/current/distrib/tetex-src-2.0.2.tar.gz
+http://www.alsa-project.org/alsa/ftp/lib/alsa-lib-1.0.3a.tar.bz2
+http://www.alsa-project.org/alsa/ftp/tools/alsa-tools-1.0.3.tar.bz2
+http://www.alsa-project.org/alsa/ftp/utils/alsa-utils-1.0.3.tar.bz2
+http://www.apache.org/dist/httpd/httpd-2.0.52.tar.gz
+http://www.cs.purdue.edu/homes/trinkle/RCS/rcs-5.7.tar.Z
+http://www.docbook.org/xml/4.3/docbook-xml-4.3.zip
+http://www.eecis.udel.edu/~ntp/ntp_spool/ntp4/ntp-4.2.0.tar.gz
+http://www.greenwoodsoftware.com/less/less-381.tar.gz
+http://www.hpl.hp.com/personal/Hans_Boehm/gc/gc_source/gc6.2.tar.gz
+http://www.libsdl.org/release/SDL-1.2.8.tar.gz
+http://www.mirrorservice.org/sites/ftp.gimp.org/pub/gimp/v2.2/
+http://www.procmail.org/procmail-3.22.tar.gz
+http://www.python.org/ftp/python/2.3.3/Python-2.3.3.tar.bz2
+http://www.tug.org/ftp/dist/db-4.3.27.tar.gz
+http://www.vorbis.com/files/1.0.1/unix/libogg-1.1.tar.gz
+http://www.vorbis.com/files/1.0.1/unix/libvorbis-1.0.1.tar.gz
+http://www.xiph.org/paranoia/download/cdparanoia-III-alpha9.8.src.tgz
+http://www.xmms.org/files/1.2.x/xmms-1.2.10.tar.bz2
+END
+EOF
+
+  cat > "$namedir/wget/download/command" << "EOF"
+#!/bin/sh -ex
+version="1.9.1"
+url="http://ftp.gnu.org/gnu/wget/wget-$version.tar.gz"
+dir="mnt/toast/pkg/wget/v$version/archive"
+mkdir -p "$dir"
+cd "$dir"
+echo "$url" > ../url
+wget "$url"
+EOF
+  ln -sf . "$namedir/wget/download/precondition"
+
+  cat > "$namedir/glibc/download/command" << "EOF"
+#!/bin/sh -ex
+dir="mnt/toast/pkg/glibc/v2.3.3/archive"
+mkdir -p "$dir"
+cd "$dir"
+cat > ../url << 'ENDURL'
+http://ftp.gnu.org/gnu/glibc/glibc-2.3.3.tar.bz2
+http://kernel.org/pub/linux/kernel/v2.6/linux-2.6.8.1.tar.bz2
+http://toastball.net/toast-linux-tmp/glibc-2.3.3-gcc34-toast.patch
+ENDURL
+for url in `cat ../url`; do wget "$url"; done
+EOF
+
+  # CVS has an https:// URL; don't try to download it until we've rebuilt
+  # wget with openssl
+  ln -sf "../../../name/wget.2/install/time" "$namedir/cvs/download/precondition"
+}
+
+run()
+{
+  act="$1"
+  color_pre="$2"
+  color_skip="$3"
+  color_working="$4"
+  color_ok="$5"
+  color_failed="$6"
+  link="$topdir/current-$act"
+
+  let top="1+$statuslines"
+  let bottom="$LINES-1"
+  [ "TOPDIR" = "." ] || echo -ne "\33[0m\33[$bottom;999H\33[1J\33[$top;${bottom}r\33[$top;1H"
+
+  echo "preparing to $act"
+
+  done_estimated="0"
+  done_actual="0"
+  remaining_estimated="0"
+
+  for i in `echo $numdir/*/$act/estimate`; do
+    let remaining_estimated="$remaining_estimated+`cat $i`"
+  done
+
+  for dir in `echo $numdir/*`; do
+    adir="$dir/$act"
+    name="`cat $dir/name`"
+    estimate="`cat $adir/estimate`"
+    cmd="$adir/command"
+    failed=""
+
+    precond="$adir/precondition"
+    if [ ! -r "$precond" ]; then
+      echo -n "waiting to $act $name... "
+      while [ ! -r "$precond" -a ! -r "$ffile" ]; do sleep 1; done
+      echo "done waiting"
+      [ -r "$ffile" ] && break
+    fi
+
+    if [ -r "$adir/skip" ]; then
+      echo "unable to $act $name"
+      refresh "$dir" "$color_skip" "$color_ok"
+      end="`date +'%s'`"
+    else
+      start="`date +'%s'`"
+      echo "$act $name"
+      echo "$start" > "$adir/start"
+      if [ "$done_estimated" -gt "0" ]; then
+        let aeta="$start+($estimate*$done_actual/$done_estimated)"
+        echo "$aeta" > "$adir/eta"
+      fi
+      ln -s "../../$dir" "$link"
+      refresh "$dir" "$color_working" "$color_pre"
+      : > "$efile"
+
+      "$cmd" || failed="1"
+      end="`date +'%s'`"
+      rm -f "$link"
+      let elapsed="$end-$start"
+      if [ -n "$failed" ]; then
+        refresh "$dir" "$color_failed" "$color_ok"
+        : > "$adir/failed"
+      else
+        refresh "$dir" "$color_ok" "$color_ok"
+        if [ ! -r "$adir/nonrepresentative" ]; then
+          let done_estimated="$done_estimated+$estimate"
+          let done_actual="$done_actual+$elapsed"
+        fi
+      fi
+      echo "$elapsed" > "$adir/time"
+    fi
+
+    let remaining_estimated="$remaining_estimated-$estimate"
+    if [ "$done_estimated" -gt "0" ]; then
+      let eta="$end+($remaining_estimated*$done_actual/$done_estimated)"
+      echo "$eta" > "$topdir/$act-eta.tmp"
+      mv "$topdir/$act-eta.tmp" "$topdir/$act-eta"
+    fi
+    [ -n "$failed" -a -r "$dir/critical" ] && : > "$ffile"
+    : > "$efile"
+
+    [ -r "$ffile" ] && break
+  done
+
+  if [ -r "$ffile" ]; then
+    echo "$act process aborted"
+  else
+    echo "$act process completed"
+  fi
+  : > "$efile"
+}
+
+fkeys()
+{
+  if [ "TOPDIR" = "." ]; then
+    [ "$1" = "1" ] && echo -ne "\33[$LINES;1H\33[0;${color_fkey}m See download.log and install.log for details.\33[K\33[0m\33[H"
+    return 0
+  fi
+
+  echo -ne "\33[$LINES;1H"
+  i=1
+  for label in overview install download shell; do
+    if [ "$i" = "$1" ]; then
+      color="$color_fkey_selected"
+    else
+      color="$color_fkey"
+    fi
+    echo -ne "\33[0;${color}m Alt-F$i $label "
+    let i="$i+1"
+  done
+  echo -ne "\33[0;${color_fkey_eol}m\33[K\33[0m\33[H"
+}
+
+download()
+{
+  fkeys 3
+  run download "$color_pending" "$color_missing" "$color_getting" "$color_stored" "$color_missing"
+}
+
+install()
+{
+  fkeys 2
+  run install "$color_stored" "$color_missing" "$color_building" "$color_done" "$color_broken"
+}
+
+shell()
+{
+  save="`stty -g`"
+  while true; do
+    stty "$save"
+    echo -ne '\33c'
+    help
+    sh --login
+  done
+}
+
+hms()
+{
+  eval "n=\"\$$1\""
+  if [ -z "$n" ]; then
+    hms="?:??:??"
+  elif [ "$n" -le "0" ]; then
+    hms="0:00:00"
+  else
+    let h="$n/3600"
+    let m="$n/60%60"
+    let s="$n%60"
+    hms="`printf '%d:%02d:%02d' $h $m $s`"
+  fi
+  eval "${1}_hms=\"\$hms\""
+}
+
+bar()
+{
+  let c="$3*2"
+  if [ -z "$1" -o -z "$2" ] || [ "$2" -le 0 ]; then
+    a="0"
+    percent="0"
+  else
+    let percent="$1*100/$2"
+    let a="$1*$c/$2"
+    [ "$a" -gt "$c" ] && a="$c"
+  fi
+  eval "bar=\"\$barcache_${a}_$c\""
+  if [ -z "$bar" ]; then
+    let d="$a/2"
+    let e="$d*2"
+    if [ "$d" = "$e" ]; then
+      let b="$3-$d"
+      h=""
+    else
+      let b="$3-$d-1"
+      h=1
+    fi
+    bar="\33[0;${color_bar}m"
+    [ "$d" -gt 0 ] && for i in `seq 1 $d`; do bar="$bar$char_solid_block"; done
+    [ -n "$h" ] && bar="$bar$char_half_block"
+    [ "$b" -gt 0 ] && for i in `seq 1 $b`; do bar="$bar "; done
+    eval "barcache_${a}_$c=\"\$bar\""
+  fi
+}
+
+status()
+{
+  save="`stty -g`"
+  stty -echo
+  echo -ne '\33[?25l' # hide the cursor
+  echo -ne '\33[9;0]' # disable screen blanking
+
+  if "$1"; then
+    for i in `seq 2 8`; do
+      dev="/dev/vcsa$i"
+      [ -c "$dev" ] || { let minor=128+$i; mknod "$dev" c 7 "$minor"; }
+    done
+    let ddcount="$statuslines*$COLUMNS"
+  fi
+
+  let total="`ls $numdir | wc -l`"
+
+  fkeys 1
+  echo -ne "\33[${statuslines}B"
+
+  overall_start="`date +'%s'`"
+
+  while ! [ -r "$ffile" ]; do
+    : > "$ufile"
+
+    getting_num="`cat $topdir/current-download/num 2>/dev/null`"
+    building_num="`cat $topdir/current-install/num 2>/dev/null`"
+    getting_name="`cat $numdir/$getting_num/name 2>/dev/null`"
+    building_name="`cat $numdir/$building_num/name 2>/dev/null`"
+
+    store_eta="`cat $topdir/download-eta 2>/dev/null`"
+    build_eta="`cat $topdir/install-eta 2>/dev/null`"
+    if [ -z "$store_eta" -o -z "$build_eta" ]; then
+      overall_eta=""
+    elif [ "$store_eta" -gt "$build_eta" ]; then
+      overall_eta="$store_eta"
+    else
+      overall_eta="$build_eta"
+    fi
+
+    let storecount="`ls $numdir/*/download/time 2>/dev/null | wc -l`"
+    let buildcount="`ls $numdir/*/install/time 2>/dev/null | wc -l`"
+    let missing="`ls $numdir/*/download/failed 2>/dev/null | wc -l`"
+    let broken="`ls $numdir/*/install/failed 2>/dev/null | wc -l`"
+    if [ -n "$building_name" ]; then building=1; else building=0; fi
+    if [ -n "$getting_name" ]; then getting=1; else getting=0; fi
+    let pending="$total-$storecount-$getting"
+    let done="$buildcount-$broken"
+    let stored="$storecount-$buildcount-$building-$missing"
+
+    o="\33[H\33[0;${color_stats}m `printf '%-12s' \"$total tasks:\"`"
+    for i in done broken missing stored pending; do
+      eval "color=\"\$color_$i\"; n=\"\$$i\""
+      [ "$n" = "0" ] || o="$o\33[0;${color}m $n $i "
+    done
+    o="$o\33[0;${color_stats}m\33[K\12\12\12\12\12\33[0m"
+
+    echo -ne "$o"
+    cat $numdir/*/display
+
+    while :; do
+      let now="`date +%s`"
+
+      let elapsed="$now-$overall_start"
+      if [ -z "$overall_eta" ]; then
+        remain=""
+        totaltime=""
+      else
+        let remain="$overall_eta-$now"
+        [ "$remain" -lt 1 ] && remain="1"
+        let totaltime="$elapsed+$remain"
+      fi
+      hms elapsed
+      hms remain
+      hms totaltime
+
+      o="\33[2;1H"
+
+      o="$o\33[0;${color_stats}m"
+      if [ -n "$building_num" ]; then
+        let start="`cat $numdir/$building_num/install/start`"
+        let lcur="$now-$start"
+        eta="`cat $numdir/$building_num/install/eta 2>/dev/null`"
+        if [ -n "$eta" ]; then
+          let lmax="$eta-$start"
+        else
+          lmax=""
+        fi
+        hms lcur
+        hms lmax
+        bar "$lcur" "$lmax" 20
+        o="$o\33[0;${color_stats}m installing  \33[0;${color_building}m `printf '%-29.29s%9s%9s%4.4s' $building_name' \33[0;@@m' $lcur_hms $lmax_hms $percent | sed -e s/@@/$color_stats/`% $bar\33[0;${color_stats}m"
+      fi
+      o="$o\33[K\12"
+      if [ -n "$getting_num" ]; then
+        current="`du -sL $numdir/$getting_num/download/progress 2>/dev/null | cut -f1`"
+        max="`cat $numdir/$getting_num/download/estimate`"
+        bar "$current" "$max" 20
+        let start="`cat $numdir/$getting_num/download/start`"
+        let lcur="$now-$start"
+        eta="`cat $numdir/$getting_num/download/eta 2>/dev/null`"
+        if [ -n "$eta" ]; then
+          let lmax="$eta-$start"
+        elif [ -n "$current" -a -n "$max" -a "$current" -gt 0 ]; then
+          let lmax="$lcur*$max/$current"
+        else
+          lmax=""
+        fi
+        hms lcur
+        hms lmax
+        o="$o\33[0;${color_stats}m downloading \33[0;${color_getting}m `printf '%-29.29s%9s%9s%4.4s' $getting_name' \33[0;@@m' $lcur_hms $lmax_hms $percent | sed -e s/@@/$color_stats/`% $bar\33[0;${color_stats}m"
+      fi
+      o="$o\33[K\12"
+
+      bar "$elapsed" "$totaltime" "$COLUMNS"
+      o="$o\33[0;${color_stats}m $totaltime_hms estimated total time; $elapsed_hms elapsed; $remain_hms left; $percent% complete\33[K\12$bar\12\33[0m"
+
+      echo -ne "$o"
+
+      if "$1"; then
+        for i in 2 3; do
+          dd if=/dev/vcsa1 of="/dev/vcsa$i" bs=2 count="$ddcount" skip=2 seek=2 2>/dev/null
+        done
+      fi
+
+      [ "$ufile" -nt "$efile" ] || break
+      sleep 3
+      [ "$ufile" -nt "$efile" ] || break
+
+      while [ "$building_name/$getting_name/$pending/$stored" = "//0/0" ]; do
+        sleep 9999999 # done!
+      done
+    done
+  done
+
+  stty "$save"
+  echo -ne '\33[?25h\33[0m\33[999;1H\12'
+
+  if "$1"; then
+    for i in 2 3; do
+      dd if=/dev/zero of="/dev/vcsa$i" bs=2 count="$ddcount" seek=2 2>/dev/null
+    done
+  fi
+  echo
+  echo "Aborting."
+}
+
+abort()
+{
+  trap - sigint
+  : > "$ffile"
+  : > "$efile"
+}
+
+start()
+{
+  cd TOPDIR
+  prepare
+  trap abort sigint
+  if [ "TOPDIR" = "." ]; then
+    download > download.log 2>&1 &
+    install > install.log 2>&1 &
+    status false
+  else
+    openvt 2 "$0" install
+    openvt 3 "$0" download
+    openvt 4 "$0" shell
+    status true
+  fi
+}
+
+help()
+{
+  cat << "EOF"
+Hi!
+
+- Press Alt-F1 to switch back to the installer overview display.
+- The root directory is a RAM disk; use "chroot /mnt" to switch to the
+  toast linux system being installed on the hard disk.  (This will work
+  any time after we install a shell on the hard disk, which happens fairly
+  early on during the "setup" task.)
+- At least until the "toastinit" task finishes, be sure to invoke the
+  "toast" command only from the RAM disk, rather than running it directly
+  from the hard disk, especially if you want to manually build a package;
+  the wrapper script will set some important options and invoke choot
+  automatically.
+- Good luck!
+
+Type "help" (or "exit") to see this message again.
+
+Thanks!
+
+Jacques
+
+EOF
+}
+
+toast()
+{
+  cd TOPDIR
+  if ! [ -r "mnt/etc/toast.conf" ]; then
+    [ -z "$TOAST_NICE" ] && export TOAST_NICE="-5"
+    [ -z "$TOAST_ARMDIR" ] && export TOAST_ARMDIR="/usr"
+    [ -z "$TOAST_POSTARMPROG" ] && export TOAST_POSTARMPROG="postarm || ldconfig"
+    if [ -h "mnt/lib/ld-uClibc.so.0" ]; then
+      export TOAST_PRELOAD="false"
+      export TOAST_POSTARMPROG="true"
+    fi
+  fi
+  exec chroot mnt /bin/toast "$@@"
+}
+
+postmortem()
+{
+  cd TOPDIR
+
+  let total=0
+  let count=0
+  for idir in tmp/setup/num/*/install; do
+    if [ -r "$idir/time" -a ! -r "$idir/failed" ]; then
+      let total="$total+`cat $idir/time`"
+      let count="$count+1"
+    fi
+  done
+
+  let i=0
+  while read name size time etc; do
+    let i="$i+1"
+    num="`printf %08d $i`"
+    dir="tmp/setup/num/$num"
+    [ -r "$dir/download/time" -a ! -r "$dir/download/failed" -a "$size" != 0 -a -d "mnt/toast/pkg/$name" ] && let size="12+`du -s mnt/toast/pkg/$name/*/archive | cut -f1`"
+    [ -r "$dir/install/time" -a ! -r "$dir/install/failed" ] && let time="`cat $dir/install/time`*10000*$count/$total"
+    echo "$name $size $time $etc"
+  done > postmortem.out < tmp/tasks
+
+  for dir in tmp/setup/num/*; do
+    if [ -r "$dir/install/time" -a ! -r "$dir/install/failed" ]; then
+      name="`cat $dir/name`"
+      num="`cat $dir/num`"
+      let estimated="`cat $dir/install/estimate`"
+      let actual="`cat $dir/install/time`*10000*$count/$total"
+      if [ "$estimated" -gt "$actual" ]; then
+        let delta="$estimated-$actual"
+      else
+        let delta="$actual-$estimated"
+      fi
+      echo "$delta $num $name $actual"
+    fi
+  done | sort -n | cut -d' ' -f2-
+}
+
+case "$0" in
+  help|*/help) help;;
+  toast|*/toast) toast "$@@";;
+  setup|*/setup)
+    case "$1" in
+      download|install|shell|postmortem) trap abort sigint; "$1";;
+      "") start;;
+      *) echo "$0: unrecognized argument: $1" >&2;;
+    esac
+  ;;
+  *) echo "$0: unrecognized name" >&2;;
+esac
+---
+@
+
+
+1.64
+log
+@fewer files
+@
+text
+@a24 2
+script() { sed -e "s,TOPDIR,$topdir,g" > "sbin/$1" && chmod +x "sbin/$1"; }
+data() { cat > "tmp/$1"; }
+d26 11
+d38 7
+a44 4
+script help << "---"
+#!/bin/sh
+cat << "EOF"
+Hi!
+d46 6
+a51 11
+- Press Alt-F1 to switch back to the installer overview display.
+- The root directory is a RAM disk; use "chroot /mnt" to switch to the
+  toast linux system being installed on the hard disk.  (This will work
+  any time after we install a shell on the hard disk, which happens fairly
+  early on during the "setup" task.)
+- At least until the "toastinit" task finishes, be sure to invoke the
+  "toast" command only from the RAM disk, rather than running it directly
+  from the hard disk, especially if you want to manually build a package;
+  the wrapper script will set some important options and invoke choot
+  automatically.
+- Good luck!
+d53 1
+a53 1
+Type "help" (or "exit") to see this message again.
+d55 2
+a56 1
+Thanks!
+d58 7
+a64 1
+Jacques
+d66 3
+a68 2
+EOF
+---
+d70 5
+a74 14
+script toast << "---"
+#!/bin/sh
+cd TOPDIR
+if ! [ -r "mnt/etc/toast.conf" ]; then
+  [ -z "$TOAST_NICE" ] && export TOAST_NICE="-5"
+  [ -z "$TOAST_ARMDIR" ] && export TOAST_ARMDIR="/usr"
+  [ -z "$TOAST_POSTARMPROG" ] && export TOAST_POSTARMPROG="postarm || ldconfig"
+  if [ -h "mnt/lib/ld-uClibc.so.0" ]; then
+    export TOAST_PRELOAD="false"
+    export TOAST_POSTARMPROG="true"
+  fi
+fi
+exec chroot mnt /bin/toast "$@@"
+---
+d76 10
+a85 2
+script partition << "---"
+#!/bin/sh
+d87 15
+a101 47
+# Environment variables:
+# DISKS
+# DESTROY
+
+# Number of partitions to create on each disk.
+# Each partition will be an LVM2 physical volume (PE).
+# We split each disk into multiple partitions/PEs because there is no way
+# to resize a PE once it has been created.  It would be very difficult
+# to make room for another OS later on if we used only one PV per disk.
+# Linux only allocates 15 minor numbers for SCSI disk partitions;
+# if 1 is primary, 2 is extended, and 5-15 are logical, then there is a
+# maximum of 12 usable partitions per disk.
+slices=8
+
+# LVM2 physical extent (PE) size, in megabytes.  This must be a power of two!
+# Once the volume group (VG) has been created, its PE size can't be changed.
+# The maximum logical volume (LV) size for the VG is about 64k times PE size.
+# A PE size of 32 MB gets you a maximum LV size of 2 terabytes, which is
+# the maximum allowed, so there is no point in using a value larger than 32.
+# Each partition must be large enough to fit at least one PE (plus overhead),
+# or it won't be very useful.
+# Since each PV stores data in multiples of the PE size, smaller values might
+# waste a bit less space, especially on smaller drives.
+pemegs=16
+
+# Number of megabytes to allocate to the /boot logical volume.
+# /boot needs to be on a separate LV because current versions of lilo
+# seem to panic if the LV spans multiple PVs (even if they're on the
+# same disk!), so we need a special LV that is explicitly restricted to
+# one PV.
+bootmegs=128
+
+# Number of megabytes to allocate for swap space.
+# This gets its own logical volume.
+swapmegs=1024
+
+# Percentage of the total space in the volume group to allocate to the
+# root logical volume we'll be creating.
+# Remaining space in the VG will be used for /boot, swap (if any),
+# by snapshots (for fsck or backups) and/or any other logical volumes
+# the user might decide to create later.
+lvpercent=80
+
+# Volume group name.  If we want to be able to coexist peacefully with an
+# existing Linux setup that also uses LVM, this shouldn't conflict with any
+# existing volume group names.
+vgname="toast"
+d103 21
+a123 2
+# Temporary file used to store munged parted output.
+tmpfile=/tmp/parted.munge.$$
+d142 58
+a199 73
+# get/validate list of disks
+if [ -n "$DISKS" ]; then
+  for disk in $DISKS; do
+    valid_disk_name "$disk" || error "bad disk name: $disk"
+  done
+else
+  while read major minor blocks name rest; do
+    valid_disk_name "$name" && DISKS="$DISKS $name"
+  done < /proc/partitions
+  [ -z "$DISKS" ] && error "no disks found"
+fi
+
+# check block device nodes for all disks
+for disk in $DISKS; do
+  path="/dev/$disk"
+  [ -b "$path" ] || error "not a block device: $path"
+  [ -r "$path" ] || error "can't read disk: $disk"
+  [ -w "$path" ] || error "can't write disk: $disk"
+done
+
+# create partitions
+pvpaths=""
+let pecount=0
+for disk in $DISKS; do
+  path="/dev/$disk"
+  parted="parted -s $path --"
+  diskmajor=""
+  diskminor=""
+  totalm=""
+  totalk=""
+  overwrite=""
+  lastminor=0
+  extminor=0
+  labeltype=""
+  primary1exists=""
+  primary2exists=""
+  primary3exists=""
+  primary4exists=""
+
+  case "$disk" in
+    h*) maxminor=63 ;; # IDE
+    s*) maxminor=15 ;; # SCSI
+    *) error "assertion failed: $disk"
+  esac
+
+  while read major minor blocks name rest; do
+    if [ "$name" = "$disk" ]; then
+      diskmajor="$major"
+      diskminor="$minor"
+      let totalm="$blocks/1024"
+      let totalk="($blocks%1024)*1000/1024"
+      case "$totalk" in
+        [0-9]) totalk="00$totalk" ;;
+        [1-9][0-9]) totalk="0$totalk" ;;
+        [1-9][0-9][0-9]) ;;
+        *) error "assertion failed: disk=$disk blocks=$blocks k=$totalk"
+      esac
+    fi
+  done < /proc/partitions
+
+  [ -z "$totalm" ] && error "assertion failed: disk=$disk totalm=$totalm"
+  [ -z "$totalk" ] && error "assertion failed: disk=$disk totalk=$totalk"
+  [ -z "$diskmajor" ] && error "assertion failed: no major for disk=$disk"
+  [ -z "$diskminor" ] && error "assertion failed: no minor for disk=$disk"
+
+  sum=bf619eac0cdf3f68d496ea9344137e8b # md5sum of 512 zero bytes
+
+  if [ "$DESTROY" = "yes" ]; then
+    echo "# Entire disk $disk will be overwritten unconditionally."
+    overwrite="yes"
+  elif dd if="$path" bs=512 count=1 2>/dev/null | md5sum | grep -q "$sum"; then
+    echo "# Disk $disk appears to be empty; entire disk will be overwritten."
+    overwrite="yes"
+d201 4
+a204 18
+    echo "# Contents of disk $disk may be accidentally destroyed."
+    # TODO: tell user what partitions will go on this disk, if any
+    $parted print | sed -e 's/0\.000-//; s/\./ /g' > "$tmpfile"
+    while read one two three four five six rest; do
+      if [ "$one $two $three" = "Disk geometry for" ]; then
+        totalm="$five"
+        totalk="$six"
+      fi
+      [ "$one $two $three" = "Disk label type:" ] && labeltype="$one"
+      case "$one" in
+        [0-9]*)
+          [ "$one" -gt "$lastminor" ] && lastminor="$one"
+          [ "$six" = "extended" ] && extminor="$one"
+          [ "$six" = "primary" ] && eval "primary${one}exists=yes"
+          ;;
+      esac
+    done < "$tmpfile"
+    rm -f "$tmpfile"
+d207 6
+a212 3
+  freeslot=0
+  for slot in 4 3 2; do
+    eval "[ -n \$primary{$slot}used ]" && freeslot="$slot"
+d215 11
+a225 1
+  if [ -n "$overwrite" ]; then
+d228 26
+a253 4
+    labeltype="msdos"
+    echo "dd if=/dev/zero of=$path bs=512 count=1"
+    echo "$parted mklabel $labeltype"
+  fi
+d255 21
+a275 24
+  if [ "$labeltype" = "msdos" ] && [ "$extminor" -gt 0 -o "$freeslot" -gt 0 ]; then
+    let slicemegs="$totalm/$slices"
+    [ "$slicemegs" -le "$pemegs" ] && slicemegs=$totalm
+    let splitmegs="$slicemegs*2"
+    lastm=0
+    lastk=000
+    {
+      if [ -z "$overwrite" ]; then
+        $parted print | grep "^[0-9]" | cut -c 3- | sort -n | sed -e 's/\./ /g'
+      fi
+      echo "$totalm $totalk END END END END END"
+    } > "$tmpfile"
+    while read startm startk endm endk type fs flags; do
+      let gapmegs="($startm$startk-$lastm$lastk)/1000"
+      create=yes
+      while [ "$gapmegs" -gt "$pemegs" -a "$lastminor" -lt "$maxminor" -a -n "$create" ]; do
+        if [ "$gapmegs" -gt "$splitmegs" ]; then
+          let newendm="$lastm+$slicemegs"
+          newendk="$lastk"
+          let gapmegs="$gapmegs-$slicemegs"
+        else
+          newendm="$startm"
+          newendk="$startk"
+          gapmegs="0"
+d277 11
+a287 27
+        let newminor="1+$lastminor"
+        if [ "$newminor" -eq 1 ]; then
+          newtype="primary"
+        else
+          newtype="logical"
+          [ "$newminor" -le 4 ] && newminor=5
+          if [ "$extminor" -eq 0 ]; then
+            extminor="$freeslot"
+            echo "$parted mkpart extended $lastm.$lastk -0"
+            echo "$parted set $extminor lba on"
+          fi
+        fi
+        echo "$parted mkpart $newtype ext2 $lastm.$lastk $newendm.$newendk"
+        echo "$parted set $newminor lvm on"
+        pvpaths="$pvpaths $path$newminor"
+        let newpecount="($newendm$newendk-$lastm$lastk)/($pemegs*1000)"
+        let pecount="$pecount+$newpecount"
+        lastm="$newendm"
+        lastk="$newendk"
+        lastminor="$newminor"
+      done
+      lastm="$endm"
+      lastk="$endk"
+    done < "$tmpfile"
+    rm -f "$tmpfile"
+  fi
+done
+d289 4
+a292 25
+# create filesystems on the new partitions
+[ -z "$pvpaths" -o "$pecount" -eq 0 ] && error "no room for new partitions"
+let lvextents="$pecount*$lvpercent/100"
+echo "devices"
+for pvpath in $pvpaths; do
+  echo "dd if=/dev/zero of=$pvpath bs=512 count=10"
+done
+echo "pvcreate -fy -M2 $pvpaths"
+echo "vgcreate -s $pemegs $vgname $pvpaths"
+echo "lvcreate -L "$bootmegs"m -n boot $vgname" # TODO: restrict to first PV
+echo "lvcreate -l $lvextents -n root $vgname"
+echo "lvcreate -L "$swapmegs"m -n swap $vgname"
+echo "vgchange -ay $vgname"
+for lvname in boot root; do
+  lvpath="/dev/$vgname/$lvname"
+  echo "parted -s $lvpath -- mklabel loop"
+  echo "parted -s $lvpath -- mkpartfs primary ext2 0 -0"
+  echo "tune2fs -j $lvpath"
+done
+echo "mount -t ext2 /dev/toast/root /mnt"
+echo "mkdir /mnt/boot"
+echo "mount -t ext2 /dev/toast/boot /mnt/boot"
+echo "mkswap /dev/$vgname/swap"
+echo "swapon /dev/toast/swap"
+---
+d294 7
+a300 2
+data urls << "---"
+# oddball essentials:
+d302 52
+a353 1
+# URLs for glibc are in get-glibc script
+d355 25
+a379 1
+[ http://kernel.org/pub/linux/kernel/v2.6/linux-2.6.5.tar.bz2 http://toastball.net/toast-linux-tmp/linux-2.6.5-config.tar.gz ]
+d381 15
+a395 2
+#lilo/22.5.9-devmapper: [ http://lilo.go.dyndns.org/pub/linux/lilo/obsolete/lilo-22.5.9.tar.gz http://www.saout.de/misc/lilo-22.5.9-devmapper.patch ]
+http://home.san.rr.com/johninsd/pub/linux/lilo/
+d397 4
+a400 51
+genext2fs/1.3-7.1: [ http://http.us.debian.org/debian/pool/main/g/genext2fs/genext2fs_1.3.orig.tar.gz http://http.us.debian.org/debian/pool/main/g/genext2fs/genext2fs_1.3-7.1.diff.gz ]
+
+sysklogd/1.4.1: [ http://www.infodrom.org/projects/sysklogd/download/sysklogd-1.4.1.tar.gz http://ep09.pld-linux.org/~mmazur/linux-libc-headers/patches/sysklogd.patch ]
+# http://mirrors.angelinacounty.net/pub/lfs/lfs-packages/testing/sysklogd-1.4.1-kernel_headers-1.patch
+
+[ http://www.tazenda.demon.co.uk/phil/net-tools/net-tools-1.60.tar.bz2 http://toastball.net/toast-linux-tmp/net-tools-1.60-toast.patch ]
+
+# other required packages:
+ftp://ftp.cistron.nl/pub/people/miquels/sysvinit/sysvinit-2.85.tar.gz
+http://ftp.gnu.org/gnu/bash/bash-3.0.tar.gz
+http://ftp.gnu.org/gnu/binutils/binutils-2.15.tar.bz2
+http://ftp.gnu.org/gnu/coreutils/coreutils-5.0.tar.bz2
+http://ftp.gnu.org/gnu/diffutils/diffutils-2.8.1.tar.gz
+http://ftp.gnu.org/gnu/findutils/
+http://ftp.gnu.org/gnu/gawk/gawk-3.1.3.tar.bz2
+http://ftp.gnu.org/gnu/gcc/gcc-3.4.3/gcc-3.4.3.tar.bz2
+http://ftp.gnu.org/gnu/gettext/gettext-0.14.1.tar.gz
+http://ftp.gnu.org/gnu/grep/grep-2.5.tar.bz2
+http://ftp.gnu.org/gnu/gzip/gzip-1.2.4a.tar.gz
+http://ftp.gnu.org/gnu/make/
+http://ftp.gnu.org/gnu/ncurses/ncurses-5.4.tar.gz
+http://ftp.gnu.org/gnu/patch/patch-2.5.4.tar.gz
+http://ftp.gnu.org/gnu/readline/readline-4.3.tar.gz
+http://ftp.gnu.org/gnu/sed/sed-4.0.9.tar.gz
+http://ftp.gnu.org/gnu/tar/tar-1.14.tar.bz2
+http://ftp.gnu.org/gnu/wget/wget-1.9.1.tar.gz
+http://kernel.org/pub/linux/daemons/devfsd/devfsd-v1.3.25.tar.bz2
+http://kernel.org/pub/linux/utils/kernel/hotplug/
+http://kernel.org/pub/linux/utils/kernel/module-init-tools/module-init-tools-3.0.tar.bz2
+http://kernel.org/pub/linux/utils/util-linux/
+http://mirrors.kernel.org/sources.redhat.com/bzip2/v102/bzip2-1.0.2.tar.gz
+http://mirrors.kernel.org/sources.redhat.com/dm/
+http://mirrors.kernel.org/sources.redhat.com/lvm2/
+http://prdownloads.sourceforge.net/e2fsprogs/e2fsprogs-1.35.tar.gz
+http://prdownloads.sourceforge.net/infozip/unzip551.tar.gz
+http://prdownloads.sourceforge.net/infozip/zip23.tar.gz
+http://prdownloads.sourceforge.net/nasm/nasm-0.98.38.tar.bz2
+http://toastball.net/toast/init/
+http://toastball.net/toast/login/
+http://www.phystech.com/ftp/dhcpcd-1.3.22-pl4.tar.gz
+http://www.sethwklein.net/projects/iana-etc/downloads/iana-etc-0.99.tar.bz2
+http://www.zsh.org/pub/
+
+# tricky optional packages:
+[ http://ftp.xfree86.org/pub/XFree86/4.4.0/source/XFree86-4.4.0-src-1.tgz http://ftp.xfree86.org/pub/XFree86/4.4.0/source/XFree86-4.4.0-src-2.tgz http://ftp.xfree86.org/pub/XFree86/4.4.0/source/XFree86-4.4.0-src-3.tgz http://ftp.xfree86.org/pub/XFree86/4.4.0/source/XFree86-4.4.0-src-4.tgz http://ftp.xfree86.org/pub/XFree86/4.4.0/source/XFree86-4.4.0-src-5.tgz http://ftp.xfree86.org/pub/XFree86/4.4.0/source/XFree86-4.4.0-src-6.tgz http://ftp.xfree86.org/pub/XFree86/4.4.0/source/XFree86-4.4.0-src-7.tgz ]
+http://prdownloads.sourceforge.net/lex/flex-2.5.27.tar.bz2 # flex 2.5.31 is broken and can't build XFree86 4.4.0, for instance
+http://prdownloads.sourceforge.net/freetype/freetype-2.1.5.tar.bz2 # 2.1.7 seems to cause include problems with xft 2.1.2
+# [ http://prdownloads.sourceforge.net/openjade/OpenSP-1.5.1.tar.gz http://belfs.linux-phreak.net/belfs/blfs-patches/OpenSP-1.5.1-gcc34-2.patch ]
+[ http://prdownloads.sourceforge.net/openjade/OpenSP-1.5.1.tar.gz http://toastball.net/toast-linux-tmp/OpenSP-1.5.1-gcc34-2.patch ]
+adns/1.1: [ ftp://ftp.chiark.greenend.org.uk/users/ian/adns/adns-1.1.tar.gz http://www.bytebot.net/rrjcode/adns-ppc.patch ]
+https://ccvs.cvshome.org/files/documents/19/534/cvs-1.11.18.tar.bz2 # requires openssl to download; see special case at the end of prepare()
+d402 2
+a403 114
+# Gnome 2.8.0, KDE 3.3.2:
+http://ftp.gnome.org/pub/GNOME/bindings/2.8/2.8.0/sources/c++/
+http://ftp.gnome.org/pub/GNOME/bindings/2.8/2.8.0/sources/java/
+http://ftp.gnome.org/pub/GNOME/bindings/2.8/2.8.0/sources/perl/
+http://ftp.gnome.org/pub/GNOME/bindings/2.8/2.8.0/sources/python/
+http://ftp.gnome.org/pub/GNOME/desktop/2.8/2.8.0/sources/
+http://ftp.gnome.org/pub/GNOME/platform/2.8/2.8.0/sources/
+http://ibiblio.org/pub/mirrors/kde/stable/3.3.2/src/
+
+# additional GNOMEy-looking stuff
+http://freedesktop.org/software/dbus/releases/
+http://freedesktop.org/software/desktop-file-utils/releases/
+http://freedesktop.org/software/icon-theme/releases/hicolor-icon-theme-0.5.tar.gz
+http://freedesktop.org/software/shared-mime-info/shared-mime-info-0.14.tar.gz
+http://freedesktop.org/~david/hal-0.4.2.tar.gz
+http://freedesktop.org/~fontconfig/release/fontconfig-2.2.93.tar.gz
+http://freedesktop.org/~fontconfig/release/xft-2.1.2.tar.gz
+http://freedesktop.org/~xlibs/release/render-0.8.tar.gz
+http://freedesktop.org/~xlibs/release/xrender-0.8.3.tar.gz
+http://ftp.gnome.org/pub/GNOME/sources/gal/2.1/gal-2.1.7.tar.bz2
+http://ftp.gnome.org/pub/GNOME/sources/libcroco/0.5/libcroco-0.5.0.tar.bz2
+http://ftp.gnome.org/pub/GNOME/sources/libgsf/1.8/libgsf-1.8.2.tar.bz2
+http://ftp.gnome.org/pub/GNOME/sources/libsigc++/2.0/
+http://www.openh323.org/bin/pwlib_1.5.2.tar.gz
+
+# everything else:
+ftp://ftp.berlios.de/pub/cdrecord/cdrtools-2.00.3.tar.gz
+ftp://ftp.bitwizard.nl/mtr/mtr-0.58.tar.gz
+ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/pcre-4.5.tar.bz2
+ftp://ftp.foolabs.com/pub/xpdf/t1lib-1.3.tar.gz
+ftp://ftp.foolabs.com/pub/xpdf/xpdf-3.00.tar.gz
+ftp://ftp.fvwm.org/pub/fvwm/version-2/fvwm-2.4.19.tar.bz2
+ftp://ftp.gnupg.org/gcrypt/gnupg/gnupg-1.2.4.tar.bz2
+ftp://ftp.isc.org/isc/bind9/9.2.3/bind-9.2.3.tar.gz
+ftp://ftp.rpm.org/pub/rpm/dist/rpm-4.1.x/popt-1.7.tar.gz
+ftp://ftp.uu.net/graphics/jpeg/jpegsrc.v6b.tar.gz
+ftp://ftp.vim.org/pub/vim/unix/vim-6.2.tar.bz2
+ftp://ftp.win.tue.nl/pub/linux-local/utils/kbd/kbd-1.12.tar.gz
+ftp://oss.sgi.com/projects/fam/download/fam-2.6.10.tar.gz
+http://alioth.debian.org/download.php/123/minicom-2.1.tar.gz
+http://caml.inria.fr/distrib/ocaml-3.08/ocaml-3.08.1.tar.bz2
+http://curl.haxx.se/download/curl-7.11.1.tar.bz2
+http://developer.kde.org/~sewardj/valgrind-2.2.0.tar.bz2
+http://dl.maptools.org/dl/libtiff/tiff-v3.6.1.tar.gz
+http://download.insecure.org/nmap/dist/nmap-3.50.tar.bz2
+http://download.ofb.net/gale/gale-0.99fruit.tar.bz2
+http://fresh.t-systems-sfr.com/fresh/unix/src/misc/file-4.12.tar.gz
+http://ftp.figlet.org/pub/figlet/program/unix/figlet221.tar.gz
+http://ftp.gnu.org/gnu/autoconf/autoconf-2.59.tar.gz
+http://ftp.gnu.org/gnu/automake/automake-1.8.2.tar.gz
+http://ftp.gnu.org/gnu/bc/bc-1.06.tar.gz
+http://ftp.gnu.org/gnu/bison/bison-1.875.tar.bz2
+http://ftp.gnu.org/gnu/cpio/cpio-2.5.tar.gz
+http://ftp.gnu.org/gnu/ed/ed-0.2.tar.gz
+http://ftp.gnu.org/gnu/gdbm/gdbm-1.8.3.tar.gz
+http://ftp.gnu.org/gnu/gmp/
+http://ftp.gnu.org/gnu/groff/groff-1.19.tar.gz
+http://ftp.gnu.org/gnu/inetutils/inetutils-1.4.2.tar.gz
+http://ftp.gnu.org/gnu/libtool/libtool-1.5.2.tar.gz
+http://ftp.gnu.org/gnu/m4/m4-1.4.tar.gz
+http://ftp.gnu.org/gnu/miscfiles/miscfiles-1.3.tar.gz
+http://ftp.gnu.org/gnu/parted/
+http://ftp.gnu.org/gnu/texinfo/texinfo-4.6.tar.gz
+http://ftp.gnu.org/gnu/units/units-1.80.tar.gz
+http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/1.0/source/firefox-1.0-source.tar.bz2
+http://ftp.mozilla.org/pub/mozilla.org/mozilla/releases/mozilla1.7.3/src/mozilla-source-1.7.3.tar.bz2
+http://ftp.silug.org/mirrors/ftp.trolltech.com/qt/source/qt-x11-free-3.3.3.tar.bz2
+http://ftp.xfree86.org/pub/XFree86/4.4.0/source/doctools-1.3.2.tgz
+http://kernel.org/pub/linux/daemons/autofs/v4/autofs-4.1.2.tar.bz2
+http://kernel.org/pub/linux/docs/manpages/man-pages-1.65.tar.bz2
+http://kernel.org/pub/linux/utils/boot/syslinux/
+http://kernel.org/pub/linux/utils/man/man-1.5m2.tar.bz2
+http://kernel.org/pub/software/utils/pciutils/pciutils-2.1.11.tar.bz2
+http://mirrors.isc.org/pub/postfix/official/postfix-2.1.5.tar.gz
+http://mtools.linux.lu/mtools-3.9.9.tar.bz2
+http://openbsd.md5.com.ar/pub/OpenBSD/OpenSSH/portable/
+http://prdownloads.sourceforge.net/docbook/docbook-xsl-1.65.1.tar.gz
+http://prdownloads.sourceforge.net/espgs/espgs-7.07.1-source.tar.bz2
+http://prdownloads.sourceforge.net/lame/lame-3.96.tar.gz
+http://prdownloads.sourceforge.net/lesstif/lesstif-0.93.94.tar.bz2
+http://prdownloads.sourceforge.net/libpng/zlib-1.2.2.tar.gz
+http://prdownloads.sourceforge.net/netpbm/netpbm-10.19.tgz
+http://prdownloads.sourceforge.net/png-mng/libpng-1.2.5.tar.bz2
+http://prdownloads.sourceforge.net/romfs/genromfs-0.5.1.tar.gz
+http://prdownloads.sourceforge.net/strace/strace-4.5.8.tar.bz2
+http://prdownloads.sourceforge.net/xine/xine-lib-1-rc8.tar.gz
+http://prdownloads.sourceforge.net/xine/xine-ui-0.99.3.tar.gz
+http://www.perl.com/CPAN/authors/id/M/MS/MSERGEANT/XML-Parser-2.34.tar.gz
+http://www.perl.com/CPAN/authors/id/T/TS/TSCH/ExtUtils-Depends-0.204.tar.gz
+http://www.perl.com/CPAN/authors/id/T/TS/TSCH/ExtUtils-PkgConfig-1.06.tar.gz
+http://subversion.tigris.org/tarballs/subversion-1.0.1.tar.bz2
+http://tug.ctan.org/tex-archive/systems/unix/teTeX/current/distrib/tetex-src-2.0.2.tar.gz
+http://www.alsa-project.org/alsa/ftp/lib/alsa-lib-1.0.3a.tar.bz2
+http://www.alsa-project.org/alsa/ftp/tools/alsa-tools-1.0.3.tar.bz2
+http://www.alsa-project.org/alsa/ftp/utils/alsa-utils-1.0.3.tar.bz2
+http://www.apache.org/dist/httpd/httpd-2.0.52.tar.gz
+http://www.cs.purdue.edu/homes/trinkle/RCS/rcs-5.7.tar.Z
+http://www.docbook.org/xml/4.3/docbook-xml-4.3.zip
+http://www.eecis.udel.edu/~ntp/ntp_spool/ntp4/ntp-4.2.0.tar.gz
+http://www.greenwoodsoftware.com/less/less-381.tar.gz
+http://www.hpl.hp.com/personal/Hans_Boehm/gc/gc_source/gc6.2.tar.gz
+http://www.libsdl.org/release/SDL-1.2.8.tar.gz
+http://www.mirrorservice.org/sites/ftp.gimp.org/pub/gimp/v2.2/
+http://www.procmail.org/procmail-3.22.tar.gz
+http://www.python.org/ftp/python/2.3.3/Python-2.3.3.tar.bz2
+http://www.tug.org/ftp/dist/db-4.3.27.tar.gz
+http://www.vorbis.com/files/1.0.1/unix/libogg-1.1.tar.gz
+http://www.vorbis.com/files/1.0.1/unix/libvorbis-1.0.1.tar.gz
+http://www.xiph.org/paranoia/download/cdparanoia-III-alpha9.8.src.tgz
+http://www.xmms.org/files/1.2.x/xmms-1.2.10.tar.bz2
+---
+
+data tasks << "---"
+partition 0 0 cn sh -ex < tmp/partition && rm tmp/partition
+d691 1
+a691 121
+---
+
+script setup << "---"
+#!/bin/sh
+
+export http_proxy=http://67.126.59.194:8080/
+
+export PATH=/sbin:/bin:/usr/sbin:/usr/bin
+export HOME=/
+export SHELL=/bin/sh
+
+# es = estimated download size (in 1024-byte blocks, as per du -s); 0 = none
+# eb = estimated build time (where 10000 = median)
+# flags = zero or more of the following letters, mashed together:
+#   c = critical task; don't bother to continue if this fails
+#   n = nonrepresentative task; don't factor install time into estimates
+# as = actual download _time_ (not size!) in seconds (on this machine)
+# ab = actual build time in seconds (on this machine)
+
+topdir="tmp/setup"
+namedir="$topdir/name"
+numdir="$topdir/num"
+efile="$topdir/event"
+ufile="$topdir/updated"
+ffile="$topdir/failed"
+
+statuslines="5"
+
+color_stats="1;44"
+color_bar="1;36;46"
+
+color_pending="41"
+color_getting="40"
+color_missing="43"
+color_stored="1;41"
+color_building="1;40"
+color_broken="1;43"
+color_done="1;42"
+
+color_fkey="30;47"
+color_fkey_selected="1;37;47"
+color_fkey_eol="37;47"
+
+# solid block:     '\33(U\333\17'
+# left half block: '\33(U\335\17'
+# halftone block:  '\33(U\261\17'
+# up arrow:        '\33[3h\30\33[3l'
+# down arrow:      '\33[3h\31\33[3l'
+
+case "$TERM" in
+  *xterm*)
+    char_solid_block='\16a\17'
+    char_half_block=' '
+    ;;
+  *)
+    char_solid_block='\33(U\333\17'
+    char_half_block='\33(U\335\17'
+    ;;
+esac
+
+timeout()
+{
+  seconds="$1"
+  save="`stty -g`"
+  key=""
+  while [ "$seconds" -gt 0 -a -z "$key" ]; do
+    echo -ne '\r'"$seconds "
+    stty raw -echo time 10 min 0 || exit $?
+    key="`dd bs=1 count=1 2>/dev/null`"
+    stty "$save"
+    let seconds="$seconds - 1"
+  done
+  echo -ne '\r          \r'
+  [ -z "$key" ]
+}
+
+resize()
+{
+  save="`stty -g`"
+  stty raw -echo time 1 min 0
+  echo -ne '\33[s\33[255;255H\33[6n\33[u'
+  eval "`dd bs=1 count=128 2>/dev/null | sed -ne 's/.*\[\([0-9]\+\);\([0-9]\+\)R.*/LINES=\1;COLUMNS=\2;/p'`"
+  stty "$save"
+  [ -z "$LINES" ] && LINES=50
+  [ -z "$COLUMNS" ] && COLUMNS=80
+  export LINES COLUMNS
+}
+
+partition()
+{
+  if [ "TOPDIR" = "." ]; then
+    export TOASTINIT_NO_LILO=1
+    echo "mkdir mnt mnt/boot mnt/lost+found" > tmp/partition
+    return 0
+  fi
+
+  echo "0" > /proc/sys/kernel/printk
+  echo ""
+  echo "Figuring out how to (re)partition your disk(s):"
+  /sbin/partition > tmp/partition || return 1
+  grep '^# ' tmp/partition
+  echo -e "Press any key to abort.  \33[1;31mThis is your last chance!\33[0m"
+  timeout 20 || return 1
+}
+
+refresh()
+{
+  echo -ne "\33[0;${2}m " > "$1/display.tmp"
+  echo -n `cat $1/name` '' >> "$1/display.tmp"
+  if [ ! -d "$1/next" -o -r "$1/next/newline" ]; then
+    echo -e "\33[0;${3}m\33[K" >> "$1/display.tmp"
+  fi
+  mv "$1/display.tmp" "$1/display"
+}
+
+prepare()
+{
+  echo -n "Preparing to install; please wait..."
+  resize
+  for i in `seq 1 $statuslines`; do echo; done
+  let scroll="$LINES-$statuslines"
+d768 4
+d939 174
+a1112 1
+sed 's/\#.*//' tmp/urls | grep . | while read x; do sbin/toast add $x; done
+a1483 1
+  partition || exit $?
+d1498 20
+a1517 6
+case "$1" in
+  download|install|shell) trap abort sigint; "$1";;
+  "") start;;
+  *) echo "$0: unrecognized argument: $1" >&2;;
+esac
+---
+d1519 1
+a1519 2
+script postmortem << "---"
+#!/bin/sh
+d1521 2
+a1522 1
+cd TOPDIR
+d1524 11
+a1534 6
+let total=0
+let count=0
+for idir in tmp/setup/num/*/install; do
+  if [ -r "$idir/time" -a ! -r "$idir/failed" ]; then
+    let total="$total+`cat $idir/time`"
+    let count="$count+1"
+d1536 6
+a1541 1
+done
+d1543 8
+a1550 9
+let i=0
+while read name size time etc; do
+  let i="$i+1"
+  num="`printf %08d $i`"
+  dir="tmp/setup/num/$num"
+  [ -r "$dir/download/time" -a ! -r "$dir/download/failed" -a "$size" != 0 -a -d "mnt/toast/pkg/$name" ] && let size="12+`du -s mnt/toast/pkg/$name/*/archive | cut -f1`"
+  [ -r "$dir/install/time" -a ! -r "$dir/install/failed" ] && let time="`cat $dir/install/time`*10000*$count/$total"
+  echo "$name $size $time $etc"
+done > postmortem.out < tmp/tasks
+d1552 22
+a1573 10
+for dir in tmp/setup/num/*; do
+  if [ -r "$dir/install/time" -a ! -r "$dir/install/failed" ]; then
+    name="`cat $dir/name`"
+    num="`cat $dir/num`"
+    let estimated="`cat $dir/install/estimate`"
+    let actual="`cat $dir/install/time`*10000*$count/$total"
+    if [ "$estimated" -gt "$actual" ]; then
+      let delta="$estimated-$actual"
+    else
+      let delta="$actual-$estimated"
+d1575 15
+a1589 3
+    echo "$delta $num $name $actual"
+  fi
+done | sort -n | cut -d' ' -f2-
+@
+
+
+1.63
+log
+@improved postmortem; updated times and sizes
+@
+text
+@a326 196
+script get-rootfs << "---"
+#!/bin/sh -ex
+if [ "`cd mnt; echo *`" != "boot lost+found" ]; then
+  echo "unexpected filesystem contents" >&2
+  exit 1
+fi
+mkdir -p mnt/toast/pkg/rootfs/v0/archive
+cd mnt/toast/pkg/rootfs/v0/archive
+wget http://www.kernel.org/pub/linux/libs/uclibc/root_fs_i386.bz2
+---
+
+script get-perl << "---"
+#!/bin/sh
+
+version=5.8.6
+url=http://www.cpan.org/src/5.0/perl-$version.tar.bz2
+adir=mnt/toast/pkg/perl/v$version/archive
+
+set -e
+mkdir -p "$adir"
+cd "$adir"
+echo "$url" > ../url
+wget "$url"
+---
+
+script get-toast << "---"
+#!/bin/sh -ex
+mkdir -p mnt/toast/pkg/toast/vlatest/archive
+cd mnt/toast/pkg/toast/vlatest/archive
+wget http://toastball.net/toast/toast.tar.gz
+# task-toast will take care of the rest
+---
+
+script get-wget << "---"
+#!/bin/sh -ex
+version="1.9.1"
+url="http://ftp.gnu.org/gnu/wget/wget-$version.tar.gz"
+dir="mnt/toast/pkg/wget/v$version/archive"
+mkdir -p "$dir"
+cd "$dir"
+echo "$url" > ../url
+wget "$url"
+---
+
+script get-glibc << "---"
+#!/bin/sh -ex
+dir="mnt/toast/pkg/glibc/v2.3.3/archive"
+mkdir -p "$dir"
+cd "$dir"
+cat > ../url << 'EOF'
+http://ftp.gnu.org/gnu/glibc/glibc-2.3.3.tar.bz2
+http://kernel.org/pub/linux/kernel/v2.6/linux-2.6.8.1.tar.bz2
+http://toastball.net/toast-linux-tmp/glibc-2.3.3-gcc34-toast.patch
+EOF
+for url in `cat ../url`; do wget "$url"; done
+---
+
+script task-rootfs << "---"
+#!/bin/sh -ex
+
+if [ "`cd mnt; echo *`" != "boot lost+found toast" ]; then
+  echo "unexpected filesystem contents" >&2
+  exit 1
+fi
+
+for i in boot dev dev/pts etc/dhcpc etc/xml home media/floppy media/cdrom mnt proc root sys toast tmp usr/bin var/empty var/lock var/run var/log var/spool/mail; do
+  mkdir -p "mnt/$i"
+done
+chmod 1777 "mnt/tmp"
+
+if grep -q '[^b]devfs' /proc/filesystems; then
+  mount -t devfs dev mnt/dev
+elif [ -d dev ]; then
+  tar -c -C / dev | tar -x -C mnt
+  chmod go-w mnt/dev
+else
+  mknod mnt/dev/null c 1 3
+  mknod mnt/dev/zero c 1 5
+  mknod mnt/dev/random c 1 8
+  mknod mnt/dev/urandom c 1 9
+  chmod 666 mnt/dev/null
+fi
+
+for i in bin lib sbin; do ln -sf "usr/$i" "mnt/$i"; done
+cp /etc/resolv.conf mnt/etc/
+[ -r /etc/TZ -a -z "$TZ" ] && TZ="`cat /etc/TZ`"
+[ -z "$TZ" ] && TZ="PST8PDT"
+ln -s "../usr/share/zoneinfo/$TZ" mnt/etc/localtime
+ln -s "../../usr/etc/xml/toast-xml-catalog" mnt/etc/xml/catalog
+ln -s bash mnt/bin/sh
+ln -s gcc mnt/bin/cc
+echo "/lib" > mnt/etc/ld.so.conf
+
+cat > mnt/etc/passwd << 'EOF'
+root:x:0:0:root:/root:/bin/zsh
+bin:x:1:1:bin:/bin:/bin/false
+daemon:x:2:2:daemon:/sbin:/bin/false
+adm:x:3:4:adm:/var/adm:/bin/false
+lp:x:4:7:lp:/var/spool/lpd:/bin/false
+sync:x:5:0:sync:/sbin:/bin/sync
+shutdown:x:6:0:shutdown:/sbin:/sbin/shutdown
+halt:x:7:0:halt:/sbin:/sbin/halt
+mail:x:8:12:mail:/var/spool/mail:/bin/false
+news:x:9:13:news:/var/spool/news:/bin/false
+uucp:x:10:14:uucp:/var/spool/uucp:/bin/false
+operator:x:11:0:operator:/root:/bin/false
+games:x:12:100:games:/usr/games:/bin/false
+ftp:x:14:50:FTP User:/home/ftp:/bin/false
+toast:x:42:42:toast:/toast:/bin/zsh
+nobody:x:99:99:nobody:/:/bin/false
+EOF
+
+cat > mnt/etc/group << 'EOF'
+root:x:0:root
+bin:x:1:bin
+daemon:x:2:daemon
+sys:x:3:sys
+adm:x:4:adm
+tty:x:5:
+disk:x:6:
+lp:x:7:lp
+mem:x:8:
+kmem:x:9:
+wheel:x:10:
+mail:x:12:mail
+news:x:13:news
+uucp:x:14:uucp
+man:x:15:
+floppy:x:19:
+games:x:20:games
+slocate:x:21:
+utmp:x:22:
+squid:x:23:
+gopher:x:30:
+toast:x:42:toast
+ftp:x:50:
+nobody:x:99:
+users:x:100:
+nofiles:x:65533:
+EOF
+
+[ -z "$USERS" ] && USERS=user
+USERS="`echo \"$USERS\" | sed -e 's/[^a-z0-9]/ /g; s/^  *//; s/  *$//'`"
+uid=500
+for i in $USERS; do
+  echo "$i:x:$uid:$uid:$i:/home/$i:/bin/zsh" >> mnt/etc/passwd
+  echo "$i:x:$uid:" >> mnt/etc/group
+  [ -r mnt/etc/user ] || echo $i > mnt/etc/user
+  mkdir "mnt/home/$i"
+  chown $uid.$uid "mnt/home/$i"
+  let uid="1+$uid"
+done
+
+mount -t proc proc mnt/proc
+mount -t sysfs sys mnt/sys
+
+bunzip2 mnt/toast/pkg/rootfs/v0/archive/*
+mount -t ext2 -o loop mnt/toast/pkg/rootfs/v0/archive/* mnt/mnt
+mkdir -p mnt/toast/pkg/rootfs/v0/1/root
+tar -c -C mnt/mnt . | tar -x -C mnt/toast/pkg/rootfs/v0/1/root
+umount mnt/mnt
+rm -fr mnt/toast/pkg/rootfs/v0/archive
+---
+
+script task-perl << "---"
+#!/bin/sh -ex
+bdir="mnt/toast/pkg/rootfs/v0/1"
+ln mnt/toast/pkg/perl/*/archive/* "$bdir/root/tmp/"
+chroot "$bdir/root" sh -ex << "EOF" | tee "$bdir/build.log"
+cd /tmp
+tar xjf perl-*.tar.bz2
+rm -f perl-*.tar.bz2 /usr/lib/*.so
+cd perl-*
+sh Configure -des -Dprefix=/usr -Dextensions="Errno File/Glob" -Uusevfork -Uuseperlio -Uusefaststdio -Uusenm -Uusedl -Uuselargefiles
+make all install
+rm -f /usr/bin/cc
+EOF
+---
+
+script task-toast << "---"
+#!/bin/sh -ex
+export TOAST_ARMDIR=/usr TOAST_PRELOAD=false
+rdir="/toast/pkg/rootfs/v0/1/root"
+tar xzf mnt/toast/pkg/toast/vlatest/archive/toast.tar.gz -C "mnt$rdir/tmp/"
+ln mnt$rdir/tmp/toast-*/toast mnt$rdir/bin/
+chroot mnt "$rdir/usr/bin/perl" -x "$rdir/bin/toast" arm rootfs
+version="`toast version | cut -c 7-`"
+sbin/toast rename toast/latest "toast/$version"
+sbin/toast change "http://toastball.net/toast/toast-$version.tar.gz"
+---
+
+script task-add << "---"
+#!/bin/sh
+sed 's/\#.*//' tmp/urls | grep . | while read x; do sbin/toast add $x; done
+---
+
+d503 4
+a506 4
+rootfs 17468 596 cn sbin/task-rootfs
+perl 9500 10345 c sbin/task-perl
+toast 88 170 c sbin/task-toast
+add 0 553 cn sbin/task-add
+a947 3
+    elif [ -x "sbin/get-$name" ]; then
+      dcmd="sbin/get-$name"
+      ln -s "../../../name/partition/install/time" "$ddir/precondition"
+d985 197
+@
+
+
+1.62
+log
+@adjusted some URLs and some build times (perhaps wrongly)
+@
+text
+@d699 287
+a985 287
+rootfs 17468 500 cn sbin/task-rootfs
+perl 9500 8856 c sbin/task-perl
+toast 88 20 c sbin/task-toast
+add 0 439 cn sbin/task-add
+wget 1312 870
+glibc 47620 129498 c sbin/toast build glibc
+binutils 11280 8098 c
+gcc 26832 13356 c sbin/toast --confappend="--enable-languages=c" arm gcc
+glibc 0 120678 c sbin/toast arm glibc && sbin/toast rebuild glibc
+binutils 0 8098 c sbin/toast rebuild binutils
+gcc 0 81472 c sbin/toast rebuild gcc
+make 920 856 c
+perl 0 11309 c
+toast 0 20 c
+gawk 1616 1295 c
+coreutils 3884 4179 c
+flex 664 776
+ncurses 2124 5170
+readline 960 776
+bash 2384 2917 c
+sed 772 889 c
+grep 568 823
+gzip 236 135
+tar 1076 1441 c
+remove 0 500 c sbin/toast remove rootfs
+openssl 2992 6567
+wget 0 1282 - sbin/toast rebuild wget
+diffutils 784 1765
+bzip2 672 258
+zlib 360 247
+util-linux 1348 1553
+module-init-tools 140 435
+gettext 6428 6012
+procps 292 564
+patch 204 447
+findutils 780 1152
+sysvinit 112 188
+sysklogd 116 117
+linux 33936 21349
+device-mapper 648 529
+LVM2 440 1788
+bin86 168 211
+nasm 556 658
+lilo 432 305
+e2fsprogs 3100 1971
+devfsd 56 117
+udev 360 258
+genext2fs 48 82
+toastinit 24 129
+toastlogin 24 27
+iana-etc 180 58
+zsh 2012 3240
+net-tools 220 411
+dhcpcd 168 411
+openssh 844 3187
+vim 3216 2151
+inetutils 1040 2759
+less 280 682
+parted 1412 2534
+groff 2380 3773
+man 220 247
+man-pages 1776 223
+texinfo 1868 1531
+cpio 204 317
+hdparm 56 105
+m4 332 317
+bison 816 1376
+autoconf 1228 435
+automake 856 376
+file 416 1023
+libtool 2612 1776
+kbd 888 447
+ed 204 258
+pkgconfig 500 1847
+tetex 11504 12030
+Python 7044 5970
+db 5808 6690 - LDFLAGS=-lpthread sbin/toast arm db # for postfix 2.1.5
+gdbm 244 988
+bind 4476 4415
+autofs 144 364
+curl 1124 3390
+figlet 192 94
+adns 232 623
+gc 756 1788
+genromfs 40 94
+gmp 1652 4680
+httpd 6788 5760
+libelf 140 648
+ltrace 128 252
+strace 432 1047
+minicom 616 1211
+bc 296 376
+miscfiles 2176 105
+mtools 280 1129
+mtr 112 317
+gnupg 2344 2647
+mutt 2572 1812
+nmap 1248 2772
+ntp 2476 2906
+ocaml 2024 4798
+pciutils 128 141
+postfix 1948 1882
+procmail 244 541
+vsftpd 164 188
+rcs 424 682
+samba 14856 11714
+smartmontools 192 35
+valgrind 964
+zip 16 258
+unzip 16 364
+popt 584 1106
+pcre 364 823
+subversion 6008 10440
+cdrtools 1624 3582
+libogg 300 777
+libvorbis 1212 2128
+lame 1248 2658
+jpeg 620 856
+libpng 392 882
+tiff 1068 889
+netpbm 2060 5102
+alsa-lib 576 3030
+alsa-utils 160 741
+alsa-tools 740
+libmng 500 1872
+syslinux 372
+units 224 211
+espgs 5304 6567
+cvs 2332 1872
+gale 396 2052 - LIBS=-ldl sbin/toast arm gale
+ExtUtils-Depends 16 94
+ExtUtils-PkgConfig 12 94
+libxml2 2740 5796
+libxslt 1748 2872
+OpenSP 1408 10779
+openjade 1056 7806
+docbook-xml 104 27
+docbook-xsl 1528 70
+XML-Parser 236 188
+XFree86 53032 66243
+doctools 1400 364
+fvwm 1368 4415
+lua 208 305
+ion 412 2162
+xscreensaver 4184 6420
+xdaliclock 204 435
+freetype 852 1847
+fam 336
+t1lib 1516
+xpdf 544 1976
+lesstif 3404 5760
+SDL 2552 4212
+xine-lib 6340
+xine-ui 2308
+cdparanoia 136
+glib 2120 2916
+libIDL 340 1529
+ORBit2 672 3924
+intltool 144 235
+libbonobo 1448 5688
+pango 952 2412
+atk 512 1706
+gtk+ 9408 12996
+mozilla 29072 83632
+GConf 1712 3300
+desktop-file-utils 344 929
+gnome-mime-data 660 658
+gnome-vfs 1840 12987
+audiofile 296 2523
+esound 332 1282
+libgnome 1160 2275
+libart_lgpl 280 1812
+libglade 324 1294
+libgnomecanvas 588 2590
+libbonoboui 968 7287
+hicolor-icon-theme 12 223
+gnome-icon-theme 2824 4235
+gnome-keyring 360 1670
+libgnomeui 1608
+startup-notification 244 1176
+gtk-engines 416 835
+gnome-themes 2680 6713
+scrollkeeper 556 2117
+gnome-desktop 1112 2421
+libwnck 404 2252
+libsoup 416 2173
+evolution-data-server 4924 16625
+gnome-panel 3152 6938
+gnome-session 872 2658
+vte 888
+gnome-terminal 2040
+libgtop 1032 2448
+gail 560 3168
+libxklavier 312
+gnome-applets 6280
+metacity 2140 3694
+librsvg 376 1800
+eel 624 4573
+nautilus 5668 13089
+libgtkhtml 428 4500
+yelp 644
+bug-buddy 716 939
+libgnomeprint 756 4471
+libgnomeprintui 588 2354
+gtksourceview 696 1903
+gedit 2444 4753
+eog 808 1682
+ggv 1272 3210
+gconf-editor 516 1517
+gnome-utils 1720 2173
+gstreamer 1376 7380
+gst-plugins 1980 13284
+gnome-media 3120 6871
+nautilus-media 432 2951
+gnome-netstatus 504 1531
+gcalctool 908 1941
+gpdf 1044
+gucharmap 1468 2309
+nautilus-cd-burner 524 2140
+zenity 732 917
+at-spi 516 5294
+libgail-gnome 160 1235
+gnome-speech 272 1423
+gnome-mag 324 1800
+gnopernicus 1788 6240
+gok 1220 4618
+epiphany 3324
+gnome-games 5812 8346
+file-roller 1368 2827
+gnome-system-tools 2676 3187
+gnome-nettool 516 1447
+vino 536 2230
+dbus 1240 2340
+hal 96
+gnome-volume-manager 200
+gal 1148 10734
+gtkhtml 1308
+evolution 14672
+evolution-webcal 156 741
+pwlib 1068
+gnomemeeting 2892
+libsigc++ 1404 2376
+glibmm 812 3276
+gtkmm 3864 40070
+libgnomemm 260 1541
+libgnomecanvasmm 328 4685
+libglademm 508 2725
+gconfmm 276 2038
+gnome-vfsmm 332 4393
+libgnomeuimm 332 6398
+libgtk-java 460
+libgconf-java 76
+libglade-java 92
+libgnome-java 176
+Glib 220 541
+Gtk2 560 4471
+Gnome2-Canvas 84 329
+Gnome2-VFS 64 423
+Gnome2-GConf 44 247
+Gnome2 100 1529
+Gtk2-GladeXML 48 141
+pygtk 636 2804
+qt-x11-free 14100 111641 - LD_LIBRARY_PATH=/toast/pkg/qt-x11-free/v3.3.3/1/src/qt-x11-free-3.3.3/lib sbin/toast arm qt-x11-free
+arts 968 11304
+kdelibs 15248 112793
+kdebase 19480 116970
+kde-i18n 190984 54254
+kdeaccessibility 1232 5136
+kdeadmin 1544 16682
+kdeartwork 17576 12312
+kdebindings 7032 94216
+kdeedu 21536 61419
+kdegames 9128 39278
+kdegraphics 6300 49754
+kdemultimedia 5268 66063
+kdenetwork 6836 66423
+kdepim 9808 124926
+kdesdk 4292
+kdetoys 2720 6120
+kdeutils 2180 32941
+kdevelop 7756 96629
+kdewebdev 4716 54470
+kdeaddons 1544 25957
+firefox 31692
+xmms 2384
+gimp
+gkrellm 656 1137
+d1564 10
+@
+
+
+1.61
+log
+@improvements for make chroot, mostly cosmetic
+@
+text
+@d672 3
+a674 3
+http://search.cpan.org/CPAN/authors/id/M/MS/MSERGEANT/XML-Parser-2.34.tar.gz
+http://search.cpan.org/CPAN/authors/id/T/TS/TSCH/ExtUtils-Depends-0.204.tar.gz
+http://search.cpan.org/CPAN/authors/id/T/TS/TSCH/ExtUtils-PkgConfig-1.06.tar.gz
+d700 1
+a700 1
+perl 9500 6938 c sbin/task-perl
+d704 1
+a704 1
+glibc 47620 70482 c sbin/toast build glibc
+d706 2
+a707 2
+gcc 26832 9799 c sbin/toast --confappend="--enable-languages=c" arm gcc
+glibc 0 76855 c sbin/toast arm glibc && sbin/toast rebuild glibc
+d709 1
+a709 1
+gcc 0 89584 c sbin/toast rebuild gcc
+d731 1
+a731 1
+gettext 6428 13990
+d734 1
+a734 1
+findutils 780 2421
+d737 1
+a737 1
+linux 33936 18304
+d750 1
+a750 1
+zsh 2012 4505
+d784 4
+a787 4
+gmp 1652 7975
+httpd 6788 9495
+libelf
+ltrace
+d796 1
+a796 1
+nmap 1248 4697
+d811 1
+a811 1
+subversion 6008 15736
+d823 1
+a823 1
+libmng 500
+d827 2
+a828 2
+cvs 2332
+gale 396 10000 - LIBS=-ldl sbin/toast arm gale
+d831 1
+a831 1
+libxml2 2740 7040
+d838 1
+a838 1
+XFree86 53032 89178
+d849 2
+a850 2
+lesstif 3404 8222
+SDL 2436 7411
+d854 1
+a854 1
+glib 2120 4922
+d856 1
+a856 1
+ORBit2 672 5620
+d859 1
+a859 1
+pango 952 4449
+d861 2
+a862 2
+gtk+ 9408 19870
+mozilla 29072 77137
+d890 2
+a891 2
+libgtop 1032 4359
+gail 560 5361
+d895 1
+a895 1
+librsvg 376 3131
+d898 1
+a898 1
+libgtkhtml
+d909 2
+a910 2
+gstreamer 1376 11027
+gst-plugins 1980 22291
+d931 1
+a931 1
+dbus 1240 3649
+d940 3
+a942 3
+libsigc++ 1404 4167
+glibmm 812 5136
+gtkmm 3864 52040
+d961 5
+a965 5
+qt-x11-free 14100 104903 - LD_LIBRARY_PATH=/toast/pkg/qt-x11-free/v3.3.3/1/src/qt-x11-free-3.3.3/lib sbin/toast arm qt-x11-free
+arts 968 15657
+kdelibs 15248 140205
+kdebase 19480 146930
+kde-i18n 190984 98392
+d968 8
+a975 8
+kdeartwork 17576 18867
+kdebindings 7032 75357
+kdeedu 21536 66789
+kdegames 9128 48019
+kdegraphics 6300 60466
+kdemultimedia 5268 89629
+kdenetwork 6836 81293
+kdepim 9808 154871
+d977 5
+a981 5
+kdetoys 2720 8155
+kdeutils 2180 39176
+kdevelop 7756 111707
+kdewebdev 4716 59035
+kdeaddons 1544 37104
+@
+
+
+1.60
+log
+@make chroot seems to work now
+@
+text
+@d11 1
+a11 1
+  sbin/setup
+d1029 17
+d1240 1
+a1240 1
+      ln -s "../$dir" "$link"
+a1324 6
+# solid block:     '\33(U\333\17'
+# left half block: '\33(U\335\17'
+# halftone block:  '\33(U\261\17'
+# up arrow:        '\33[3h\30\33[3l'
+# down arrow:      '\33[3h\31\33[3l'
+
+d1363 4
+a1366 5
+    bar="\33[0;${color_bar}m\33(U"
+    for i in `seq 1 $d`; do bar="${bar}\333"; done
+    [ -n "$h" ] && bar="${bar}\335"
+    for i in `seq 1 $b`; do bar="${bar} "; done
+    bar="$bar\17"
+d1481 1
+a1481 1
+        o="$o\33[0;${color_stats}m downloading \33[0;${color_getting}m `printf '%-29.29s%9s%9s%4.4s' $getting_name' \33[0;@@m' $lcur_hms $lmax_hms $percent | sed -e s/@@/$color_stats/'`% $bar\33[0;${color_stats}m"
+@
+
+
+1.59
+log
+@add make chroot
+@
+text
+@d14 1
+d397 3
+a399 1
+if [ -d dev ]; then
+d407 1
+a407 1
+  chmod 777 mnt/dev/null
+d514 2
+a515 2
+toast rename toast/latest "toast/$version"
+toast change "http://toastball.net/toast/toast-$version.tar.gz"
+d520 1
+a520 1
+sed 's/\#.*//' tmp/urls | grep . | while read x; do toast add $x; done
+d704 1
+a704 1
+glibc 47620 70482 c toast build glibc
+d706 4
+a709 4
+gcc 26832 9799 c toast --confappend="--enable-languages=c" arm gcc
+glibc 0 76855 c toast arm glibc && toast rebuild glibc
+binutils 0 8098 c toast rebuild binutils
+gcc 0 89584 c toast rebuild gcc
+d723 1
+a723 1
+remove 0 500 c toast remove rootfs
+d725 1
+a725 1
+wget 0 1282 - toast rebuild wget
+d775 1
+a775 1
+db 5808 6690 - LDFLAGS=-lpthread toast arm db # for postfix 2.1.5
+d828 1
+a828 1
+gale 396 10000 - LIBS=-ldl toast arm gale
+d961 1
+a961 1
+qt-x11-free 14100 104903 - LD_LIBRARY_PATH=/toast/pkg/qt-x11-free/v3.3.3/1/src/qt-x11-free-3.3.3/lib toast arm qt-x11-free
+d993 3
+a995 1
+PATH=sbin:/sbin:/bin:/usr/sbin:/usr/bin
+d1131 1
+a1131 1
+      dcmd="exec toast get $name"
+d1138 1
+a1138 1
+    [ -n "$icmd" ] || icmd="exec toast arm $name"
+@
+
+
+1.58
+log
+@move towards being able to precompile on an existing system; update db url
+@
+text
+@d7 1
+a7 1
+all:
+d10 3
+d14 3
+a16 1
+  rm -fr sbin tmp
+a27 6
+script respin << "---"
+#!/bin/sh -e
+dd if=/dev/zero of=/dev/sda bs=512 count=1
+reboot
+---
+
+d152 1
+a152 1
+# create/check block device nodes for all disks
+d391 1
+a391 1
+for i in boot etc/dhcpc etc/xml home media/floppy media/cdrom mnt proc root sys toast tmp usr/bin var/empty var/lock var/run var/log var/spool/mail; do
+d395 12
+a406 2
+tar -c -C / dev | tar -x -C mnt
+chmod go-w mnt/dev
+d409 3
+a411 1
+ln -s "../usr/share/zoneinfo/`cat /etc/TZ`" mnt/etc/localtime
+d696 4
+a699 4
+rootfs 17468 500 cn task-rootfs
+perl 9500 6938 c task-perl
+toast 88 20 c task-toast
+add 0 439 cn task-add
+d990 2
+d1055 2
+a1056 1
+    echo "mkdir mnt/boot mnt/lost+found" > tmp/partition
+d1122 2
+a1123 2
+    elif [ -x "/sbin/get-$name" ]; then
+      dcmd="get-$name"
+d1179 1
+a1179 1
+  echo -ne "\33[0m\33[$bottom;999H\33[1J\33[$top;${bottom}r\33[$top;1H"
+d1261 5
+d1328 1
+a1328 1
+  if [ -z "$1" -o -z "$2" -o "$2" -le 0 ]; then
+d1363 7
+a1369 5
+  for i in `seq 2 8`; do
+    dev="/dev/vcsa$i"
+    [ -c "$dev" ] || { let minor=128+$i; mknod "$dev" c 7 "$minor"; }
+  done
+  let ddcount="$statuslines*$COLUMNS"
+d1475 5
+a1479 3
+      for i in 2 3; do
+        dd if=/dev/vcsa1 of="/dev/vcsa$i" bs=2 count="$ddcount" skip=2 seek=2 2>/dev/null
+      done
+d1494 5
+a1498 3
+  for i in 2 3; do
+    dd if=/dev/zero of="/dev/vcsa$i" bs=2 count="$ddcount" seek=2 2>/dev/null
+  done
+d1512 1
+d1516 10
+a1525 4
+  openvt 2 "$0" install
+  openvt 3 "$0" download
+  openvt 4 "$0" shell
+  status
+d1530 1
+a1530 1
+  "") cd TOPDIR && start;;
+@
+
+
+1.57
+log
+@try to fix more stuff
+@
+text
+@d4 13
+a16 5
+  1.[1-9]*) ;;
+  *)
+    echo "This program is still too dumb to be installed directly, sorry." >&2
+    exit 1
+    ;;
+d19 2
+a20 2
+script() { cat > "/sbin/$1"; chmod +x "/sbin/$1"; }
+data() { cat > "/tmp/$1"; }
+a24 2
+echo "WARNING: Destroying all disk contents."
+timeout 10
+a54 23
+script timeout << "---"
+#!/bin/sh
+
+seconds="$1"
+if [ -z "$seconds" -o "$seconds" -le 0 ]; then
+  echo "usage: $0 <seconds>" >&2
+  exit 1
+fi
+
+exec < /dev/tty
+save="`stty -g`"
+key=""
+while [ "$seconds" -gt 0 -a -z "$key" ]; do
+  echo -ne '\r'"$seconds "
+  stty raw -echo time 10 min 0 || exit $?
+  key="`dd bs=1 count=1 2>/dev/null`"
+  stty "$save"
+  let seconds="$seconds - 1"
+done
+echo -ne '\r          \r'
+[ -z "$key" ]
+---
+
+d57 2
+a58 2
+target=/mnt
+if ! [ -r "$target/etc/toast.conf" ]; then
+d62 1
+a62 1
+  if [ -h "$target/lib/ld-uClibc.so.0" ]; then
+d67 1
+a67 1
+exec chroot "$target" /bin/toast "$@@"
+d320 3
+d324 1
+d329 2
+a330 3
+mount -t ext2 /dev/toast/root /mnt
+if [ "`cd /mnt; echo *`" != "lost+found" ]; then
+  echo "unexpected filesystem contents: /mnt" >&2
+d333 2
+a334 2
+mkdir -p /mnt/toast/pkg/rootfs/v0/archive
+cd /mnt/toast/pkg/rootfs/v0/archive
+d343 1
+a343 1
+adir=/mnt/toast/pkg/perl/v$version/archive
+d354 2
+a355 2
+mkdir -p /mnt/toast/pkg/toast/vlatest/archive
+cd /mnt/toast/pkg/toast/vlatest/archive
+d364 1
+a364 1
+dir="/mnt/toast/pkg/wget/v$version/archive"
+d373 1
+a373 1
+dir="/mnt/toast/pkg/glibc/v2.3.3/archive"
+d387 2
+a388 4
+target=/mnt
+
+if [ "`cd $target; echo *`" != "lost+found toast" ]; then
+  echo "unexpected filesystem contents: $target" >&2
+d393 1
+a393 1
+  mkdir -p "$target/$i"
+d395 10
+a404 10
+chmod 1777 "$target/tmp"
+tar -c -C / dev | tar -x -C "$target"
+chmod go-w "$target/dev"
+for i in bin lib sbin; do ln -sf "usr/$i" "$target/$i"; done
+cp /etc/resolv.conf "$target/etc/"
+ln -s "../usr/share/zoneinfo/`cat /etc/TZ`" "$target/etc/localtime"
+ln -s "../../usr/etc/xml/toast-xml-catalog" "$target/etc/xml/catalog"
+ln -s bash "$target/bin/sh"
+ln -s gcc "$target/bin/cc"
+echo "/lib" > "$target/etc/ld.so.conf"
+d406 1
+a406 1
+cat > "$target/etc/passwd" << 'EOF'
+d425 1
+a425 1
+cat > "$target/etc/group" << 'EOF'
+d458 5
+a462 5
+  echo "$i:x:$uid:$uid:$i:/home/$i:/bin/zsh" >> "$target/etc/passwd"
+  echo "$i:x:$uid:" >> "$target/etc/group"
+  [ -r "$target/etc/user" ] || echo $i > "$target/etc/user"
+  mkdir "$target/home/$i"
+  chown $uid.$uid "$target/home/$i"
+d466 9
+a474 11
+mount -t ext2 /dev/toast/boot "$target/boot"
+mount -t proc proc "$target/proc"
+mount -t sysfs sys "$target/sys"
+swapon /dev/toast/swap
+
+bunzip2 "$target/toast/pkg/rootfs/v0/archive"/*
+mount -t ext2 -o loop "$target/toast/pkg/rootfs/v0/archive"/* "$target/mnt"
+mkdir -p "$target/toast/pkg/rootfs/v0/1/root"
+tar -c -C "$target/mnt" . | tar -x -C "$target/toast/pkg/rootfs/v0/1/root"
+umount "$target/mnt"
+rm -fr "$target/toast/pkg/rootfs/v0/archive"
+d479 2
+a480 2
+bdir="/mnt/toast/pkg/rootfs/v0/1"
+ln "/mnt/toast/pkg/perl"/*/archive/* "$bdir/root/tmp/"
+d496 3
+a498 3
+tar xzf /mnt/toast/pkg/toast/vlatest/archive/toast.tar.gz -C "/mnt$rdir/tmp/"
+ln "/mnt$rdir/tmp"/toast-*/toast "/mnt$rdir/bin/"
+chroot /mnt "$rdir/usr/bin/perl" -x "$rdir/bin/toast" arm rootfs
+d506 1
+a506 1
+sed 's/\#.*//' /tmp/urls | grep . | while read x; do toast add $x; done
+a609 1
+ftp://sleepycat1.inetu.net/releases/db-4.3.21.tar.gz
+d676 1
+d684 1
+a684 1
+partition 0 0 cn sh -ex < /tmp/partition && rm /tmp/partition
+d987 1
+a987 1
+topdir="/tmp/setup"
+d1011 16
+d1041 6
+d1049 2
+a1050 2
+  /sbin/partition > /tmp/partition || return 1
+  grep '^# ' /tmp/partition
+d1110 1
+a1110 1
+      ln -s "$namedir/partition/install/time" "$ddir/precondition"
+d1113 1
+a1113 1
+      ln -s "$namedir/wget/install/time" "$ddir/precondition"
+d1115 1
+a1115 1
+    ln -s "/mnt/toast/pkg/$name" "$ddir/progress"
+d1126 1
+a1126 1
+      ln -s "$dir" "$namedir/$name"
+d1130 1
+a1130 1
+      ln -s "$dir" "$namedir/$name.$suffix"
+d1134 2
+a1135 2
+      ln -s "$prev" "$dir/prev"
+      ln -s "$dir" "$prev/next"
+d1137 2
+a1138 2
+    prev="$dir"
+  done < /tmp/tasks
+d1150 1
+a1150 1
+  ln -sf "$namedir/wget.2/install/time" "$namedir/cvs/download/precondition"
+d1204 1
+a1204 1
+      ln -s "$dir" "$link"
+a1486 1
+  echo "0" > /proc/sys/kernel/printk
+d1498 1
+a1498 1
+  "") start;;
+d1506 2
+d1510 1
+a1510 1
+for idir in /tmp/setup/num/*/install; do
+d1517 1
+a1517 1
+for dir in /tmp/setup/num/*; do
+@
+
+
+1.56
+log
+@try to fix a few things that aren't building
+@
+text
+@a669 1
+http://prdownloads.sourceforge.net/libmng/libmng-1.0.6.tar.gz
+d692 1
+d790 1
+d902 1
+d951 1
+a952 1
+gnome-vfsmm 332 4393
+d988 1
+a988 1
+gimp 64
+@
+
+
+1.55
+log
+@more build times
+@
+text
+@a600 1
+http://freedesktop.org/software/hal/releases/ # missing?
+d603 1
+a617 1
+ftp://ftp.figlet.org/pub/figlet/program/unix/figlet221.tar.gz
+d637 1
+d831 1
+a831 1
+gale 396
+@
+
+
+1.54
+log
+@fill in some build times
+@
+text
+@d676 2
+a677 2
+http://prdownloads.sourceforge.net/xine/xine-lib-1-rc7.tar.gz
+http://prdownloads.sourceforge.net/xine/xine-ui-0.99.2.tar.gz
+d704 1
+a704 1
+perl 9500 8000 c task-perl
+d706 1
+a706 1
+add 0 2000 cn task-add
+d708 8
+a715 8
+glibc 47620 73412 c toast build glibc
+binutils 11280 15000 c
+gcc 26832 10354 c toast --confappend="--enable-languages=c" arm gcc
+glibc 0 81307 c toast arm glibc && toast rebuild glibc
+binutils 0 15000 c toast rebuild binutils
+gcc 0 93592 c toast rebuild gcc
+make 920 1500 c
+perl 0 8000 c
+d717 2
+a718 2
+gawk 1616 2500 c
+coreutils 3884 8000 c
+d720 1
+a720 1
+ncurses 2124
+d722 2
+a723 2
+bash 2384 5000 c
+sed 772 1700 c
+d725 2
+a726 2
+gzip 236
+tar 1076 2800 c
+d728 1
+a728 1
+openssl 2992
+d735 1
+a735 1
+gettext 6428
+d738 1
+a738 1
+findutils 780
+d741 1
+a741 1
+linux 33936 19226
+d747 1
+a747 1
+e2fsprogs 3100
+d754 1
+a754 1
+zsh 2012
+d757 3
+a759 3
+openssh
+vim 3216
+inetutils 1040
+d761 2
+a762 2
+parted 1412
+groff 2380
+d765 1
+a765 1
+texinfo 1868 1835
+d777 3
+a779 3
+tetex 11504
+Python
+db 5808 10000 - LDFLAGS=-lpthread toast arm db # for postfix 2.1.5
+d781 1
+a781 1
+bind 4476
+d783 1
+a783 1
+curl 1124
+d788 2
+a789 2
+gmp
+httpd 6788
+d791 1
+a791 1
+strace 432
+d797 1
+a797 1
+gnupg 2344
+d799 3
+a801 3
+nmap 1248
+ntp 2476
+ocaml 2024
+d807 1
+a807 1
+samba 14856
+d814 6
+a819 6
+subversion 6008
+cdrtools 1624
+libogg 300
+libvorbis 1212
+lame 1248
+jpeg 620 1164
+d821 3
+a823 3
+tiff 1068 1176
+netpbm 2060
+alsa-lib 576
+d829 1
+a829 1
+espgs 5304
+d834 4
+a837 4
+libxml2 2740
+libxslt 1748
+OpenSP 1408
+openjade 1056
+d841 1
+a841 1
+XFree86 53032 87826
+d843 1
+a843 1
+fvwm
+d845 2
+a846 2
+ion 412
+xscreensaver 4184
+d852 2
+a853 2
+lesstif 3404
+SDL 2436
+d857 1
+a857 1
+glib 2120
+d859 1
+a859 1
+ORBit2 672
+d861 2
+a862 2
+libbonobo 1448
+pango 952
+d864 3
+a866 3
+gtk+ 9408 21227
+mozilla 29072 100000
+GConf 1712
+d869 2
+a870 2
+gnome-vfs 1840
+audiofile 296
+d872 1
+a872 1
+libgnome 1160
+d875 2
+a876 2
+libgnomecanvas 588
+libbonoboui 968
+d878 1
+a878 1
+gnome-icon-theme 2824
+d883 8
+a890 8
+gnome-themes 2680
+scrollkeeper 556
+gnome-desktop 1112
+libwnck 404
+libsoup 416
+evolution-data-server 4924
+gnome-panel 3152
+gnome-session 872
+d893 2
+a894 2
+libgtop 1032
+gail 560
+d897 4
+a900 4
+metacity 2140
+librsvg 376
+eel 624
+nautilus 5668
+d902 5
+a906 5
+bug-buddy 716
+libgnomeprint 756
+libgnomeprintui 588
+gtksourceview 696
+gedit 2444
+d908 1
+a908 1
+ggv 1272
+d910 6
+a915 6
+gnome-utils 1720
+gstreamer 1376
+gst-plugins 1980 23603
+gnome-media 3120
+nautilus-media 432
+gnome-netstatus 504 1835
+d918 2
+a919 2
+gucharmap 1468
+nautilus-cd-burner 524
+d921 1
+a921 1
+at-spi 516
+d925 2
+a926 2
+gnopernicus 1788
+gok 1220
+d928 3
+a930 3
+gnome-games 5812
+file-roller 1368
+gnome-system-tools 2676
+d932 2
+a933 2
+vino 536
+dbus 1240
+d936 1
+a936 1
+gal 1148
+d942 3
+a944 3
+libsigc++ 1404
+glibmm 812
+gtkmm 3864 60000
+d946 5
+a950 5
+libgnomecanvasmm 328
+libglademm 508
+gconfmm 276
+libgnomeuimm 332
+gnome-vfsmm 332
+d956 1
+a956 1
+Gtk2 560
+d962 16
+a977 16
+pygtk 636
+qt-x11-free 14100 109465 - LD_LIBRARY_PATH=/toast/pkg/qt-x11-free/v3.3.3/1/src/qt-x11-free-3.3.3/lib toast arm qt-x11-free
+arts 968
+kdelibs 15248 146742
+kdebase 19480 155000
+kde-i18n 184964
+kdeaccessibility 1232
+kdeadmin 1544 17767
+kdeartwork 17576 23000
+kdebindings 7032 100000
+kdeedu 21536 80000
+kdegames 9128 55000
+kdegraphics 6300 63446
+kdemultimedia 5268 106829
+kdenetwork 6836 93627
+kdepim 9808 163721
+d979 5
+a983 5
+kdetoys 2720
+kdeutils 2180 41124
+kdevelop 7756 118361
+kdewebdev 4716 63293
+kdeaddons 1544 38888
+d987 1
+a987 1
+gkrellm 656
+d1513 1
+d1521 1
+a1521 1
+    echo "$delta $name $actual"
+@
+
+
+1.53
+log
+@display elapsed and total estimated time for download/install tasks
+@
+text
+@d601 1
+a601 1
+http://freedesktop.org/software/hal/releases/
+d704 1
+a704 1
+perl 9500 20000 c task-perl
+d707 2
+a708 2
+wget 1312
+glibc 47620 150000 c toast build glibc
+d710 2
+a711 2
+gcc 26832 20000 c toast --confappend="--enable-languages=c" arm gcc
+glibc 0 100000 c toast arm glibc && toast rebuild glibc
+d713 1
+a713 1
+gcc 0 110000 c toast rebuild gcc
+d719 1
+a719 1
+flex 664
+d721 1
+a721 1
+readline 960
+d724 1
+a724 1
+grep 568
+d729 6
+a734 6
+wget 0 10000 - toast rebuild wget
+diffutils 784
+bzip2 672
+zlib 360
+util-linux 1348
+module-init-tools 140
+d736 2
+a737 2
+procps 292
+patch 204
+d739 8
+a746 8
+sysvinit 112
+sysklogd 116
+linux 33936
+device-mapper 648
+LVM2 440
+bin86 168
+nasm 556
+lilo 432
+d748 4
+a751 4
+devfsd 56
+udev 360
+genext2fs 48
+toastinit 24
+d753 1
+a753 1
+iana-etc 180
+d755 2
+a756 2
+net-tools 220
+dhcpcd 168
+d760 1
+a760 1
+less 280
+d763 14
+a776 14
+man 220
+man-pages 1776
+texinfo 1868
+cpio 204
+hdparm 56
+m4 332
+bison 816
+autoconf 1228
+automake 856
+file 416
+libtool 2612
+kbd 888
+ed 204
+pkgconfig 500
+d780 1
+a780 1
+gdbm 244
+d782 1
+a782 1
+autofs 144
+d784 3
+a786 3
+figlet 192
+adns 232
+gc 756
+d792 5
+a796 5
+minicom 616
+bc 296
+miscfiles 2176
+mtools 280
+mtr 112
+d798 1
+a798 1
+mutt 2572
+d802 5
+a806 5
+pciutils 128
+postfix 1948
+procmail 244
+vsftpd 164
+rcs 424
+d808 1
+a808 1
+smartmontools 192
+d810 4
+a813 4
+zip 16
+unzip 16
+popt 584
+pcre 364
+d819 3
+a821 3
+jpeg 620
+libpng 392
+tiff 1068
+d824 1
+a824 1
+alsa-utils 160
+d828 1
+a828 1
+units 224
+d830 1
+a830 1
+cvs
+d832 2
+a833 2
+ExtUtils-Depends
+ExtUtils-PkgConfig
+d839 4
+a842 4
+docbook-xsl 1528
+XML-Parser 236
+XFree86 53032 100000
+doctools 1400
+d844 1
+a844 1
+lua 208
+d847 2
+a848 2
+xdaliclock 204
+freetype 852
+d851 1
+a851 1
+xpdf 544
+d858 1
+a858 1
+libIDL 340
+d860 1
+a860 1
+intltool 144
+d863 2
+a864 2
+atk 512
+gtk+ 9408
+d867 2
+a868 2
+desktop-file-utils
+gnome-mime-data 660
+d871 1
+a871 1
+esound 332
+d873 2
+a874 2
+libart_lgpl 280
+libglade 324
+d877 1
+a877 1
+hicolor-icon-theme 12
+d879 1
+a879 1
+gnome-keyring 360
+d881 2
+a882 2
+startup-notification 244
+gtk-engines 416
+d907 1
+a907 1
+eog 808
+d909 1
+a909 1
+gconf-editor 516
+d912 1
+a912 1
+gst-plugins 1980
+d915 2
+a916 2
+gnome-netstatus 504
+gcalctool 908
+d920 1
+a920 1
+zenity 732
+d922 3
+a924 3
+libgail-gnome 160
+gnome-speech 272
+gnome-mag 324
+d931 1
+a931 1
+gnome-nettool 516
+d939 1
+a939 1
+evolution-webcal 156
+d945 1
+a945 1
+libgnomemm 260
+d955 1
+a955 1
+Glib 220
+d957 5
+a961 5
+Gnome2-Canvas 84
+Gnome2-VFS 64
+Gnome2-GConf 44
+Gnome2 100
+Gtk2-GladeXML 48
+d963 1
+a963 1
+qt-x11-free 14100 126000 - LD_LIBRARY_PATH=/toast/pkg/qt-x11-free/v3.3.3/1/src/qt-x11-free-3.3.3/lib toast arm qt-x11-free
+d965 2
+a966 2
+kdelibs 15248 170000
+kdebase 19480 180000
+d969 1
+a969 1
+kdeadmin 1544
+d974 4
+a977 4
+kdegraphics 6300
+kdemultimedia 5268
+kdenetwork 6836
+kdepim 9808
+d980 4
+a983 4
+kdeutils 2180
+kdevelop 7756
+kdewebdev 4716
+kdeaddons 1544
+@
+
+
+1.52
+log
+@muck with and reorder urls and download-related code
+@
+text
+@a856 1
+gtk-doc
+d1408 3
+a1410 1
+      if [ -n "$building_name" ]; then
+a1412 3
+          let start="`cat $numdir/$building_num/install/start`"
+          let left="$eta-$now"
+          let lcur="$now-$start"
+a1414 2
+          left=""
+          lcur="0"
+d1417 4
+a1420 3
+        hms left
+        bar "$lcur" "$lmax" 24
+        o="$o\33[0;${color_stats}m installing  \33[0;${color_building}m `printf '%-29.29s%9s left%4.4s' $building_name' \33[0;@@m' $left_hms $percent | sed -e s/@@/$color_stats/`% $bar\33[0;${color_stats}m"
+d1423 6
+a1428 1
+      if [ -n "$getting_name" ]; then
+d1431 3
+a1433 1
+          let left="$eta-$now"
+d1435 1
+a1435 1
+          left=""
+d1437 3
+a1439 5
+        hms left
+        current="`du -sL $numdir/$getting_num/download/progress 2>/dev/null | cut -f1`"
+        max="`cat $numdir/$getting_num/download/estimate`"
+        bar "$current" "$max" 24
+        o="$o\33[0;${color_stats}m downloading \33[0;${color_getting}m `printf '%-29.29s%9s left%4.4s' $getting_name' \33[0;@@m' $left_hms $percent | sed -e s/@@/$color_stats/'`% $bar\33[0;${color_stats}m"
+@
+
+
+1.51
+log
+@fix packages, fill in a few build times, add postmortem utility
+@
+text
+@d352 46
+a494 14
+script get-perl << "---"
+#!/bin/sh
+
+version=5.8.6
+url=http://www.cpan.org/src/5.0/perl-$version.tar.bz2
+adir=/mnt/toast/pkg/perl/v$version/archive
+
+set -e
+mkdir -p "$adir"
+cd "$adir"
+echo "$url" > ../url
+wget "$url"
+---
+
+a509 7
+script get-toast << "---"
+#!/bin/sh -ex
+mkdir -p /mnt/toast/pkg/toast/vlatest/archive
+cd /mnt/toast/pkg/toast/vlatest/archive
+wget http://toastball.net/toast/toast.tar.gz
+---
+
+d530 1
+a530 1
+glibc/2.3.3: [ http://ftp.gnu.org/gnu/glibc/glibc-2.3.3.tar.bz2 http://kernel.org/pub/linux/kernel/v2.6/linux-2.6.8.1.tar.bz2 http://toastball.net/toast-linux-tmp/glibc-2.3.3-gcc34-toast.patch ]
+a544 4
+http://toastball.net/toast/init/
+http://toastball.net/toast/login/
+http://www.phystech.com/ftp/dhcpcd-1.3.22-pl4.tar.gz
+http://www.sethwklein.net/projects/iana-etc/downloads/iana-etc-0.99.tar.bz2
+a545 2
+http://www.zsh.org/pub/
+http://ftp.gnu.org/gnu/tar/tar-1.14.tar.bz2
+d561 1
+d564 1
+d570 9
+a578 5
+http://download.sourceforge.net/e2fsprogs/e2fsprogs-1.35.tar.gz
+http://download.sourceforge.net/nasm/nasm-0.98.38.tar.bz2
+http://ftp.info-zip.org/pub/infozip/src/unzip551.tar.gz
+http://ftp.info-zip.org/pub/infozip/src/zip23.tar.gz
+http://kernel.org/pub/linux/utils/kernel/hotplug/
+d582 6
+a587 3
+http://download.sourceforge.net/sourceforge/lex/flex-2.5.27.tar.bz2 # flex 2.5.31 is broken and can't build XFree86 4.4.0, for instance
+http://download.sourceforge.net/freetype/freetype-2.1.5.tar.bz2 # 2.1.7 seems to cause include problems with xft 2.1.2
+[ http://download.sourceforge.net/openjade/OpenSP-1.5.1.tar.gz ftp://belfs.linux-phreak.net/belfs/blfs-patches/OpenSP-1.5.1-gcc34-2.patch ]
+a589 2
+http://ftp.gnome.org/pub/GNOME/platform/2.8/2.8.0/sources/
+http://ftp.gnome.org/pub/GNOME/desktop/2.8/2.8.0/sources/
+d594 2
+a616 1
+adns/1.1: [ ftp://ftp.chiark.greenend.org.uk/users/ian/adns/adns-1.1.tar.gz http://www.bytebot.net/rrjcode/adns-ppc.patch ]
+d621 1
+d629 1
+a636 11
+http://download.sourceforge.net/docbook/docbook-xsl-1.65.1.tar.gz
+http://download.sourceforge.net/espgs/espgs-7.07.1-source.tar.bz2
+http://download.sourceforge.net/lame/lame-3.96.tar.gz
+http://download.sourceforge.net/lesstif/lesstif-0.93.94.tar.bz2
+http://download.sourceforge.net/libmng/libmng-1.0.6.tar.gz
+http://download.sourceforge.net/netpbm/netpbm-10.19.tgz
+http://download.sourceforge.net/png-mng/libpng-1.2.5.tar.bz2
+http://download.sourceforge.net/romfs/genromfs-0.5.1.tar.gz
+http://download.sourceforge.net/strace/strace-4.5.8.tar.bz2
+http://download.sourceforge.net/xine/xine-lib-1-rc7.tar.gz
+http://download.sourceforge.net/xine/xine-ui-0.99.2.tar.gz
+d645 1
+a646 1
+http://ftp.gnu.org/gnu/gmp/
+a653 1
+http://openbsd.md5.com.ar/pub/OpenBSD/OpenSSH/portable/
+d665 13
+a691 1
+http://www.libpng.org/pub/png/src/zlib-1.2.1.tar.gz
+a694 1
+ftp://sleepycat1.inetu.net/releases/db-4.3.21.tar.gz
+d707 1
+d727 1
+d729 1
+a729 2
+wget 1312
+remove 0 500 c toast remove rootfs
+a826 1
+unison
+d829 1
+a829 1
+espgs
+a901 3
+gnome-control-center
+gtkhtml2
+gnome-doc-utils
+a903 1
+libgnomecups
+a911 1
+procman
+a929 1
+gnome-user-docs
+d934 2
+a935 2
+dbus
+hal
+d943 1
+a943 1
+libsigc++
+d983 1
+a983 1
+kdewebdev
+d1108 1
+a1108 1
+      ln -s "$namedir/add/install/time" "$ddir/precondition"
+d1120 7
+a1126 1
+    [ -d "$namedir/$name" ] || ln -s "$dir" "$namedir/$name"
+d1142 4
+@
+
+
+1.50
+log
+@tweak UI; upgrade packages; be less nice
+@
+text
+@d553 1
+a555 1
+[ http://download.sourceforge.net/ghostscript/ghostscript-8.14.tar.gz http://download.sourceforge.net/gs-fonts/ghostscript-fonts-std-8.11.tar.gz ] # what happened here? shouldn't fonts be 8.14 too?
+d561 1
+a561 1
+# Gnome 2.8.0, KDE 3.3.1:
+d568 1
+a568 1
+http://ibiblio.org/pub/mirrors/kde/stable/3.3.1/src/
+d571 3
+d609 1
+d617 2
+a618 2
+http://download.sourceforge.net/xine/xine-lib-1-rc3c.tar.gz
+http://download.sourceforge.net/xine/xine-ui-0.99.1.tar.gz
+d637 1
+a637 1
+http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/0.10/firefox-1.0PR-source.tar.bz2
+d639 1
+a639 1
+http://ftp.silug.org/mirrors/ftp.trolltech.com/qt/source/qt-x11-free-3.3.1.tar.bz2
+d649 2
+d682 1
+a682 1
+glibc 0 150000 c toast arm glibc && toast rebuild glibc
+d684 1
+a684 1
+gcc 0 150000 c toast rebuild gcc
+d686 1
+a686 1
+perl 0 20000 c
+d720 1
+d723 1
+a723 1
+toastlogin 24
+d758 1
+a758 1
+genromfs 40
+d801 1
+a801 1
+ghostscript 10556
+d804 2
+d810 1
+a810 1
+docbook-xml 104
+d813 1
+a813 1
+XFree86 53032
+d838 1
+a838 1
+mozilla 29072
+d913 1
+a913 1
+hal 96
+d923 1
+a923 1
+gtkmm 3864
+d927 1
+a935 1
+Gnome2 100
+a936 1
+Gtk2-GladeXML 48
+d939 2
+d942 1
+a942 1
+qt-x11-free 14100
+d944 2
+a945 2
+kdelibs 15248
+kdebase 19480
+d949 4
+a952 4
+kdeartwork 17576
+kdebindings 7032
+kdeedu 21536
+kdegames 9128
+d961 1
+a961 1
+quanta
+d1463 27
+@
+
+
+1.49
+log
+@rework things to split up early tasks; cosmetic improvements
+@
+text
+@d76 2
+a77 1
+  [ -z "$TOAST_ARMDIR" ] && export TOAST_ARMDIR=/usr
+d79 4
+a82 1
+  [ -h "$target/lib/ld-uClibc.so.0" ] && export TOAST_PRELOAD=false TOAST_POSTARMPROG=true
+a521 1
+http://www.cpan.org/src/5.0/perl-5.8.5.tar.gz
+d580 2
+d639 1
+a639 1
+http://kernel.org/pub/linux/utils/boot/syslinux/syslinux-2.08.tar.bz2
+d642 1
+a642 1
+ftp://ftp.porcupine.org/mirrors/postfix-release/official/postfix-2.1.5.tar.gz
+d657 1
+a657 1
+http://www.libsdl.org/release/SDL-1.2.7.tar.gz
+d743 1
+a743 1
+db 5808
+d910 1
+a1199 2
+  echo -ne '\33]P3908000' # 3 is usually brown; make it yellower
+
+d1262 1
+a1262 1
+  if [ -z "$1" -o -z "$2" ]; then
+d1339 1
+a1339 1
+    for i in done broken stored missing pending; do
+@
+
+
+1.48
+log
+@fixed some package URLs, new colors, stop updating when done
+@
+text
+@d78 1
+a78 1
+  ls "$target/lib/ld-uClibc.so.0" >/dev/null 2>&1 && export TOAST_PRELOAD=false
+a85 14
+if [ "$*" != "foo" ]; then
+  set -e
+  echo ""
+  echo "Examining disks:"
+  $0 foo > /tmp/partition.tmp
+  grep '^# ' /tmp/partition.tmp
+  echo "Preparing to write new disk partitions as described above."
+  echo "Press any key to abort."
+  timeout 20
+  sh -ex /tmp/partition.tmp
+  rm /tmp/partition.tmp
+  exit 0
+fi
+
+d336 1
+a336 1
+script get-setup << "---"
+a337 1
+ln -s /mnt/tmp/dl /tmp/setup/name/setup/download/progress
+d343 2
+a344 2
+mkdir -p /mnt/tmp/dl
+cd /mnt/tmp/dl
+a345 1
+wget http://www.cpan.org/src/5.0/stable.tar.gz
+d348 1
+a348 1
+script task-setup << "---"
+a351 2
+vgname="toast"
+vgpath="/dev/$vgname"
+d353 1
+a353 1
+if [ "`cd $target; echo *`" != "lost+found tmp" ]; then
+d432 1
+a432 1
+mount -t ext2 "$vgpath/boot" "$target/boot"
+d435 1
+a435 1
+swapon "$vgpath/swap"
+d437 10
+a446 15
+tmpdir="$target/tmp"
+mntpt="$target/mnt"
+relrootdir="/toast/pkg/setup/v0/1/root"
+rootdir="$target$relrootdir"
+
+cd "$tmpdir"
+mv dl/* .
+rmdir dl
+bunzip2 root*.bz2
+mount -t ext2 -o loop "$tmpdir"/root* "$mntpt"
+mkdir -p "$rootdir"
+tar -c -C "$mntpt" . | tar -x -C "$rootdir"
+umount "$mntpt"
+rm -f "$tmpdir"/root*
+mv "$tmpdir"/* "$rootdir/tmp/"
+d448 16
+a463 1
+chroot "$rootdir" sh -ex << "EOF" | tee "$rootdir/../build.log"
+d465 2
+a466 2
+mv /usr/lib/*.so .
+tar xzf stable.tar.gz
+d470 1
+a470 4
+mv /usr/bin/cc /tmp
+cd /bin
+wget http://toastball.net/toast/toast
+chmod +x toast
+d472 1
+d474 18
+a491 1
+chroot "$target" "$relrootdir/usr/bin/perl" -x "$relrootdir/bin/toast" --armdir=/usr arm setup
+d493 2
+a661 28
+script task-glibc << "---"
+#!/bin/sh -ex
+# Don't arm glibc until the compiler is prepared to use it ("rebuild" task):
+toast build glibc
+---
+
+script task-gcc << "---"
+#!/bin/sh -ex
+# To save time, leave C++, Java, and other compilers for the "rebuild" task:
+toast --confappend=--enable-languages=c arm gcc
+---
+
+script task-rebuild << "---"
+#!/bin/sh -ex
+# Rebuild everything we've built so far to link with glibc instead of uClibc:
+toast arm glibc
+toast rebuild glibc binutils gcc
+---
+
+script task-remove << "---"
+#!/bin/sh -ex
+# We should no longer need the temporary uClibc build environment:
+toast remove setup
+# XXX ldconfig removes libgcc_s.so.1.off, I think, but g++ needs it later:
+toast disarm gcc
+toast arm gcc
+---
+
+d663 16
+a678 10
+setup 29124 1 c
+glibc 47620 1 c
+binutils 11280 1 c
+gcc 26832 1 c
+rebuild 0 1 c
+make 920 1 c
+perl 11684 1 c
+toast 88 1 c
+gawk 1616 1 c
+coreutils 3884 1 c
+d682 2
+a683 2
+bash 2384 1 c
+sed 772 1 c
+d686 1
+a686 1
+tar 1076 1 c
+d689 1
+a689 1
+remove 0 1 c
+d959 1
+a959 1
+# eb = estimated build time (on some reference machine)
+d962 1
+d978 4
+a981 4
+color_pending="30;43"
+color_getting="30;47"
+color_missing="30;41"
+color_stored="1;43"
+d983 1
+a983 1
+color_broken="1;41"
+d1002 10
+d1024 1
+a1024 2
+  echo "Preparing to install; please wait..."
+
+d1026 2
+d1029 1
+a1029 1
+  mkdir -p "$namedir" "$numdir"
+d1033 15
+a1047 2
+  while read name size time flags junk; do
+    dir="$namedir/$name"
+d1050 1
+d1052 1
+a1052 1
+
+d1054 4
+a1057 2
+    [ -n "$size" ] && echo "$size" > "$ddir/estimate"
+    [ -n "$time" ] && echo "$time" > "$idir/estimate"
+d1059 2
+a1061 1
+    dcmd="$ddir/command"
+d1063 1
+a1063 1
+      ln -s "/bin/true" "$dcmd"
+d1066 2
+a1067 2
+      ln -s "/sbin/get-$name" "$dcmd"
+      : > "$ddir/precondition"
+d1069 2
+a1070 12
+      echo -e "#!/bin/sh\12exec toast get $name" > "$dcmd"
+      chmod +x "$dcmd"
+      ln -s "$namedir/setup/install/time" "$ddir/precondition"
+      ln -s "/mnt/toast/pkg/$name" "$ddir/progress"
+    fi
+
+    icmd="$idir/command"
+    if [ -x "/sbin/task-$name" ]; then
+      ln -s "/sbin/task-$name" "$icmd"
+    else
+      echo -e "#!/bin/sh\12toast arm $name" > "$icmd"
+      chmod +x "$icmd"
+d1072 7
+d1082 1
+a1082 8
+    let i="$i+1"
+    ln -s "$dir" "$numdir/`printf '%08d' $i`"
+
+    line="$line $name "
+    if echo "$line" | egrep -q "..{$COLUMNS}"; then
+      : > "$dir/newline"
+      line=" $name "
+    fi
+d1091 2
+a1092 20
+  for i in download install; do
+    total=0
+    count=0
+    for dir in $namedir/*; do
+      estimate="`cat $dir/$i/estimate 2>/dev/null`"
+      if [ -n "$estimate" -a "$estimate" -gt 0 ]; then
+        let total="$total+$estimate"
+        let count="$count+1"
+      fi
+    done
+    if [ "$count" -gt "0" ]; then
+      let average="$total/$count"
+    else
+      average="0"
+    fi
+    for dir in $namedir/*; do
+      file="$dir/$i/estimate"
+      [ -r "$file" ] || echo "$average" > "$file"
+    done;
+  done
+d1096 1
+d1164 4
+a1167 2
+        let done_estimated="$done_estimated+$estimate"
+        let done_actual="$done_actual+$elapsed"
+d1299 1
+a1299 1
+  let total="`ls $namedir | wc -l`"
+a1300 1
+  for i in `seq 1 "$LINES"`; do echo; done
+d1309 4
+a1312 2
+    getting_name="`cat $topdir/current-download/name 2>/dev/null`"
+    building_name="`cat $topdir/current-install/name 2>/dev/null`"
+d1324 4
+a1327 4
+    let storecount="`ls $namedir/*/download/time 2>/dev/null | wc -l`"
+    let buildcount="`ls $namedir/*/install/time 2>/dev/null | wc -l`"
+    let missing="`ls $namedir/*/download/failed 2>/dev/null | wc -l`"
+    let broken="`ls $namedir/*/install/failed 2>/dev/null | wc -l`"
+d1364 1
+a1364 1
+        eta="`cat $namedir/$building_name/install/eta 2>/dev/null`"
+d1366 1
+a1366 1
+          let start="`cat $namedir/$building_name/install/start`"
+d1381 1
+a1381 1
+        eta="`cat $namedir/$getting_name/download/eta 2>/dev/null`"
+d1388 2
+a1389 2
+        current="`du -sL $namedir/$getting_name/download/progress 2>/dev/null | cut -f1`"
+        max="`cat $namedir/$getting_name/download/estimate`"
+@
+
+
+1.47
+log
+@patch OpenSP for gcc 3.4
+@
+text
+@d385 1
+d539 2
+a540 4
+
+# ftp.info-zip.org seems to be down today (8/31/04):
+ftp://ftp.icce.rug.nl/infozip/src/unzip542.tar.gz
+ftp://ftp.icce.rug.nl/infozip/src/zip23.tar.gz
+d559 2
+a560 2
+http://freedesktop.org/Software/icon-theme/releases/hicolor-icon-theme-0.5.tar.gz
+http://freedesktop.org/Software/shared-mime-info/shared-mime-info-0.14.tar.gz
+a569 1
+ftp://ftp.astron.com/pub/file/file-4.07.tar.gz
+a577 1
+ftp://ftp.gw.com/mirrors/pub/unix/file/file-4.09.tar.gz
+d601 1
+d610 1
+d618 1
+d744 1
+a744 1
+file 24
+d811 1
+d849 1
+d987 2
+a988 2
+color_stats="30;43"
+color_bar="1;35;45"
+d990 4
+a993 4
+color_pending="44"
+color_getting="40"
+color_missing="41"
+color_stored="1;44"
+d1203 1
+a1203 1
+  echo -ne '\33]P3ccb800' # 3 is usually brown; make it yellower
+d1222 1
+a1222 1
+  run download "$color_pending" "$color_missing" "$color_storing" "$color_stored" "$color_missing"
+d1415 4
+@
+
+
+1.46
+log
+@no fake data remains on the status display
+@
+text
+@d548 1
+a598 1
+http://download.sourceforge.net/openjade/OpenSP-1.5.1.tar.gz
+@
+
+
+1.45
+log
+@tweak a few things
+@
+text
+@d352 1
+d358 2
+a359 2
+mkdir -p /mnt/tmp
+cd /mnt/tmp
+d460 2
+d1153 1
+a1153 2
+      refresh "$dir" "$color_working" "$color_pre"
+      ln -s "$dir" "$link"
+a1154 1
+      start="`date +'%s'`"
+d1156 6
+d1246 16
+d1265 1
+a1265 1
+  if [ -z "$2" ]; then
+d1267 1
+d1269 1
+d1312 1
+a1312 1
+  start="`date +'%s'`"
+d1323 1
+a1323 1
+      eta=""
+d1325 1
+a1325 1
+      eta="$store_eta"
+d1327 1
+a1327 1
+      eta="$build_eta"
+d1352 3
+a1354 2
+      let elapsed="$now-$start"
+      if [ -z "$eta" ]; then
+a1356 1
+        total_percent="0"
+d1358 1
+a1358 1
+        let remain="$eta-$now"
+a1360 1
+        let total_percent="$elapsed*100/$totaltime"
+d1362 3
+a1364 13
+
+      for i in elapsed remain totaltime; do
+        eval "n=\"\$$i\""
+        if [ -z "$n" ]; then
+          hms="?:??:??"
+        else
+          let h="$n/3600"
+          let m="$n/60%60"
+          let s="$n%60"
+          hms="`printf '%d:%02d:%02d' $h $m $s`"
+        fi
+        eval "${i}_hms=\"\$hms\""
+      done
+a1367 1
+      bar 1 3 24 # XXX
+d1370 14
+a1383 1
+        o="$o\33[0;${color_stats}m installing  \33[0;${color_building}m `printf '%-29.29s%9s left%4.4s' $building_name' \33[0;@@m' 1:23:45 23 | sed -e s/@@/$color_stats/`% $bar\33[0;${color_stats}m"
+d1387 7
+a1395 2
+        [ -n "$current" ] || current="0"
+        let percent="$current*100/$max"
+d1397 1
+a1397 1
+        o="$o\33[0;${color_stats}m downloading \33[0;${color_getting}m `printf '%-29.29s%9s left%4.4s' $getting_name' \33[0;@@m' 1:23:45 $percent | sed -e s/@@/$color_stats/'`% $bar\33[0;${color_stats}m"
+a1400 2
+      o="$o\33[0;${color_stats}m $totaltime_hms estimated total time; $elapsed_hms elapsed; $remain_hms left; $total_percent% complete\33[K\12"
+
+d1402 1
+a1402 1
+      o="$o$bar\12\33[0m"
+@
+
+
+1.44
+log
+@show download progress
+@
+text
+@d1320 1
+a1320 1
+    o="$o\33[0;${color_stats}m\33[K\12\12\12\12\12"
+d1361 1
+a1361 1
+        current="`{ du -sL $namedir/$getting_name/download/progress 2>/dev/null || echo 0; } | cut -f1`"
+d1363 1
+d1381 3
+a1383 5
+      if [ "$ufile" -nt "$efile" ]; then
+        sleep 3
+      else
+        break
+      fi
+d1399 1
+d1401 1
+a1401 1
+  trap - sigint
+@
+
+
+1.43
+log
+@converging on a look for the installer; fixed qt problem
+@
+text
+@d679 4
+a682 4
+setup 1 1 c
+glibc 1 1 c
+binutils 1 1 c
+gcc 1 1 c
+d684 15
+a698 15
+make 1 1 c
+perl 1 1 c
+toast 1 1 c
+gawk 1 1 c
+coreutils 1 1 c
+flex 1 1
+ncurses 1 1
+readline 1 1
+bash 1 1 c
+sed 1 1 c
+grep 1 1
+gzip 1 1
+tar 1 1 c
+openssl 1 1
+wget 1 1
+d700 259
+a958 259
+diffutils 1 1
+bzip2 1 1
+zlib 1 1
+util-linux 1 1
+module-init-tools 1 1
+gettext 1 1
+procps 1 1
+patch 1 1
+findutils 1 1
+sysvinit 1 1
+sysklogd 1 1
+linux 1 1
+device-mapper 1 1
+lvm2 1 1
+bin86 1 1
+nasm 1 1
+lilo 1 1
+e2fsprogs 1 1
+devfsd 1 1
+genext2fs 1 1
+toastinit 1 1
+toastlogin 1 1
+iana-etc 1 1
+zsh 1 1
+net-tools 1 1
+dhcpcd 1 1
+openssh 1 1
+vim 1 1
+inetutils 1 1
+less 1 1
+parted 1 1
+groff 1 1
+man 1 1
+man-pages 1 1
+texinfo 1 1
+cpio 1 1
+hdparm 1 1
+m4 1 1
+bison 1 1
+autoconf 1 1
+automake 1 1
+file 1 1
+libtool 1 1
+kbd 1 1
+ed 1 1
+pkgconfig 1 1
+tetex 1 1
+python 1 1
+db 1 1
+gdbm 1 1
+bind 1 1
+autofs 1 1
+curl 1 1
+figlet 1 1
+adns 1 1
+gc 1 1
+genromfs 1 1
+gmp 1 1
+httpd 1 1
+ltrace 1 1
+strace 1 1
+minicom 1 1
+bc 1 1
+miscfiles 1 1
+mtools 1 1
+mtr 1 1
+gnupg 1 1
+mutt 1 1
+nmap 1 1
+ntp 1 1
+ocaml 1 1
+pciutils 1 1
+postfix 1 1
+procmail 1 1
+vsftpd 1 1
+rcs 1 1
+samba 1 1
+smartmontools 1 1
+valgrind 1 1
+zip 1 1
+unzip 1 1
+popt 1 1
+pcre 1 1
+subversion 1 1
+cdrtools 1 1
+libogg 1 1
+libvorbis 1 1
+lame 1 1
+jpeg 1 1
+libpng 1 1
+tiff 1 1
+netpbm 1 1
+alsa-lib 1 1
+alsa-utils 1 1
+alsa-tools 1 1
+libmng 1 1
+unison 1 1
+syslinux 1 1
+units 1 1
+ghostscript 1 1
+cvs 1 1
+gale 1 1
+libxml2 1 1
+libxslt 1 1
+OpenSP 1 1
+openjade 1 1
+docbook-xml 1 1
+docbook-xsl 1 1
+XFree86 1 1
+doctools 1 1
+fvwm 1 1
+lua 1 1
+ion 1 1
+xscreensaver 1 1
+xdaliclock 1 1
+freetype 1 1
+fam 1 1
+t1lib 1 1
+xpdf 1 1
+lesstif 1 1
+sdl 1 1
+xine-lib 1 1
+xine-ui 1 1
+cdparanoia 1 1
+gtk-doc 1 1
+glib 1 1
+libIDL 1 1
+ORBit2 1 1
+intltool 1 1
+libbonobo 1 1
+pango 1 1
+atk 1 1
+gtk+ 1 1
+mozilla 1 1
+gconf 1 1
+desktop-file-utils 1 1
+gnome-mime-data 1 1
+gnome-vfs 1 1
+audiofile 1 1
+esound 1 1
+libgnome 1 1
+libart_lgpl 1 1
+libglade 1 1
+libgnomecanvas 1 1
+libbonoboui 1 1
+gnome-icon-theme 1 1
+gnome-keyring 1 1
+libgnomeui 1 1
+startup-notification 1 1
+gtk-engines 1 1
+gnome-themes 1 1
+scrollkeeper 1 1
+gnome-desktop 1 1
+libwnck 1 1
+libsoup 1 1
+evolution-data-server 1 1
+gnome-panel 1 1
+gnome-session 1 1
+vte 1 1
+gnome-terminal 1 1
+libgtop 1 1
+gail 1 1
+libxklavier 1 1
+gnome-applets 1 1
+metacity 1 1
+librsvg 1 1
+eel 1 1
+nautilus 1 1
+gnome-control-center 1 1
+gtkhtml2 1 1
+gnome-doc-utils 1 1
+yelp 1 1
+bug-buddy 1 1
+libgnomecups 1 1
+libgnomeprint 1 1
+libgnomeprintui 1 1
+gtksourceview 1 1
+gedit 1 1
+eog 1 1
+ggv 1 1
+gconf-editor 1 1
+gnome-utils 1 1
+procman 1 1
+gstreamer 1 1
+gst-plugins 1 1
+gnome-media 1 1
+nautilus-media 1 1
+gnome-netstatus 1 1
+gcalctool 1 1
+gpdf 1 1
+gucharmap 1 1
+nautilus-cd-burner 1 1
+zenity 1 1
+at-spi 1 1
+libgail-gnome 1 1
+gnome-speech 1 1
+gnome-mag 1 1
+gnopernicus 1 1
+gok 1 1
+epiphany 1 1
+gnome-games 1 1
+gnome-user-docs 1 1
+file-roller 1 1
+gnome-system-tools 1 1
+gnome-nettool 1 1
+vino 1 1
+dbus 1 1
+hal 1 1
+gnome-volume-manager 1 1
+gal 1 1
+gtkhtml 1 1
+evolution 1 1
+evolution-webcal 1 1
+gnomemeeting 1 1
+libsigc++ 1 1
+glibmm 1 1
+gtkmm 1 1
+libgnomemm 1 1
+libgnomecanvasmm 1 1
+libglademm 1 1
+libgnomeuimm 1 1
+gnome-vfsmm 1 1
+libgtk-java 1 1
+libgconf-java 1 1
+libglade-java 1 1
+libgnome-java 1 1
+Glib 1 1
+Gtk2 1 1
+Gnome2 1 1
+Gnome2-Canvas 1 1
+Gtk2-GladeXML 1 1
+Gnome2-VFS 1 1
+Gnome2-GConf 1 1
+pygtk 1 1
+qt-x11-free 1 1
+arts 1 1
+kdelibs 1 1
+kdebase 1 1
+kde-i18n 1 1
+kdeaccessibility 1 1
+kdeadmin 1 1
+kdeartwork 1 1
+kdebindings 1 1
+kdeedu 1 1
+kdegames 1 1
+kdegraphics 1 1
+kdemultimedia 1 1
+kdenetwork 1 1
+kdepim 1 1
+kdesdk 1 1
+kdetoys 1 1
+kdeutils 1 1
+kdevelop 1 1
+quanta 1 1
+kdeaddons 1 1
+firefox 1 1
+xmms 1 1
+gimp 1 1
+gkrellm 1 1
+a1029 3
+    [ -z "$size" ] && size="0"
+    [ -z "$time" ] && time="0"
+
+d1036 2
+a1037 2
+    echo "$size" > "$ddir/estimate"
+    echo "$time" > "$idir/estimate"
+d1051 1
+d1080 21
+d1285 1
+d1315 9
+a1323 12
+    let now="`date +%s`"
+    let elapsed="$now-$start"
+    if [ -z "$eta" ]; then
+      remain=""
+      totaltime=""
+      percent="0"
+    else
+      let remain="$eta-$now"
+      [ "$remain" -lt 1 ] && remain="1"
+      let totaltime="$elapsed+$remain"
+      let percent="$elapsed*100/$totaltime"
+    fi
+d1325 7
+a1331 4
+    for i in elapsed remain totaltime; do
+      eval "n=\"\$$i\""
+      if [ -z "$n" ]; then
+        hms="?:??:??"
+d1333 4
+a1336 4
+        let h="$n/3600"
+        let m="$n/60%60"
+        let s="$n%60"
+        hms="`printf '%d:%02d:%02d' $h $m $s`"
+a1337 2
+      eval "${i}_hms=\"\$hms\""
+    done
+d1339 29
+a1367 1
+    o="\33[H"
+d1369 1
+a1369 6
+    o="$o\33[0;${color_stats}m `printf '%-12s' \"$total tasks:\"`"
+    for i in done broken stored missing pending; do
+      eval "color=\"\$color_$i\"; n=\"\$$i\""
+      [ "$n" = "0" ] || o="$o\33[0;${color}m $n $i "
+    done
+    o="$o\33[0;${color_stats}m\33[K\12"
+d1371 2
+a1372 10
+    bar 1 3 20 # XXX
+    o="$o\33[0;${color_stats}m"
+    if [ -n "$building_name" ]; then
+      o="$o\33[0;${color_stats}m installing  \33[0;${color_building}m `printf '%-33s%9s left %3s' $building_name' \33[0;@@m' 1:23:45 23 | sed -e s/@@/$color_stats/`% $bar\33[0;${color_stats}m"
+    fi
+    o="$o\33[K\12"
+    if [ -n "$getting_name" ]; then
+      o="$o\33[0;${color_stats}m downloading \33[0;${color_getting}m `printf '%-33s%9s left %3s' $getting_name' \33[0;@@m' 1:23:45 23 | sed -e s/@@/$color_stats/'`% $bar\33[0;${color_stats}m"
+    fi
+    o="$o\33[K\12"
+d1374 1
+a1374 1
+    o="$o\33[0;${color_stats}m $totaltime_hms estimated total time; $elapsed_hms elapsed; $remain_hms left; $percent% complete\33[K\12"
+d1376 3
+a1378 2
+    bar "$elapsed" "$totaltime" "$COLUMNS"
+    o="$o$bar\12"
+d1380 5
+a1384 6
+    echo -ne "$o"
+    cat $numdir/*/display
+    echo -ne '\33[0m'
+
+    for i in 2 3; do
+      dd if=/dev/vcsa1 of="/dev/vcsa$i" bs=2 count="$ddcount" skip=2 seek=2 2>/dev/null
+a1385 2
+
+    while [ "$ufile" -nt "$efile" ]; do sleep 1; done
+@
+
+
+1.42
+log
+@more cosmetic stuff
+@
+text
+@d934 1
+a934 1
+qt 1 1
+d982 2
+a983 2
+color_stats="30;46"
+color_bar="1;33;43"
+d1175 1
+a1175 2
+  echo -ne '\33]P3908000' # 3 is normally brown; make it dark yellow
+  echo -ne '\33]P6d8d000' # 6 is normally dark cyan; make it medium yellow
+d1323 1
+a1323 1
+    o="$o\33[0;${color_stats}m $total tasks: "
+d1333 1
+a1333 1
+      o="$o installing $building_name: xxx:xx:xx left xx% $bar\33[0;${color_stats}m"
+d1337 1
+a1337 1
+      o="$o downloading $getting_name: xxx:xx:xx left xx% $bar\33[0;${color_stats}m"
+d1348 1
+d1367 6
+d1378 3
+a1380 2
+  openvt 2 "$0" download
+  openvt 3 "$0" install
+d1386 1
+a1386 1
+  download|install|shell) "$1";;
+@
+
+
+1.41
+log
+@consolidated installer code somewhat
+@
+text
+@d980 4
+a983 1
+statuslines="6"
+d993 16
+d1021 4
+d1070 1
+a1070 1
+    if echo "$line" | egrep -q ".{$COLUMNS}"; then
+a1086 18
+resize()
+{
+  save="`stty -g`"
+  stty raw -echo time 1 min 0
+  echo -ne '\33[s\33[255;255H\33[6n\33[u'
+  eval "`dd bs=1 count=128 2>/dev/null | sed -ne 's/.*\[\([0-9]\+\);\([0-9]\+\)R.*/LINES=\1;COLUMNS=\2;/p'`"
+  stty "$save"
+  [ -z "$LINES" ] && LINES=50
+  [ -z "$COLUMNS" ] && COLUMNS=80
+  export LINES COLUMNS
+}
+
+setscroll()
+{
+  let LINES="$LINES-$statuslines"
+  echo -ne "\33[2J\33[1;${LINES}r"
+}
+
+d1097 4
+a1102 2
+  setscroll
+
+d1129 1
+a1140 1
+      let remaining_estimated="$remaining_estimated-$estimate"
+d1151 1
+d1153 5
+a1157 7
+      if [ "$done_estimated" -gt "0" ]; then
+        let eta="$end+($remaining_estimated*$done_actual/$done_estimated)"
+        echo "$eta" > "$topdir/$act-eta.tmp"
+        mv "$topdir/$act-eta.tmp" "$topdir/$act-eta"
+      fi
+      [ -n "$failed" -a -r "$dir/critical" ] && : > "$ffile"
+      : > "$efile"
+d1159 2
+d1173 19
+d1194 1
+d1200 1
+d1208 2
+a1211 2
+    stty "$save"
+    echo -ne '\33c'
+d1215 6
+d1223 1
+d1227 2
+a1228 2
+    let a="$1*$3/$2"
+    [ "$a" -gt "$3" ] && a="$3"
+d1230 1
+a1230 2
+  let b="$3-$a"
+  eval "bar=\"\$barcache_${a}_$b\""
+d1232 9
+d1242 3
+a1244 2
+    for i in `seq 1 $a`; do bar="${bar}\333"; done
+    for i in `seq 1 $b`; do bar="${bar}\261"; done
+d1246 1
+a1246 1
+    eval "barcache_${a}_$b=\"\$bar\""
+d1252 4
+a1255 18
+  # solid block:     '\33(U\333\17'
+  # left half block: '\33(U\335\17'
+  # halftone block:  '\33(U\261\17'
+  # up arrow:        '\33[3h\30\33[3l'
+  # down arrow:      '\33[3h\31\33[3l'
+
+  start="`date +'%s'`"
+
+  color_bar="1;33;43"
+  color_stats="1;33;43"
+  color_fkey="30;47"
+  color_fkey_selected="1;37;40"
+  color_fkey_eol="37;47"
+
+  let statusline="$LINES-$statuslines+1"
+  let offset="($LINES - $statuslines) * $COLUMNS + 2"
+
+  let tasks="`ls $namedir | wc -l`"
+d1261 3
+d1266 3
+a1268 1
+  echo -n "Please wait... "
+d1292 1
+a1292 1
+    let pending="$tasks-$storecount-$getting"
+d1300 1
+a1300 1
+      total=""
+d1305 2
+a1306 2
+      let total="$elapsed+$remain"
+      let percent="$elapsed*100/$total"
+d1309 1
+a1309 1
+    for i in elapsed remain total; do
+d1322 1
+a1322 1
+    o="\33[$statusline;1H"
+d1324 6
+a1329 3
+    bar "$elapsed" "$total" "$COLUMNS"
+    o="$o$bar\12"
+    o="$o\33[0;${color_stats}m $total_hms estimated total time; $elapsed_hms elapsed; $remain_hms left; $percent% complete\33[K\12"
+d1331 1
+d1334 1
+a1334 1
+      o="$o building $building_name: xxx:xx:xx left xx% \33[0;${color_bar}m[progress bar]"
+d1336 1
+a1336 1
+    o="$o\33[K\12\33[0;${color_stats}m"
+d1338 1
+a1338 1
+      o="$o getting $getting_name: xxx:xx:xx left xx% \33[0;${color_bar}m[progress bar]"
+d1342 1
+a1342 7
+    for i in done broken building stored missing getting pending; do
+      eval "color=\"\$color_$i\"; n=\"\$$i\""
+      nn="$n "
+      [ "$n" = "1" ] && nn=""
+      [ "$n" = "0" ] || o="$o\33[0;${color}m $nn$i "
+    done
+    o="$o\33[0;${color_stats}m\33[K\12"
+d1344 2
+a1345 1
+    o="$o\33[0;${color_fkey_selected}m Alt-F1 overview \33[0;${color_fkey}m Alt-F2 get  Alt-F3 build  Alt-F4 shell \33[0;${color_fkey_eol}m\33[K\33[0m"
+d1347 1
+a1347 1
+    echo -ne '\33[9;0]\33[H'
+a1348 1
+    echo -ne "$o"
+d1351 1
+a1351 1
+      dd if=/dev/vcsa1 of="/dev/vcsa$i" bs=2 skip="$offset" seek="$offset" 2>/dev/null
+d1357 3
+d1361 1
+a1361 1
+    dd if=/dev/zero of="/dev/vcsa$i" bs=2 seek="$offset" 2>/dev/null
+a1370 1
+  resize
+@
+
+
+1.40
+log
+@fix a couple of display bugs
+@
+text
+@a71 98
+script task << "---"
+#!/bin/sh
+
+start="`date +'%s'`"
+
+if [ "$1" = "init" ]; then
+  [ -n "$TASK_INIT" ] && exit 0
+  shift
+  echo -ne '\33[9;0]'
+  for i in `seq 1 $LINES`; do echo; done
+  TASK_INIT=1 exec "$@@"
+fi
+
+estimate="$1"
+name="$2"
+shift 2
+
+dir="/var/run/task"
+list="$dir/LIST"
+file="$dir/$name"
+
+if [ -n "$TASK_INIT" ]; then
+  [ -r "$file" ] && exit 0
+  mkdir -p "$dir"
+  echo "$name $estimate" >> $list
+  : > "$file"
+  exit 0
+fi
+
+[ -s "$file" ] && exit 0
+
+hms()
+{
+  local h m s
+  case "$1" in
+    [0-9]*)
+      let h="$1/3600"
+      let m="($1/60)%60"
+      let s="$1%60"
+      printf "%d:%02d:%02d\n" "$h" "$m" "$s"
+      ;;
+    *)
+      echo "?:??:??"
+      ;;
+  esac
+}
+out=""
+p() { out="$out$*"; }
+firstline=4
+line=""
+etotal=1 # force nonzero
+atotal=0
+esofar=0
+asofar=0
+let margin="$COLUMNS-1"
+while read n e; do
+  line="$line $n"
+  if echo "$line" | egrep -q ".{$margin}"; then
+    let firstline="1+$firstline"
+    p '\33[K\12'
+    line=" $n"
+  fi
+  p '\33[0;44m '
+  if [ "$name" = "$n" ]; then
+    p '\33[0;1m'
+    esofar="$etotal"
+    asofar="$atotal"
+  fi
+  let etotal="$etotal+$e"
+  [ -s "$dir/$n" ] && read a < "$dir/$n" && let atotal="$atotal+$a"
+  p "$n"
+  p '\33[0;44m'
+done < "$list"
+remain=""
+this=""
+let percent="$esofar*100/$etotal"
+if [ "$percent" -gt 0 -a "$esofar" -gt 0 -a "$asofar" -gt 0 ]; then
+  let remain="($etotal-$esofar)*$asofar/$esofar"
+  let this="$estimate*$asofar/$esofar"
+fi
+out='\33[s\33[H\33[0;1;42m'"`hms $asofar` elapsed / $percent% complete = `hms $remain` left ($name: `hms $this`)"'\33[K\12'"$out"
+p '\33[K\12\16\33[1;33;43m'
+let bar="$esofar*$COLUMNS/$etotal"
+while [ "$bar" -gt 0 ]; do
+  p '0'
+  let bar="$bar-1"
+done
+p '\17\33[K\33[m\33['"$firstline"'r\33[u'
+echo -ne "$out"
+
+if ! "$@@"; then
+  echo -ne '\33[s\33[r\33[u'
+  exit 1
+fi
+let elapsed="`date +'%s'`-$start"
+echo "$elapsed" > $file
+---
+
+d978 1
+a978 3
+cfile="$topdir/critical"
+slink="$topdir/getting"
+blink="$topdir/building"
+d1006 3
+a1008 3
+  while read name es eb flags junk; do
+    [ -z "$es" ] && es="0"
+    [ -z "$eb" ] && eb="0"
+d1011 3
+a1013 1
+    mkdir "$dir"
+d1016 2
+a1017 3
+    echo "$es" > "$dir/store-est"
+    echo "$eb" > "$dir/build-est"
+    [ "$es" = "0" ] && : > "$dir/nostore"
+d1020 23
+d1082 1
+a1082 1
+store()
+d1084 9
+a1092 1
+  echo "Preparing to store."
+d1096 3
+a1098 74
+  let done_estimated="0"
+  let done_actual="0"
+  let remaining_estimated="0"
+  for dir in `echo "$numdir/"*`; do
+    let remaining_estimated="$remaining_estimated+`cat $dir/store-est`"
+  done
+
+  for dir in `echo "$numdir/"*`; do
+    name="`cat $dir/name`"
+    estimate="`cat $dir/build-est`"
+    ns="$dir/nostore"
+    prog="/sbin/get-$name"
+    precond="$namedir/setup/build-time"
+
+    rm -f "$slink"
+    if [ ! -r "$ns" -a ! -x "$prog" -a ! -r "$precond" ]; then
+      echo -n "Waiting for setup to finish... "
+      while [ ! -r "$precond" ]; do sleep 1; done
+      echo "done."
+      [ -r "$cfile" ] && break
+    fi
+
+    refresh "$dir" "$color_getting" "$color_pending"
+    ln -s "$dir" "$slink"
+    echo "Storing $name."
+    start="`date +'%s'`"
+    echo "$start" > "$dir/store-start"
+    : > "$efile"
+
+    if [ -r "$ns" ]; then
+      true
+    elif [ -x "$prog" ]; then
+      "$prog"
+    else
+      toast get "$name"
+    fi
+    ret="$?"
+    end="`date +'%s'`"
+
+    let remaining_estimated="$remaining_estimated-$estimate"
+    let elapsed="$end-$start"
+    if [ "$ret" = "0" ]; then
+      refresh "$dir" "$color_stored" "$color_stored"
+      let done_estimated="$done_estimated+$estimate"
+      let done_actual="$done_actual+$elapsed"
+    else
+      refresh "$dir" "$color_missing" "$color_stored"
+      : > "$dir/missing"
+    fi
+    let elapsed="$end-$start"
+    echo "$elapsed" > "$dir/store-time"
+    if [ "$done_estimated" -gt "0" ]; then
+      let eta="$end+($remaining_estimated*$done_actual/$done_estimated)"
+      echo "$eta" > "$topdir/store-eta.tmp"
+      mv "$topdir/store-eta.tmp" "$topdir/store-eta"
+    fi
+    [ "$ret" != "0" -a -r "$dir/critical" ] && : > "$cfile"
+    : > "$efile"
+
+    [ -r "$cfile" ] && break
+  done
+
+  if [ -r "$cfile" ]; then
+    echo "Aborted."
+  else
+    echo "Done."
+  fi
+}
+
+build()
+{
+  echo "Preparing to build."
+
+  setscroll
+d1100 2
+a1101 5
+  let done_estimated="0"
+  let done_actual="0"
+  let remaining_estimated="0"
+  for dir in `echo "$numdir/"*`; do
+    let remaining_estimated="$remaining_estimated+`cat $dir/build-est`"
+d1104 2
+a1105 1
+  for dir in `echo "$numdir/"*`; do
+d1107 3
+a1109 3
+    estimate="`cat $dir/build-est`"
+    prog="/sbin/task-$name"
+    precond="$dir/store-time"
+d1111 1
+a1111 1
+    rm -f "$blink"
+d1113 4
+a1116 4
+      echo -n "Waiting for $name to be stored... "
+      while [ ! -r "$precond" -a ! -r "$cfile" ]; do sleep 1; done
+      echo -n "done."
+      [ -r "$cfile" ] && break
+d1119 3
+a1121 3
+    if [ -r "$dir/missing" ]; then
+      echo "Skipping missing package $name."
+      refresh "$dir" "$color_missing" "$color_done"
+d1123 3
+a1125 3
+      refresh "$dir" "$color_building" "$color_stored"
+      ln -s "$dir" "$blink"
+      echo "Building $name."
+d1127 1
+a1127 1
+      echo "$start" > "$dir/build-start"
+d1130 1
+a1130 6
+      if [ -x "$prog" ]; then
+        "$prog"
+      else
+        toast arm "$name"
+      fi
+      ret="$?"
+d1132 1
+a1132 1
+
+d1135 5
+a1139 2
+      if [ "$ret" = "0" ]; then
+        refresh "$dir" "$color_done" "$color_done"
+a1141 3
+      else
+        refresh "$dir" "$color_broken" "$color_done"
+        : > "$dir/broken"
+d1143 2
+a1144 1
+      echo "$elapsed" > "$dir/build-time"
+d1147 2
+a1148 2
+        echo "$eta" > "$topdir/build-eta.tmp"
+        mv "$topdir/build-eta.tmp" "$topdir/build-eta"
+d1150 1
+a1150 1
+      [ "$ret" != "0" -a -r "$dir/critical" ] && : > "$cfile"
+d1152 1
+d1154 1
+a1154 2
+      [ -r "$cfile" ] && break
+    fi
+d1157 2
+a1158 2
+  if [ -r "$cfile" ]; then
+    echo "Aborted."
+d1160 1
+a1160 1
+    echo "Done."
+d1162 11
+d1234 1
+a1234 1
+  while ! [ -r "$cfile" ]; do
+d1237 2
+a1238 2
+    getting_name="`cat $slink/name 2>/dev/null`"
+    building_name="`cat $blink/name 2>/dev/null`"
+d1240 2
+a1241 2
+    store_eta="`cat $topdir/store-eta 2>/dev/null`"
+    build_eta="`cat $topdir/build-eta 2>/dev/null`"
+d1250 4
+a1253 4
+    let storecount="`ls $namedir/*/store-time 2>/dev/null | wc -l`"
+    let buildcount="`ls $namedir/*/build-time 2>/dev/null | wc -l`"
+    let missing="`ls $namedir/*/missing 2>/dev/null | wc -l`"
+    let broken="`ls $namedir/*/broken 2>/dev/null | wc -l`"
+d1336 2
+a1337 2
+  openvt 2 "$0" store
+  openvt 3 "$0" build
+d1343 1
+a1343 1
+  store|build|shell) "$1";;
+@
+
+
+1.39
+log
+@progress bar etc.
+@
+text
+@d1262 1
+d1392 1
+a1392 1
+    let stored="$storecount-$buildcount-$building"
+d1436 1
+a1436 1
+    for i in done broken building missing stored getting pending; do
+d1442 1
+a1442 1
+    o="$o\33[0;${color_pending}m\33[K\12"
+@
+
+
+1.38
+log
+@much quicker
+@
+text
+@d1319 19
+d1372 1
+d1375 7
+d1395 1
+a1395 1
+    if [ -z "$build_eta" -o -z "$store_eta" ]; then
+d1400 2
+a1401 7
+      let sremain="$store_eta-$now"
+      let bremain="$build_eta-$now"
+      if [ "$sremain" -gt "$bremain" ]; then
+        remain="$sremain"
+      else
+        remain="$bremain"
+      fi
+d1421 2
+a1422 1
+    o="$o\33[0;${color_bar}m TODO: overall progress bar \33[K\12"
+d1453 1
+a1453 1
+    while [ ! "$ufile" -ot "$efile" ]; do sleep 1; done
+@
+
+
+1.37
+log
+@further cosmetic experimentation
+@
+text
+@d1082 18
+d1105 1
+d1127 6
+d1134 4
+d1160 2
+d1164 7
+d1173 1
+d1177 2
+a1179 1
+      rm -f "$slink"
+d1186 2
+a1188 1
+    ln -sf "$dir" "$slink"
+d1192 1
+d1202 11
+a1212 1
+    [ "$ret" = "0" ] || : > "$dir/missing"
+d1215 5
+d1222 1
+d1235 2
+d1239 7
+d1248 1
+d1251 2
+a1253 1
+      rm -f "$blink"
+d1263 2
+a1265 1
+      ln -sf "$dir" "$blink"
+d1269 1
+d1277 2
+a1278 1
+      [ "$ret" = "0" ] || : > "$dir/broken"
+d1280 8
+d1289 5
+d1296 1
+d1319 1
+a1319 1
+inc()
+d1321 5
+a1325 5
+  eval "let $1=\"1+$1\"; color=\"\$color_$1\""
+  for e in es eb as ab; do
+    eval "[ -n \"\$$1""_$e\" ] && let $1""_$e=\"\$$1""_$e+\$$e\""
+  done
+}
+a1326 2
+status()
+{
+a1334 11
+  color_pending="44"
+  color_getting="40"
+  color_missing="41"
+  color_stored="1;44"
+  color_building="1;40"
+  color_broken="1;41"
+  color_done="1;42"
+
+  o=""
+  for i in `seq 1 "$LINES"`; do o="$o\12"; done
+
+d1338 2
+d1345 3
+a1348 31
+    pending="0"
+    pending_es="0"
+    pending_eb="0"
+    getting="0"
+    getting_es="0"
+    getting_eb="0"
+    missing="0"
+    missing_es="0"
+    missing_eb="0"
+    stored="0"
+    stored_es="0"
+    stored_eb="0"
+    stored_as="0"
+    building="0"
+    building_es="0"
+    building_eb="0"
+    building_as="0"
+    broken="0"
+    broken_es="0"
+    broken_eb="0"
+    broken_as="0"
+    done="0"
+    done_es="0"
+    done_eb="0"
+    done_as="0"
+    done_ab="0"
+
+    eolcolor="0"
+
+    o="$o\33[9;0]\33[H"
+
+d1353 2
+a1354 34
+    let line="1"
+
+    for dir in `echo "$numdir/"*`; do
+
+      if [ -r "$dir/newline" ]; then
+        o="$o\33[0;${eolcolor}m\33[K\12"
+        let line="$line+1"
+        [ "$line" = "$statusline" ] && break;
+      fi
+
+      name="`cat $dir/name`"
+      es="`cat $dir/store-est`"
+      eb="`cat $dir/build-est`"
+      as="`cat $dir/store-time 2>/dev/null`"
+      ab="`cat $dir/build-time 2>/dev/null`"
+
+      if [ "$name" = "$building_name" ]; then
+        inc building
+      elif [ "$name" = "$getting_name" ]; then
+        inc getting
+      elif [ -r "$dir/broken" ]; then
+        inc broken
+      elif [ -r "$dir/build-time" ]; then
+        inc done
+        eolcolor="$color"
+      elif [ -r "$dir/missing" ]; then
+        inc missing
+      elif [ -r "$dir/store-time" ]; then
+        inc stored
+        eolcolor="$color"
+      else
+        inc pending
+        eolcolor="$color"
+      fi
+d1356 13
+a1368 7
+      o="$o\33[0;${color}m $name "
+    done
+
+    o="$o\33[0;${eolcolor}m"
+
+    let elapsed="`date +%s`-$start"
+    if [ "$done_eb" = "0" -o "$done_es/$broken_es/$building_es/$stored_es" = "0/0/0/0" ]; then
+d1373 2
+a1374 2
+      let sremain="($getting_es+$pending_es)*($done_as+$broken_as+$building_as+$stored_as)/($done_es+$broken_es+$building_es+$stored_es)"
+      let bremain="($building_eb+$missing_eb+$stored_eb+$getting_eb+$pending_eb)*$done_ab/$done_eb"
+d1397 1
+a1397 6
+    while [ "$line" -lt "$statusline" ]; do
+      o="$o\33[K\12"
+      let line="$line+1"
+    done
+
+    o="$o\33[K\33[$statusline;1H"
+d1403 1
+a1403 1
+    if [ "$building" != "0" ]; then
+d1407 1
+a1407 1
+    if [ "$getting" != "0" ]; then
+d1422 2
+a1424 1
+    o=""
+d1442 8
+a1449 12
+  if [ -d "$sdir" ]; then
+    echo "$0: already run" >&2
+  else
+    echo "0" > /proc/sys/kernel/printk
+    partition || exit $?
+    resize
+    prepare
+    openvt 2 "$0" store
+    openvt 3 "$0" build
+    openvt 4 "$0" shell
+    status
+  fi
+@
+
+
+1.36
+log
+@rejigger the way the installer stores state
+@
+text
+@d1077 3
+d1086 1
+d1090 1
+d1093 1
+d1097 1
+a1097 1
+    [ "es" = "0" ] && : > "$dir/nostore"
+d1099 1
+d1102 6
+d1137 1
+a1137 1
+    precond="$namedir/setup/done"
+d1139 1
+d1147 1
+d1184 1
+d1195 1
+d1235 1
+a1235 1
+  eval "${1}_name=\"\$name\"; let $1=\"1+$1\"; color=\"\$color_$1\""
+d1246 4
+a1249 4
+  color_stats="1;36;46"
+  color_fkey="30;46"
+  color_fkey_selected="1;36;46"
+  color_fkey_eol="36;46"
+d1263 6
+a1300 1
+    line=""
+d1304 4
+d1309 7
+d1322 5
+a1326 1
+      if [ -r "$dir/broken" ]; then
+a1330 2
+      elif [ -r "$dir/build-start" ]; then
+        inc building
+a1335 2
+      elif [ -r "$dir/store-start" ]; then
+        inc storing
+a1340 5
+      line="$line $name "
+      if echo "$line" | egrep -q ".{$COLUMNS}"; then
+        o="$o\33[0;${eolcolor}m\33[K\12"
+        line=" $name "
+      fi
+d1344 2
+d1376 5
+a1382 8
+    for i in done broken building missing stored getting pending; do
+      eval "color=\"\$color_$i\"; n=\"\$$i\""
+      nn="$n "
+      [ "$n" = "1" ] && nn=""
+      [ "$n" = "0" ] || o="$o\33[0;${color}m $nn$i "
+    done
+    o="$o\33[0;${color_pending}m\33[K\12"
+
+d1396 8
+a1408 1
+    let offset="($LINES - $statuslines) * $COLUMNS + 2"
+d1410 1
+a1410 3
+      dev="/dev/vcsa$i"
+      [ -c "$dev" ] || { let minor=128+$i; mknod "$dev" c 7 "$minor"; }
+      dd if=/dev/vcsa1 of="$dev" bs=2 skip="$offset" seek="$offset" 2>/dev/null
+d1415 6
+a1422 9
+: << "EOF" # status area mock-up
+[progress bar]
+xxx:xx:xx estimated total time; xxx:xx:xx elapsed; xxx:xx:xx left; 99% complete
+getting gnome-control-center: xxx:xx:xx left   89% [progress bar]
+building evolution-data-server: xxx:xx:xx left 22% [progress bar]
+ NNN done  NNN broken  building  NNN missing  NNN stored  getting  NNN pending
+ Alt-F1 overview  Alt-F2 get  Alt-F3 build  Alt-F4 shell
+EOF
+
+d1430 1
+a1431 1
+    resize
+@
+
+
+1.35
+log
+@cosmetic improvements
+@
+text
+@d1071 6
+a1076 7
+dir="/tmp/setup"
+list="$dir/list"
+sdir="$dir/stored"
+bdir="$dir/built"
+efile="$dir/event"
+ufile="$dir/updated"
+cfile="$dir/critical"
+d1079 19
+d1116 1
+a1116 1
+fortask()
+d1118 17
+a1134 6
+  xdir="$1"
+  shift
+  date="`date +'%s'`"
+  while read name es eb flags junk && ! [ -r "$cfile" ]; do
+    file="$xdir/$name"
+    : > "$file"
+d1136 4
+a1139 9
+    [ -z "$es" ] && es=0
+    [ -z "$eb" ] && eb=0
+    eval "$*"
+    ret="$?"
+    start="$date" 
+    date="`date +'%s'`"
+    let elapsed="$date-$start"
+    if [ "$ret" = "0" ]; then
+      echo "$elapsed" >> "$file"
+d1141 1
+a1141 2
+      echo "failed" >> $file
+      case "$flags" in *c*) : > "$cfile";; esac
+d1143 6
+d1150 2
+a1151 3
+  done < "$list"
+  echo "Done."
+}
+d1153 5
+a1157 4
+store()
+{
+  setscroll
+  fortask "$sdir" storeone
+a1162 2
+  fortask "$bdir" buildone
+}
+d1164 31
+a1194 12
+storeone()
+{
+  [ "$es" = "0" ] && return 0
+  p="/sbin/get-$name"
+  if [ -x "$p" ]; then
+    "$p"
+  else
+    if [ ! -s "$bdir/setup" ]; then
+      echo -n "Waiting for setup to complete... "
+      while [ ! -s "$bdir/setup" ]; do sleep 1; done
+      date="`date +'%s'`"
+      echo "finished."
+d1196 1
+a1196 3
+    toast get "$name"
+  fi
+}
+d1198 4
+a1201 8
+buildone()
+{
+  sfile="$sdir/$name"
+  if [ "$es" != 0 -a ! -s "$sfile" ]; then
+    echo -n "Waiting for $name to download... "
+    while [ ! -s "$sfile" ]; do sleep 1; done
+    date="`date +'%s'`"
+    echo "finished."
+a1202 6
+  if [ "`cat $sfile`" = "failed" ]; then
+    echo "Skipping missing package $name."
+    return 1
+  fi
+  p="/sbin/task-$name"
+  if [ -x "$p" ]; then "$p"; else toast arm "$name"; fi
+d1229 2
+a1230 2
+  color_stats="30;47"
+  color_fkey="30;47"
+d1232 1
+a1232 1
+  color_fkey_eol="37;47"
+d1282 22
+a1303 8
+    while read name es eb flags junk; do
+      [ -z "$es" ] && es=0
+      [ -z "$eb" ] && eb=0
+
+      sfile="$sdir/$name"
+      bfile="$bdir/$name"
+
+      if [ ! -r "$sfile" ]; then # pending
+a1305 19
+      else
+        as="`cat $sfile`"
+        case "$as" in
+          "") inc getting;;
+          failed) inc missing;;
+          *)
+            if [ ! -r "$bfile" ]; then
+              inc stored
+              eolcolor="$color"
+            else
+              ab="`cat $bfile`"
+              case "$ab" in
+                "") inc building;;
+                failed) inc broken;;
+                *) inc done; eolcolor="$color";;
+              esac
+            fi
+          ;;
+        esac
+d1314 1
+a1314 1
+    done < "$list"
+d1347 9
+a1368 8
+    for i in done broken building missing stored getting pending; do
+      eval "color=\"\$color_$i\"; n=\"\$$i\""
+      nn="$n "
+      [ "$n" = "1" ] && nn=""
+      [ "$n" = "0" ] || o="$o\33[0;${color}m $nn$i "
+    done
+    o="$o\33[0;${color_pending}m\33[K\12"
+
+d1401 1
+a1401 2
+    mkdir -p "$sdir" "$bdir"
+    sed 's/\#.*//' /tmp/tasks | grep . > "$list"
+@
+
+
+1.34
+log
+@fixed bug that caused status display to chew up CPU
+@
+text
+@d23 26
+d1075 2
+d1106 1
+d1120 1
+d1122 1
+d1173 7
+a1179 6
+  setscroll
+  export PS1="\[\e[s\e[r\e[u"
+  for i in `seq 1 "$statuslines"`; do PS1="$PS1"'
+'; done
+  PS1="$PS1\e[${statuslines}A\e[s\e[1;${LINES}r\e[?6h\e[u\]\h:\w\$ "
+  while true; do sh; done
+d1194 6
+d1236 6
+a1241 4
+    done="0"
+    done="0"
+    done="0"
+    done="0"
+d1246 2
+d1257 1
+d1266 1
+d1272 1
+a1272 1
+                *) inc done;;
+d1281 1
+a1281 1
+        o="$o\33[K\12"
+d1287 30
+d1318 12
+a1329 4
+    o="$o\33[0;1;33;43m TODO: overall progress bar \33[K\12"
+    o="$o\33[0m TODO: overall progress numbers \33[K\12"
+    o="$o\33[0m TODO: building progress \33[K\12"
+    o="$o\33[0m TODO: getting progress \33[K\12"
+d1339 1
+a1339 1
+    o="$o\33[0;30;47m f1 overview f2 get f3 build f4 shell\33[37m\33[K\33[0m"
+d1345 1
+a1345 1
+    for i in 2 3 4; do
+d1351 1
+a1351 13
+    if [ "$getting" = 0 -a "$pending" = 0 ]; then
+      if [ "$building" = 0 ]; then
+        sleep 1
+      else
+        while [ ! -s "$bdir/$building_name" ]; do sleep 1; done
+      fi
+    else
+      if [ "$building" = 0 -o "$getting" = 0 ]; then
+        sleep 1
+      else
+        while [ ! -s "$bdir/$building_name" -a ! -s "$sdir/$getting_name" ]; do sleep 1; done
+      fi
+    fi
+d1357 2
+a1358 2
+xxx:xx:xx estimated total time; xxx:xx:xx elapsed; xxx:xx:xx left; 37% complete
+getting gnome-control-center: xxx:xx:xx left 89% [progress bar]
+d1361 1
+a1361 1
+ Alt-F1 overview  Alt-F2 get  Alt-F3 build  Alt-F4 games  Alt-F5 shell
+@
+
+
+1.33
+log
+@adjust task and URL lists
+@
+text
+@d1279 1
+a1279 1
+        while [ ! -s "$bdir/$building_name" -a ! -s "$sdir/$storing_name" ]; do sleep 1; done
+@
+
+
+1.32
+log
+@improved status display
+@
+text
+@a712 1
+http://www.openssl.org/source/openssl-0.9.7d.tar.gz
+d762 1
+a773 1
+ncurses 1 1
+a825 1
+file 1 1
+@
+
+
+1.31
+log
+@fix setup bug; mark some packages as "critical"
+@
+text
+@d1148 1
+a1148 1
+  PS1="$PS1\e[${statuslines}A\e[s\e[1;${LINES}r\e[?6h\e[u\e[0;1m\]\h:\w\$ \[\e[0m\]"
+d1154 1
+a1154 1
+  eval "let $1=\"1+$1\"; color=\"\$color_$1\""
+d1170 1
+a1170 1
+  color_built="1;42"
+d1175 2
+d1199 5
+a1203 5
+    built="0"
+    built_es="0"
+    built_eb="0"
+    built_as="0"
+    built_ab="0"
+d1230 1
+a1230 1
+                *) inc built;;
+d1245 5
+a1249 6
+    o="$o\33[K\12" # XXX advance to status area
+    # XXX status line 1: overall progress bar
+    # XXX status line 2: overall progress numbers
+    # XXX status line 3: progress of the task we are currently getting, if any
+    # XXX status line 4: progress of the task we are currently building, if any
+    o="$o TODO: stuff goes here\12"
+d1251 1
+a1251 2
+    # status line 5: summary and key of task completion states
+    for i in pending getting stored missing building built broken; do
+d1259 1
+a1259 3
+    # XXX status line 6: Alt-Fn key reference
+    o="$o\33[0;30;47m f1 overview f2 get f3 build f4 shell\33[K"
+    o="$o\33[0m"
+d1264 20
+a1283 1
+    sleep 10
+d1292 1
+a1292 1
+ NNN pending  getting  NNN missing  NNN stored  building  NN broken  NNN built
+@
+
+
+1.30
+log
+@fix a few of the egregious problems
+@
+text
+@d537 1
+a537 1
+mv "$tmpdir/*" "$rootdir/tmp/"
+d752 10
+a761 10
+setup 1 1
+glibc 1 1
+binutils 1 1
+gcc 1 1
+rebuild 0 1
+make 1 1
+perl 1 1
+toast 1 1
+gawk 1 1
+coreutils 1 1
+d764 2
+a765 2
+bash 1 1
+sed 1 1
+d768 1
+a768 1
+tar 1 1
+d771 1
+a771 1
+remove 0 1
+d1040 7
+d1051 1
+d1077 1
+a1077 1
+  while read name es eb junk; do
+d1087 6
+a1092 2
+    [ "$ret" = "0" ] || elapsed="failed"
+    echo "$elapsed" >> "$file"
+d1098 1
+a1098 1
+#  setscroll
+d1104 1
+a1104 1
+#  setscroll
+a1171 5
+  # es = estimated download size (in 1024-byte blocks, as per du -s)
+  # eb = estimated build time (on some reference machine)
+  # as = actual download time (on this machine)
+  # ab = actual build time (on this machine)
+
+d1175 1
+a1175 1
+  while true; do
+d1206 1
+a1206 1
+    while read name es eb junk; do
+d1261 1
+@
+
+
+1.29
+log
+@destroy everything!
+@
+text
+@d13 1
+a13 1
+set -ex
+d155 1
+a155 1
+script task-partition << "---"
+d422 13
+d442 1
+a442 2
+mount -t ext2 "$vgpath/root" "$target"
+if [ "`cd $target; echo *`" != "lost+found" ]; then
+d531 2
+a532 3
+wget http://www.kernel.org/pub/linux/libs/uclibc/root_fs_i386.bz2
+bunzip2 *
+mount -t ext2 -o loop "$tmpdir"/* "$mntpt"
+d536 2
+a537 1
+rm -f "$tmpdir"/*
+a541 1
+wget http://www.cpan.org/src/5.0/stable.tar.gz
+d752 281
+a1032 282
+partition
+setup
+glibc
+binutils
+gcc
+rebuild
+make
+perl
+toast
+gawk
+coreutils
+flex
+readline
+bash
+sed
+grep
+gzip
+tar
+openssl
+wget
+remove
+diffutils
+bzip2
+ncurses
+zlib
+util-linux
+module-init-tools
+gettext
+procps
+patch
+findutils
+sysvinit
+sysklogd
+linux
+device-mapper
+lvm2
+bin86
+nasm
+lilo
+e2fsprogs
+devfsd
+genext2fs
+toastinit
+toastlogin
+iana-etc
+zsh
+net-tools
+dhcpcd
+openssh
+vim
+inetutils
+less
+parted
+groff
+man
+man-pages
+texinfo
+cpio
+hdparm
+m4
+bison
+autoconf
+automake
+file
+libtool
+kbd
+ed
+pkgconfig
+tetex
+python
+db
+gdbm
+bind
+autofs
+curl
+figlet
+file
+adns
+gc
+genromfs
+gmp
+httpd
+ltrace
+strace
+minicom
+bc
+miscfiles
+mtools
+mtr
+gnupg
+mutt
+nmap
+ntp
+ocaml
+pciutils
+postfix
+procmail
+vsftpd
+rcs
+samba
+smartmontools
+valgrind
+zip
+unzip
+popt
+pcre
+subversion
+cdrtools
+libogg
+libvorbis
+lame
+jpeg
+libpng
+tiff
+netpbm
+alsa-lib
+alsa-utils
+alsa-tools
+libmng
+unison
+syslinux
+units
+ghostscript
+cvs
+gale
+libxml2
+libxslt
+OpenSP
+openjade
+docbook-xml
+docbook-xsl
+XFree86
+doctools
+fvwm
+lua
+ion
+xscreensaver
+xdaliclock
+freetype
+fam
+t1lib
+xpdf
+lesstif
+sdl
+xine-lib
+xine-ui
+cdparanoia
+gtk-doc
+glib
+libIDL
+ORBit2
+intltool
+libbonobo
+pango
+atk
+gtk+
+mozilla
+gconf
+desktop-file-utils
+gnome-mime-data
+gnome-vfs
+audiofile
+esound
+libgnome
+libart_lgpl
+libglade
+libgnomecanvas
+libbonoboui
+gnome-icon-theme
+gnome-keyring
+libgnomeui
+startup-notification
+gtk-engines
+gnome-themes
+scrollkeeper
+gnome-desktop
+libwnck
+libsoup
+evolution-data-server
+gnome-panel
+gnome-session
+vte
+gnome-terminal
+libgtop
+gail
+libxklavier
+gnome-applets
+metacity
+librsvg
+eel
+nautilus
+gnome-control-center
+gtkhtml2
+gnome-doc-utils
+yelp
+bug-buddy
+libgnomecups
+libgnomeprint
+libgnomeprintui
+gtksourceview
+gedit
+eog
+ggv
+gconf-editor
+gnome-utils
+procman
+gstreamer
+gst-plugins
+gnome-media
+nautilus-media
+gnome-netstatus
+gcalctool
+gpdf
+gucharmap
+nautilus-cd-burner
+zenity
+at-spi
+libgail-gnome
+gnome-speech
+gnome-mag
+gnopernicus
+gok
+epiphany
+gnome-games
+gnome-user-docs
+file-roller
+gnome-system-tools
+gnome-nettool
+vino
+dbus
+hal
+gnome-volume-manager
+gal
+gtkhtml
+evolution
+evolution-webcal
+gnomemeeting
+libsigc++
+glibmm
+gtkmm
+libgnomemm
+libgnomecanvasmm
+libglademm
+libgnomeuimm
+gnome-vfsmm
+libgtk-java
+libgconf-java
+libglade-java
+libgnome-java
+Glib
+Gtk2
+Gnome2
+Gnome2-Canvas
+Gtk2-GladeXML
+Gnome2-VFS
+Gnome2-GConf
+pygtk
+qt
+arts
+kdelibs
+kdebase
+kde-i18n
+kdeaccessibility
+kdeadmin
+kdeartwork
+kdebindings
+kdeedu
+kdegames
+kdegraphics
+kdemultimedia
+kdenetwork
+kdepim
+kdesdk
+kdetoys
+kdeutils
+kdevelop
+quanta
+kdeaddons
+firefox
+xmms
+gimp
+gkrellm
+d1036 1
+a1036 1
+#!/bin/sh -e
+d1080 1
+a1080 1
+    echo "$result" >> "$file"
+d1086 1
+a1086 1
+  setscroll
+d1092 1
+a1092 1
+  setscroll
+d1098 12
+a1109 3
+  if [ "$es" != "0" ]; then
+    p="/sbin/download-$name"
+    if [ -x "$p" ]; then "$p"; else toast get "$name"; fi
+d1133 4
+a1136 4
+  export PS1="\e[s\e[r\e[u"
+  for i in `seq 1 $statuslines`; do PS1="$PS1
+"; done
+  PS1="$PS1\e[4A\e[s\e[1;${LINES}r\e[u\e[?6h\e[0;1m\h:\w\$ \e[0m"
+d1144 1
+a1144 1
+    eval "[ -n \"\$${1}_$e\" ] && let ${1}_$e=\"\$${1}_$e+\$$e\""
+d1165 3
+d1196 1
+a1196 1
+    o="\33[H"
+d1248 1
+a1248 1
+      [ "$n" = "0" ] || $o="$o\33[0;${color}m $nn$i "
+d1250 1
+a1250 1
+    o="\33[0;${pending_color}m\33[K\12"
+d1253 1
+a1253 1
+    o="$o f1 overview f2 get f3 build f4 shell"
+d1256 1
+d1258 1
+a1258 1
+    sleep 60
+d1276 2
+@
+
+
+1.28
+log
+@make it stop
+@
+text
+@a50 3
+[ -z "$LINES" ] && LINES=50
+[ -z "$COLUMNS" ] && COLUMNS=80
+
+d1030 222
+a1251 5
+task init "$0"
+sed 's/\#.*//' /tmp/tasks | grep . | while read name size time junk; do
+  [ -z "$time" ] && time=0
+  if [ -x "/sbin/task-$name" ]; then
+    task "$time" "$name" "task-$name" || exit $?
+d1253 7
+a1259 1
+    task "$time" "$name" toast arm "$name" || exit $?
+d1261 7
+a1267 1
+done
+@
+
+
+1.27
+log
+@rearrange stuff, and upgrade gcc
+@
+text
+@d1037 1
+a1037 1
+    task "$time" "$name" "task-$name"
+d1039 1
+a1039 1
+    task "$time" "$name" toast arm "$name"
+@
+
+
+1.26
+log
+@halfhearted upgrades
+@
+text
+@d12 1
+d32 1
+d99 1
+a99 1
+etotal=0
+d158 1
+a158 1
+script partition << "---"
+d425 1
+a425 1
+script setup << "---"
+d546 2
+a547 1
+sed 's/\#.*//' << 'EOF' | grep . | while read x; do toast add $x; done
+d549 1
+d581 1
+a581 2
+http://ftp.gnu.org/gnu/gcc/gcc-3.4.2/gcc-3.4.2.tar.bz2
+http://ftp.gnu.org/gnu/gcc/gcc-3.4.2/gcc-core-3.4.2.tar.bz2
+d713 1
+d715 4
+a718 1
+EOF
+d721 5
+a725 2
+script run << "---"
+#!/bin/sh -e
+d727 6
+a732 1
+export http_proxy=http://67.126.59.194:8080/
+d734 8
+a741 2
+t() { while [ -n "$1" ]; do task "$1" "$2" toast arm "$2" || exit $?; shift 2; done; }
+t0() { for i in "$@@"; do t 0 "$i"; done; }
+d743 284
+a1026 1
+task init "$0"
+d1028 2
+a1029 2
+task 0 partition partition
+task 0 setup setup
+d1031 1
+a1031 26
+task 5476 glibc toast build glibc
+t 537 binutils 755 gcc-core
+task 537 rebuild sh -c 'toast arm glibc && toast rebuild glibc binutils'
+t 6076 gcc 0 make 849 perl 0 toast 88 gawk 267 coreutils 0 flex 175 bash 55 sed 54 grep 9 gzip 75 tar 67 wget
+task 37 remove sh -c 'toast remove setup gcc-core && toast disarm gcc && toast arm gcc' # ldconfig removes libgcc_s.so.1.off, I think; g++ needs it
+t 66 diffutils 16 bzip2 322 ncurses 70 util-linux 25 module-init-tools 485 gettext 60 readline 37 procps 22 patch 25 findutils 16 sysvinit 8 sysklogd 1871 linux 22 device-mapper 84 lvm2 16 bin86 64 nasm 27 lilo 327 e2fsprogs 7 devfsd 6 genext2fs 18 toastinit 1 toastlogin 4 iana-etc 238 zsh 34 net-tools 20 dhcpcd
+
+# not absolutely required
+t 17 zlib
+task 500 openssl sh -c 'toast arm openssl && toast rebuild wget'
+t 192 openssh 192 vim 131 inetutils 50 less 98 parted 221 groff 13 man 30 man-pages 93 texinfo 172 cpio 14 hdparm 21 m4 76 bison 22 autoconf 19 automake 57 file 76 libtool 38 kbd 19 ed
+
+# non-X extras
+t 99 pkgconfig 1004 tetex 571 python 407 db 54 gdbm 353 bind 19 autofs 182 curl 13 figlet 55 file 53 adns 76 gc 5 genromfs 327 gmp 490 httpd 15 ltrace 51 strace 61 minicom 23 bc 24 miscfiles 74 mtools 24 mtr 187 gnupg 0 mutt 207 nmap 180 ntp 423 ocaml 12 pciutils 0 postfix 38 procmail 0 vsftpd 50 rcs 1000 samba 9 smartmontools 94 valgrind 98 zip 107 unzip 57 popt 44 pcre 835 subversion 235 cdrtools 38 libogg 128 libvorbis 163 lame 57 jpeg 57 libpng 64 tiff 327 netpbm
+(export LDFLAGS=-ldl; t 152 gale)
+t 176 alsa-lib 36 alsa-utils
+# t 0 libmng 0 unison 0 syslinux 0 units 0 ghostscript 0 cvs 0 alsa-tools
+
+# DocBook / XML stuff
+t 437 libxml2 181 libxslt 0 OpenSP 0 openjade 0 docbook-xml 0 docbook-xsl
+
+# X starts here
+t 5679 XFree86 102 doctools 410 fvwm 32 lua 140 ion 551 xscreensaver 35 xdaliclock
+t 128 freetype 66 fam 
+# t 0 t1lib
+t 134 xpdf 488 lesstif 334 sdl 1470 xine-lib 237 xine-ui 35 cdparanoia
+d1033 9
+a1041 8
+# GNOME and Mozilla
+t0 gtk-doc glib libIDL ORBit2 intltool libbonobo pango atk gtk+ mozilla gconf desktop-file-utils gnome-mime-data gnome-vfs audiofile esound libgnome libart_lgpl libglade libgnomecanvas libbonoboui gnome-icon-theme gnome-keyring libgnomeui startup-notification gtk-engines gnome-themes scrollkeeper gnome-desktop libwnck libsoup evolution-data-server gnome-panel gnome-session vte gnome-terminal libgtop gail libxklavier gnome-applets metacity librsvg eel nautilus gnome-control-center gtkhtml2 gnome-doc-utils yelp bug-buddy libgnomecups libgnomeprint libgnomeprintui gtksourceview gedit eog ggv gconf-editor gnome-utils procman gstreamer gst-plugins gnome-media nautilus-media gnome-netstatus gcalctool gpdf gucharmap nautilus-cd-burner zenity at-spi libgail-gnome gnome-speech gnome-mag gnopernicus gok epiphany gnome-games gnome-user-docs file-roller gnome-system-tools gnome-nettool vino dbus hal gnome-volume-manager gal gtkhtml evolution evolution-webcal gnomemeeting libsigc++ glibmm gtkmm libgnomemm libgnomecanvasmm libglademm libgnomeuimm gnome-vfsmm libgtk-java libgconf-java libglade-java libgnome-java Glib Gtk2 Gnome2 Gnome2-Canvas Gtk2-GladeXML Gnome2-VFS Gnome2-GConf pygtk
+
+# KDE
+t 0 qt 0 arts 0 kdelibs 0 kdebase 0 kde-i18n 0 kdeaccessibility 0 kdeadmin 0 kdeartwork 0 kdebindings 0 kdeedu 0 kdegames 0 kdegraphics 0 kdemultimedia 0 kdenetwork 0 kdepim 0 kdesdk 0 kdetoys 0 kdeutils 0 kdevelop 0 quanta 0 kdeaddons
+
+# other X-based stuff
+t 0 firefox 0 xmms 0 gimp 0 gkrellm
+@
+
+
+1.25
+log
+@various fixes and upgrades
+@
+text
+@d647 1
+a647 1
+http://developer.kde.org/~sewardj/valgrind-2.0.0.tar.bz2
+a658 1
+http://download.sourceforge.net/smartsuite/smartsuite-2.1.tar.gz
+d686 1
+a686 1
+ftp://ftp.porcupine.org/mirrors/postfix-release/official/postfix-2.1.4.tar.gz
+d705 1
+a705 1
+http://www.sleepycat.com/update/snapshot/db-4.2.52.tar.gz
+d740 1
+a740 1
+t 99 pkgconfig 1004 tetex 571 python 407 db 54 gdbm 353 bind 19 autofs 182 curl 13 figlet 55 file 53 adns 76 gc 5 genromfs 327 gmp 490 httpd 15 ltrace 51 strace 61 minicom 23 bc 24 miscfiles 74 mtools 24 mtr 187 gnupg 0 mutt 207 nmap 180 ntp 423 ocaml 12 pciutils 0 postfix 38 procmail 0 vsftpd 50 rcs 1000 samba 9 smartsuite 94 valgrind 98 zip 107 unzip 57 popt 44 pcre 835 subversion 235 cdrtools 38 libogg 128 libvorbis 163 lame 57 jpeg 57 libpng 64 tiff 327 netpbm
+@
+
+
+1.24
+log
+@another round of fixes
+@
+text
+@d436 1
+a436 1
+for i in boot etc/dhcpc etc/xml home media/floppy media/cdrom mnt proc root sys toast tmp var/empty var/lock var/run var/log var/spool/mail; do
+d607 1
+a607 1
+# Gnome 2.8.0:
+d614 1
+a614 3
+
+# KDE 3.3:
+http://ibiblio.org/pub/mirrors/kde/stable/3.3/src/
+d631 1
+a631 1
+ftp://ftp.chiark.greenend.org.uk/users/ian/adns/adns-1.1.tar.gz
+d645 1
+a645 1
+http://caml.inria.fr/distrib/ocaml-3.06/ocaml-3.06.tar.gz
+d660 1
+a660 1
+http://download.sourceforge.net/strace/strace-4.4.98.tar.bz2
+a669 1
+http://ftp.gnu.org/gnu/gmp/gmp-4.1.2.tar.bz2
+d675 1
+a675 1
+http://ftp.gnu.org/gnu/parted/parted-1.6.6.tar.gz
+d695 1
+a695 1
+http://www.apache.org/dist/httpd/httpd-2.0.50.tar.gz
+d732 1
+a732 1
+task 37 remove toast remove setup gcc-core
+@
+
+
+1.23
+log
+@fixed a number of fatal bugs
+@
+text
+@a144 12
+script bootable << "---"
+#!/bin/sh -ex
+target=/mnt
+[ -d "$target/proc/1" ]
+[ -d "$target/sys/class" ]
+rm -f "$target"/dev/dm-[0-9]*
+chroot "$target" vgscan
+chroot "$target" sh -c 'cp /usr/boot/* /boot/'
+[ -b /dev/hda ] || chroot "$target" perl -p -i -e 's/hda/sda/' /etc/lilo.conf
+exec chroot "$target" lilo
+---
+
+d148 5
+a152 2
+[ -z "$TOAST_ARMDIR" ] && export TOAST_ARMDIR=/usr
+ls "$target/lib/ld-uClibc.so.0" >/dev/null 2>&1 && export TOAST_PRELOAD=false
+d557 5
+a565 1
+http://www.infodrom.org/projects/sysklogd/download/sysklogd-1.4.1.tar.gz
+a567 1
+http://www.tazenda.demon.co.uk/phil/net-tools/net-tools-1.60.tar.bz2
+d594 1
+a594 1
+http://download.sourceforge.net/e2fsprogs/e2fsprogs-1.34.tar.gz
+d733 1
+a733 1
+task 537 rebuild sh -c 'toast arm glibc && toast rebuild glibc && toast disarm glibc && toast arm glibc && toast rebuild binutils && chroot /mnt ldconfig'
+a736 1
+task 7 bootable bootable
+@
+
+
+1.22
+log
+@now we're getting somewhere
+@
+text
+@d451 2
+a452 1
+for i in bin lib sbin; do ln -sf "../usr/$i" "$target/$i"; done
+d454 2
+a552 2
+ln -s bash "$target/usr/bin/sh.off"
+
+d581 1
+d596 1
+a596 1
+http://kernel.org/pub/linux/utils/util-linux/util-linux-2.11z.tar.bz2
+d739 1
+a739 1
+task 537 rebuild sh -c 'toast arm glibc && toast rebuild glibc && toast disarm glibc && toast arm glibc && toast rebuild binutils'
+d742 1
+a742 1
+t 66 diffutils 16 bzip2 70 util-linux 25 module-init-tools 322 ncurses 485 gettext 60 readline 37 procps 22 patch 25 findutils 16 sysvinit 8 sysklogd 1871 linux 22 device-mapper 84 lvm2 16 bin86 64 nasm 27 lilo 327 e2fsprogs 7 devfsd 6 genext2fs 18 toastinit 1 toastlogin 4 iana-etc 238 zsh 34 net-tools 20 dhcpcd
+@
+
+
+1.21
+log
+@run doesn't seem to be stopping on error; maybe this will help
+@
+text
+@d586 1
+d737 1
+a737 1
+task 537 rebuild sh -c 'toast arm glibc && toast rebuild glibc && toast disarm glibc && toast arm glibc binutils'
+@
+
+
+1.20
+log
+@looks like this might help with /lib/libc.so.6, not sure why...?
+@
+text
+@d726 1
+a726 1
+t() { while [ -n "$1" ]; do task "$1" "$2" toast arm "$2"; shift 2; done; }
+@
+
+
+1.19
+log
+@this should help
+@
+text
+@d736 1
+a736 1
+task 537 rebuild sh -c 'toast arm glibc && toast rebuild glibc binutils'
+@
+
+
+1.18
+log
+@looks promising
+@
+text
+@d542 1
+a542 1
+cd /tmp
+d550 2
+d736 2
+a737 2
+task 537 rebuild toast rebuild binutils # XXX rebuild glibc first!
+t 6076 gcc 849 perl 0 toast 88 gawk 267 coreutils 0 flex 175 bash 55 sed 54 grep 9 gzip 75 tar 67 wget
+@
+
+
+1.17
+log
+@still doesn't work, but getting warmer, maybe
+@
+text
+@d453 1
+a542 1
+mv *.so /usr/lib/
+d732 4
+a735 3
+t 537 binutils 755 gcc-core 5476 glibc
+task 537 rebuild toast rebuild binutils
+t 6076 gcc 849 perl 0 toast 389 88 gawk 267 coreutils flex 175 bash 55 sed 54 grep 9 gzip 75 tar 67 wget
+@
+
+
+1.16
+log
+@fix first round of stupid mistakes
+@
+text
+@d14 8
+d451 1
+a451 1
+for i in bin lib sbin; do ln -sf "../usr/$i" "$target/$i"
+d516 1
+a516 1
+mount -t sys sys "$target/sys"
+d519 1
+a519 3
+cd "$target/tmp"
+wget http://www.kernel.org/pub/linux/libs/uclibc/root_fs_i386.bz2
+bunzip2 *
+a520 1
+mount -t ext2 -o loop "$target"/tmp/* "$mntpt"
+d523 6
+a528 3
+armdir="$target/usr"
+mkdir -p "$rootdir" "$armdir"
+ln -sf . "$armdir/usr"
+d531 16
+a546 7
+rm -f "$target"/tmp/*
+(cd "$rootdir" && find . -type d) | while read -r rel; do
+  mkdir -p "$armdir/rel"
+done
+(cd "$rootdir" && find .) | while read -r rel; do
+  [ -d "$rootdir/$rel" ] || ln -sf "$relrootdir/$rel" "$target/usr/$rel"
+done
+d548 1
+a548 1
+wget http://toastball.net/toast/toast | chroot "$target" perl -x - --nostrictpreload --armdir=/usr arm toast
+d722 2
+d732 3
+a734 3
+t 88 gawk 267 coreutils 849 perl 389 flex 755 gcc-core 537 binutils 5476 glibc 
+task 1589 rebuild toast rebuild make toast gawk coreutils perl flex
+t 6076 gcc 175 bash 55 sed 54 grep 9 gzip 75 tar 67 wget
+@
+
+
+1.15
+log
+@drastic untested changes: bootstrap from uClibc rather than Debian
+@
+text
+@d427 1
+d432 1
+a432 1
+if [ "`cd /$target; echo *`" != "lost+found" ]; then
+d710 1
+@
+
+
+1.14
+log
+@my latest attempts at fooling glibc 2.3.3 into actually compiling
+@
+text
+@d11 1
+a11 1
+script() { cat > "$1"; chmod +x "$1"; }
+d14 1
+a14 1
+script /sbin/timeout << "---"
+d36 1
+a36 1
+script /sbin/task << "---"
+d137 10
+a146 70
+script /sbin/setup << "---"
+#!/bin/sh -e
+
+target="/mnt/root"
+
+mount "$target"
+
+if [ "`cd /$target; echo *`" != "lost+found" ]; then
+  echo "unexpected filesystem contents: $target" >&2
+  exit 1
+fi
+
+copy="dev etc lib"
+for i in /bin/* /sbin/*; do
+  ls -l "$i" | grep -q 'busybox$' && copy="$copy $i"
+done
+(cd / && tar c $copy) | (cd "$target" && tar x)
+
+relrootdir="/toast/pkg/busybox/vunknown/1/root"
+rootdir="$target/$relrootdir"
+mkdir -p "$rootdir"
+for i in bin sbin lib; do
+  mv "$target/$i" "$rootdir/$i"
+  mkdir -p "$target/usr/$i"
+  ln -s "usr/$i" "$target/$i"
+done
+touch "$rootdir/../build.log"
+for i in `cd "$rootdir" && find *`; do
+  ln -s "$relrootdir/$i" "$target/$i"
+done
+
+for i in boot etc/dhcpc mnt/boot mnt/floppy mnt/cdrom proc root sys tmp usr/man var/empty var/lock var/run var/log var/spool/mail; do
+  mkdir -p "$target/$i"
+done
+chmod 1777 "$target/tmp"
+
+for i in boot proc sys; do mount "$target/$i"; done
+
+ln -s "../usr/share/zoneinfo/`cat /etc/TZ`" "$target/etc/localtime"
+for i in inittab rc devfsd.conf protocols services rpc fdprm sgml; do
+  ln -sf "../usr/etc/$i" "$target/etc/$i"
+done
+rm -fr "$target/etc/init.d"
+ln -s . "$target/usr/usr"
+ln -s gcc "$target/bin/cc"
+ln -s vim "$target/bin/vi.off"
+ln -s bash "$target/bin/sh.off"
+rm "$target/bin/sh"
+
+for i in `cd "$target/etc" && echo *.hd`; do
+  mv "$target/etc/$i" "$target/etc/`basename $i .hd`"
+done
+
+mkdir "$target/etc/xml"
+ln -s ../usr/etc/xml/toast-xml-catalog "$target/etc/xml/catalog"
+
+chmod go-w "$target/dev"
+chmod -R go-w "$target/etc" 2>/dev/null || true # ignore broken symlinks
+
+[ -z "$USERS" ] && USERS=user
+USERS="`echo \"$USERS\" | sed -e 's/[^a-z0-9]/ /g; s/^  *//; s/  *$//'`"
+uid=500
+for i in $USERS; do
+  echo "$i:x:$uid:$uid:$i:/home/$i:/bin/zsh" >> "$target/etc/passwd"
+  echo "$i:x:$uid:" >> "$target/etc/group"
+  [ -r "$target/etc/user" ] || echo $i > "$target/etc/user"
+  mkdir -p "$target/home/$i"
+  chown $uid.$uid "$target/home/$i"
+  let uid="1+$uid"
+done
+d149 1
+a149 1
+script /sbin/swap << "---"
+d151 4
+a154 26
+
+# If available memory is less than "goalmegs" megabytes, create and activate
+# a swap volume to bring it up to that amount.
+# TODO: combine this with the /sbin/partition script.
+# BUG: the permanent fstab isn't getting updated
+
+goalmegs=1536
+vgname=toast
+lvname=swap
+lvpath="/dev/$vgname/$lvname"
+
+read caption number units < /proc/meminfo
+if [ "$caption $units" != "MemTotal: kB" ]; then
+  echo "Error parsing /proc/meminfo: $caption $number $units" >2
+  exit 1
+fi
+let goalk="1024*$goalmegs"
+[ "$number" -ge "$goalk" ] && exit 0
+let lvk="$goalk-$number"
+
+set -e
+
+lvcreate -L "$lvk"k -n "$lvname" "$vgname"
+mkswap "$lvpath"
+echo "$lvpath swap swap defaults 0 0" >> /etc/fstab
+swapon -a
+d157 1
+a157 1
+script /sbin/partition << "---"
+d206 4
+d402 1
+a402 1
+# create an ext3 filesystem on the new partitions
+d413 1
+d421 1
+d424 2
+a425 10
+script /sbin/bootable << "---"
+#!/bin/sh -e
+[ -d /mnt/root/proc/1 ] || ! echo "/mnt/root/proc not mounted?"
+[ -d /mnt/root/sys/class ] || ! echo "/mnt/root/sys not mounted?"
+rm -f /mnt/root/dev/dm-[0-9]*
+chroot /mnt/root vgscan
+chroot /mnt/root sh -c 'cp /usr/boot/* /boot/'
+[ -b /dev/hda ] || chroot /mnt/root perl -p -i -e 's/hda/sda/' /etc/lilo.conf
+exec chroot /mnt/root lilo "$@@"
+---
+d427 2
+a428 6
+script /sbin/toast << "---"
+#!/bin/sh
+[ -z "$TOAST_ARMDIR" ] && export TOAST_ARMDIR=/usr
+ls /mnt/root/lib/ld-uClibc.so.0 >/dev/null 2>&1 && export TOAST_PRELOAD=false
+exec chroot /mnt/root /bin/toast "$@@"
+---
+d430 3
+a432 28
+script /sbin/utoast << "---"
+#!/bin/sh
+
+# utoast - minimal toast replacement script for toast linux toaststrap process
+
+# paths to use:
+chrootdir=/mnt/root
+relstoredir=/toast
+relarmdir=/usr
+storedir="$chrootdir""$relstoredir"
+armdir="$chrootdir""$relarmdir"
+
+# functions
+
+announce()
+{
+  echo "$*"
+}
+
+explain()
+{
+  echo "# $*"
+}
+
+error()
+{
+  [ -n "$*" ] && echo "utoast: $*" >&2
+  echo "utoast: aborting" >&2
+d434 1
+a434 1
+}
+d436 2
+a437 25
+# parse command line
+
+name="$1"
+shift
+version="$1"
+shift
+# remaining args are urls
+[ -n "$*" ] || error "usage: $0 name version url..."
+
+# add
+
+namedir="$storedir/pkg/$name"
+verdir="$namedir/v$version"
+[ -d "$verdir" ] && error "$name version $version has already been added"
+
+announce mkdir -p "$namedir"
+mkdir -p "$namedir" || error
+announce mkdir "$verdir"
+mkdir "$verdir" || error
+
+urlfile="$verdir/url"
+urlfiletmp="$urlfile.tmp"
+explain "creating $urlfile.tmp"
+for url in "$@@"; do
+  echo "$url" >> "$urlfiletmp" || error
+d439 5
+d445 18
+a462 2
+announce mv "$urlfiletmp" "$urlfile"
+mv "$urlfiletmp" "$urlfile" || error
+d464 28
+a491 1
+# get
+d493 10
+a502 8
+archivedir="$verdir/archive"
+archivedirtmp="$archivedir.tmp"
+announce mkdir "$archivedirtmp"
+mkdir "$archivedirtmp" || error
+
+for url in "$@@"; do
+  announce "(cd $archivedirtmp && wget $url)"
+  (cd "$archivedirtmp" && wget "$url") || error
+d505 21
+a525 148
+announce mv "$archivedirtmp" "$archivedir"
+mv "$archivedirtmp" "$archivedir" || error
+
+# build
+
+build=1
+builddir="$verdir/$build"
+relbuilddir="$relstoredir/pkg/$name/v$version/$build"
+srcdir="$builddir/src"
+relsrcdir="$relbuilddir/src"
+rootdir="$builddir/root"
+relrootdir="$relbuilddir/root"
+
+announce mkdir "$builddir"
+mkdir "$builddir" || error
+
+buildlog="$builddir/build.log"
+brokenlog="$builddir/broken.log"
+explain "redirecting to $brokenlog"
+{
+  explain "utoast building $name version $version"
+  announce date
+  date
+  announce uname -a
+  uname -a
+  announce env
+  env
+  announce cat "$urlfile"
+  cat "$urlfile"
+  announce md5sum "$archivedir"/*
+  md5sum "$archivedir"/*
+
+  # extract
+
+  announce mkdir "$srcdir"
+  mkdir "$srcdir" || error
+  for archive in "$archivedir"/*; do
+    explain "extracting $archive"
+    case "$archive" in
+      *.deb) dpkg-deb -x "$archive" "$srcdir" || error;;
+      *.tar.gz) (cd "$srcdir" && tar xzf "$archive") || error;;
+      *.tar.bz2) (cd "$srcdir" && tar xjf "$archive") || error;;
+      *) error "don't know how to extract: $archive";;
+    esac
+  done
+
+  # compile
+
+  isbin=false
+  for subdir in usr bin etc lib sbin; do
+    [ -d "$srcdir/$subdir" ] && isbin=true
+  done
+  for file in "$srcdir"/*; do
+    [ ! -d $file ] && isbin=false
+  done
+
+  if $isbin; then
+    announce mv "$srcdir" "$rootdir"
+    mv "$srcdir" "$rootdir" || error
+
+    # terrible hack: create "gcc" symlink for debian gcc-2.95 binary
+    if [ ! -x "$rootdir/usr/bin/gcc" ]; then
+      for gcc in $rootdir/usr/bin/gcc-*; do
+        if [ -x "$gcc" ]; then
+          announce ln -sf `basename $gcc` "$rootdir/usr/bin/gcc"
+          ln -sf `basename $gcc` "$rootdir/usr/bin/gcc"
+        fi
+      done
+    fi
+
+    # terrible hack: create "sh" symlink for bash-minimal binary
+    if [ ! -x "$rootdir/bin/sh" ]; then
+      for bash in $rootdir/bin/bash*; do
+        if [ -x "$bash" ]; then
+          announce ln -sf `basename $bash` "$rootdir/bin/sh"
+          ln -sf `basename $bash` "$rootdir/bin/sh"
+        fi
+      done
+    fi
+  else
+    # configure
+
+    makedir="$srcdir"
+    relmakedir="$relsrcdir"
+    subdir=`cd $makedir && echo *`
+    if [ -d "$makedir/$subdir" ]; then
+      makedir="$makedir/$subdir"
+      relmakedir="$relmakedir/$subdir"
+    fi
+
+    unconfigured=true
+    for confprog in configure.gnu configure; do
+      if $unconfigured && [ -x "$makedir/$confprog" ]; then
+        announce chroot "$chrootdir" sh -c "cd $relmakedir && ./$confprog --prefix=$relarmdir"
+        chroot "$chrootdir" sh -c "cd $relmakedir && ./$confprog --prefix=$relarmdir" || error
+        unconfigured=false
+      fi
+    done
+    $unconfigured && error "can't figure out how to configure"
+
+    # prepare rootdir
+
+    announce mkdir "$rootdir"
+    mkdir "$rootdir" || error
+
+    # make all install
+
+    if [ -r "$makedir/build.sh" ]; then
+      # bootstrap GNU make itself; work around apparent make 3.80 build.sh bug
+      announce "sed -e 's/\@@REMOTE\@@/stub/' < $makedir/build.sh > $makedir/build.sh.patched"
+      sed -e 's/\@@REMOTE\@@/stub/' < "$makedir/build.sh" > "$makedir/build.sh.patched" || error
+      announce chroot "$chrootdir" sh -c "cd $relmakedir && sh build.sh.patched"
+      chroot "$chrootdir" sh -c "cd $relmakedir && sh build.sh.patched" || error
+      announce PATH="$PATH:$relmakedir" chroot "$chrootdir" make -C "$relmakedir" install DESTDIR="$relrootdir"
+      PATH="$PATH:$relmakedir" chroot "$chrootdir" make -C "$relmakedir" install DESTDIR="$relrootdir" || error
+    else
+      announce chroot "$chrootdir" make -C "$relmakedir" all install DESTDIR="$relrootdir"
+      chroot "$chrootdir" make -C "$relmakedir" all install DESTDIR="$relrootdir" || error
+    fi
+
+    # fix rootdir
+
+    announce chmod -R -w "$rootdir"
+    chmod -R -w "$rootdir" || error
+
+    # autoclean
+
+    announce rm -fr "$srcdir"
+    rm -fr "$srcdir" || error
+  fi
+} 2>&1 | tee "$brokenlog" | sed 's/^/  /' || error
+
+[ -d "$rootdir" ] || error
+
+announce mv "$brokenlog" "$buildlog"
+mv "$brokenlog" "$buildlog" || error
+
+# arm
+
+displace()
+{
+  if ls "$1" >/dev/null 2>&1; then
+    displace "$1.off"
+    announce mv "$1" "$1.off"
+    mv "$1" "$1.off" || error
+  fi
+}
+
+d527 1
+a527 15
+  rootfile="$rootdir/$rel"
+  relrootfile="$relrootdir/$rel"
+  armfile="$armdir/$rel"
+
+  if [ -d "$rootfile" ]; then
+    if [ ! -d "$armfile" ]; then
+      announce mkdir "$armfile"
+      mkdir "$armfile" || error
+    fi
+  else
+    [ -d "$armfile" ] && error "$armfile is a directory but $rootfile isn't"
+    displace "$armfile"
+    announce ln -s "$relrootfile" "$armfile"
+    ln -s "$relrootfile" "$armfile" || error
+  fi
+a528 1
+---
+d530 1
+a530 25
+script /sbin/utoastdeb << "---"
+#!/bin/sh
+urls=""
+url_base="http://http.us.debian.org/debian/pool/main/"
+deb()
+{
+  echo "Locating Debian package $1/$2."
+  filename=`wget -O- "$url_base$1/" | sed -e 's/"/\n/g' | grep "^$2"'.*_i386.deb$' | tail -1`
+  if [ -z "$filename" ]; then
+    echo "Unable to locate Debian package $1/$2." >&2
+    exit 1
+  fi
+  urls="$urls $url_base$1/$filename"
+}
+deb g/glibc libc6_2.3.2.ds1
+deb g/glibc libc6-dev_2.3.2.ds1
+deb l/linux-kernel-headers linux-kernel-headers_2.5.999
+deb b/binutils binutils_2.15
+deb g/gcc-3.4 gcc-3.4_3.4
+deb g/gcc-3.4 cpp-3.4_3.4
+deb g/gcc-3.4 libgcc1
+deb p/perl perl-base_5.8
+deb b/bash bash-minimal_3.0
+exec utoast bin 0 $urls
+---
+a531 2
+script /sbin/add << "---"
+#!/bin/sh -e
+d701 1
+a701 1
+script /sbin/run << "---"
+d703 1
+d706 1
+d708 3
+a710 7
+task 123 partition partition
+task 1 swap swap
+task 1 setup setup
+task 89 bin utoastdeb
+task 54 make utoast make 3.80 http://ftp.gnu.org/gnu/make/make-3.80.tar.bz2
+task 4 toast utoast toast 1.354 http://toastball.net/toast/toast-1.354.tar.gz
+task 0 add add
+d714 1
+a714 1
+task 37 remove toast remove bin busybox gcc-core
+@
+
+
+1.13
+log
+@I bet binutils needs upgrading too....
+@
+text
+@d217 1
+a217 1
+goalmegs=1024
+d790 1
+a790 1
+glibc/2.3.3: [ http://ftp.gnu.org/gnu/glibc/glibc-2.3.3.tar.bz2 http://ftp.gnu.org/gnu/glibc/glibc-linuxthreads-2.3.3.tar.bz2 http://kernel.org/pub/linux/kernel/v2.6/linux-2.6.8.1.tar.bz2 ]
+d965 1
+a965 1
+task 4 toast utoast toast 1.353 http://toastball.net/toast/toast-1.353.tar.gz
+d967 2
+a968 2
+t 88 gawk 267 coreutils 849 perl 755 gcc-core 537 binutils 5476 glibc 
+task 1200 rebuild toast rebuild make toast gawk coreutils perl
+d977 1
+a977 1
+t 192 openssh 192 vim 131 inetutils 50 less 98 parted 221 groff 13 man 30 man-pages 93 texinfo 172 cpio 14 hdparm 21 m4 76 bison 389 flex 22 autoconf 19 automake 57 file 76 libtool 38 kbd 19 ed
+@
+
+
+1.12
+log
+@here's an idea, how about I use the correct URLs....
+@
+text
+@d811 1
+a811 1
+http://ftp.gnu.org/gnu/binutils/binutils-2.14.tar.bz2
+@
+
+
+1.11
+log
+@maybe upgrading gcc will help somehow....
+@
+text
+@d815 2
+a816 2
+http://ftp.gnu.org/gnu/gcc/gcc-3.4.2/gcc-3.3.2.tar.bz2
+http://ftp.gnu.org/gnu/gcc/gcc-3.4.2/gcc-core-3.3.2.tar.bz2
+a877 1
+ftp://ftp.proftpd.org/distrib/source/proftpd-1.2.10.tar.bz2
+d980 1
+a980 1
+t 99 pkgconfig 1004 tetex 571 python 407 db 54 gdbm 353 bind 19 autofs 182 curl 13 figlet 55 file 53 adns 76 gc 5 genromfs 327 gmp 490 httpd 15 ltrace 51 strace 61 minicom 23 bc 24 miscfiles 74 mtools 24 mtr 187 gnupg 0 mutt 207 nmap 180 ntp 423 ocaml 12 pciutils 0 postfix 38 procmail 127 proftpd 50 rcs 1000 samba 9 smartsuite 94 valgrind 98 zip 107 unzip 57 popt 44 pcre 835 subversion 235 cdrtools 38 libogg 128 libvorbis 163 lame 57 jpeg 57 libpng 64 tiff 327 netpbm
+@
+
+
+1.10
+log
+@as long as everything's broken, might as well upgrade some things....
+@
+text
+@d815 2
+a816 2
+http://ftp.gnu.org/gnu/gcc/gcc-3.3.2/gcc-3.3.2.tar.bz2
+http://ftp.gnu.org/gnu/gcc/gcc-3.3.2/gcc-core-3.3.2.tar.bz2
+@
+
+
+1.9
+log
+@reshuffling and attempt at upgrading to GNOME 2.8
+@
+text
+@d790 1
+a790 9
+glibc/2.3.2: [ http://ftp.gnu.org/gnu/glibc/glibc-2.3.2.tar.bz2 http://ftp.gnu.org/gnu/glibc/glibc-linuxthreads-2.3.2.tar.bz2 http://kernel.org/pub/linux/kernel/v2.4/linux-2.4.25.tar.bz2 http://toastball.net/toast-linux-tmp/glibc-2.3.2-gcc-2.3.x.patch ]
+# http://www.rocklinux.net/sources/package/base/glibc23/gcc33-hotfix.patch
+# http://nl.lunar-linux.org/lunar/patches/glibc-2.3.2-newstyle.patch
+# http://www.mozilla.org/projects/minimo/toolchain/glibc-2.3.2.diff
+# http://www.linuxfromscratch.org/patches/lfs/5.0/glibc-2.3.2-sscanf-1.patch
+# http://www.muth.org/Robert/Patch/glibc-2.3.2.patch
+# http://sources.redhat.com/ml/bug-glibc/2003-10/msg00101/sscanf.c.diff
+# http://mirror.gentoo.ru/pub/mirror/gentoo-portage/sys-libs/glibc/files/2.3.2/glibc-2.3.2-gcc33-sscanf.patch
+# http://www.pengutronix.de/software/ptxdist/patches-0.5.0/glibc-2.3.2/generic/generic-sscanf.diff
+d794 2
+a795 1
+lilo/22.5.9-devmapper: [ http://lilo.go.dyndns.org/pub/linux/lilo/obsolete/lilo-22.5.9.tar.gz http://www.saout.de/misc/lilo-22.5.9-devmapper.patch ]
+d808 1
+a808 1
+http://www.zsh.org/pub/old/zsh-4.2.0.tar.bz2 # "old" URL less likely to change
+d966 1
+a966 1
+task 4 toast utoast toast 1.351 http://toastball.net/toast/toast-1.351.tar.gz
+@
+
+
+1.8
+log
+@fix gtk+
+@
+text
+@d851 9
+a859 2
+# Gnome and KDE:
+http://ftp.gnome.org/pub/GNOME/desktop/2.6/2.6.2/sources/
+d966 1
+d982 1
+a982 2
+[ -n "$MINIMAL" ] && exit 0
+
+d987 2
+a988 3
+# [ -z "$EXTRAS" ] && exit 0
+
+t 1004 tetex 571 python 407 db 54 gdbm 353 bind 19 autofs 182 curl 13 figlet 55 file 53 adns 76 gc 5 genromfs 327 gmp 490 httpd 15 ltrace 51 strace 61 minicom 23 bc 24 miscfiles 74 mtools 24 mtr 187 gnupg 0 mutt 207 nmap 180 ntp 423 ocaml 12 pciutils 0 postfix 38 procmail 127 proftpd 50 rcs 1000 samba 9 smartsuite 94 valgrind 98 zip 107 unzip 57 popt 44 pcre 835 subversion 235 cdrtools 38 libogg 128 libvorbis 163 lame 57 jpeg 57 libpng 64 tiff 327 netpbm
+d990 2
+a991 1
+# t 0 libmng 0 unison 0 syslinux 0 units 0 ghostscript 0 cvs
+d993 2
+a994 1
+# [ "$EXTRAS" = "X" ] || exit 0
+d996 3
+a998 3
+t 5679 XFree86 102 doctools 410 fvwm 32 lua 140 ion 551 xscreensaver 35 xdaliclock 176 alsa-lib
+# t 0 alsa-tools
+t 36 alsa-utils 128 freetype 66 fam 
+d1001 5
+a1005 4
+t 99 pkgconfig 117 audiofile 437 libxml2 181 libxslt 0 OpenSP 0 openjade 0 docbook-xml 0 docbook-xsl
+t 0 gtk-doc 0 glib 0 libIDL 0 ORBit2 0 XML-Parser
+# t 0 intltool
+t 0 libbonobo 0 fontconfig 0 render 0 xrender 0 xft 0 pango 0 atk 0 shared-mime-info 0 gtk+ t 0 mozilla 0 GConf 0 gnome-mime-data 0 gnome-vfs 0 esound 0 libgnome 0 libart 0 libglade 0 libgnomecanvas 0 libbonoboui 0 hicolor-icon-theme 0 gnome-icon-theme 0 gnome-keyring 0 libgnomeui 0 startup-notification 0 gtk-engines 0 gnome-themes 0 scrollkeeper 0 gnome-desktop 0 libwnck 0 gnome-panel 0 gnome-session 0 vte 0 gnome-terminal 0 libgtop 0 gail 0 gnome-applets 0 metacity 0 libgsf 0 libcroco 0 librsvg 0 eel 0 nautilus 0 control-center 0 libgtkhtml 0 yelp 0 bug-buddy 0 libgnomeprint 0 libgnomeprintui 0 gtksourceview 0 gedit 0 eog 0 ggv 0 file-roller 0 gconf-editor 0 gnome-utils 0 gal 0 gnome-system-monitor 0 gstreamer 0 gst-plugins 0 gnome-media 0 gnome-netstatus 0 gcalctool 0 gpdf 0 gucharmap 0 nautilus-cd-burner 0 zenity 0 gnome-speech 0 at-spi 0 gnome-mag 0 gnopernicus 0 gok 0 epiphany 0 gnomemeeting 0 gnome-games 0 gnome2-user-docs 0 dasher 0 gdm 0 libgail-gnome 0 libxklavier 0 nautilus-media
+d1007 2
+@
+
+
+1.7
+log
+@more XML catalog fixes; mozilla needs more memory to build
+@
+text
+@d965 1
+a965 1
+task 4 toast utoast toast 1.350 http://toastball.net/toast/toast-1.350.tar.gz
+d996 1
+a996 3
+t 0 libbonobo 0 fontconfig 0 render 0 xrender 0 xft 0 pango 0 atk 0 shared-mime-info
+RUN_QUERY_LOADER_TEST=true t 0 gtk+
+t 0 mozilla 0 GConf 0 gnome-mime-data 0 gnome-vfs 0 esound 0 libgnome 0 libart 0 libglade 0 libgnomecanvas 0 libbonoboui 0 hicolor-icon-theme 0 gnome-icon-theme 0 gnome-keyring 0 libgnomeui 0 startup-notification 0 gtk-engines 0 gnome-themes 0 scrollkeeper 0 gnome-desktop 0 libwnck 0 gnome-panel 0 gnome-session 0 vte 0 gnome-terminal 0 libgtop 0 gail 0 gnome-applets 0 metacity 0 libgsf 0 libcroco 0 librsvg 0 eel 0 nautilus 0 control-center 0 libgtkhtml 0 yelp 0 bug-buddy 0 libgnomeprint 0 libgnomeprintui 0 gtksourceview 0 gedit 0 eog 0 ggv 0 file-roller 0 gconf-editor 0 gnome-utils 0 gal 0 gnome-system-monitor 0 gstreamer 0 gst-plugins 0 gnome-media 0 gnome-netstatus 0 gcalctool 0 gpdf 0 gucharmap 0 nautilus-cd-burner 0 zenity 0 gnome-speech 0 at-spi 0 gnome-mag 0 gnopernicus 0 gok 0 epiphany 0 gnomemeeting 0 gnome-games 0 gnome2-user-docs 0 dasher 0 gdm 0 libgail-gnome 0 libxklavier 0 nautilus-media
+@
+
+
+1.6
+log
+@upgrade mozilla and firefox
+@
+text
+@d176 1
+a176 1
+for i in inittab rc devfsd.conf protocols services rpc fdprm sgml xml; do
+d190 3
+d217 1
+a217 1
+goalmegs=512
+d965 1
+a965 1
+task 4 toast utoast toast 1.347 http://toastball.net/toast/toast-1.347.tar.gz
+@
+
+
+1.5
+log
+@I hope the DocBook problem is solved for good now!
+@
+text
+@d916 2
+a917 2
+http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/0.8/firefox-source-0.8.tar.bz2
+http://ftp.mozilla.org/pub/mozilla.org/mozilla/releases/mozilla1.6/src/mozilla-source-1.6.tar.bz2
+@
+
+
+1.4
+log
+@use latest versions of device-mapper and LVM2
+@
+text
+@d4 1
+a4 1
+  1.*) ;;
+d888 1
+d893 1
+d935 1
+d962 1
+a962 1
+task 4 toast utoast toast 1.345 http://toastball.net/toast/toast-1.345.tar.gz
+d990 4
+a993 2
+t 99 pkgconfig 117 audiofile 437 libxml2 181 libxslt
+t 0 gtk-doc 0 glib 0 libIDL 0 ORBit2 0 XML-Parser 0 intltool 0 libbonobo 0 fontconfig 0 render 0 xrender 0 xft 0 pango 0 atk 0 shared-mime-data
+@
+
+
+1.3
+log
+@added missing separator
+@
+text
+@d833 2
+a834 2
+http://mirrors.kernel.org/sources.redhat.com/dm/device-mapper.1.00.19.tgz
+http://mirrors.kernel.org/sources.redhat.com/lvm2/LVM2.2.00.22.tgz
+d959 1
+a959 1
+task 4 toast utoast toast 1.344 http://toastball.net/toast/toast-1.344.tar.gz
+@
+
+
+1.2
+log
+@presumably the network is already up...
+@
+text
+@d513 1
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@a952 1
+task 2 network network
+@

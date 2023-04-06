@@ -1,0 +1,172 @@
+head	1.4;
+access;
+symbols;
+locks
+	zaphod:1.4; strict;
+comment	@# @;
+
+
+1.4
+date	2004.05.07.20.02.00;	author zaphod;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2004.05.07.18.04.44;	author zaphod;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2004.05.07.17.58.11;	author zaphod;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2004.05.07.01.43.28;	author zaphod;	state Exp;
+branches;
+next	;
+
+
+desc
+@a little package to set up /etc/xml/catalog and friends
+@
+
+
+1.4
+log
+@try to placate GConf by throwing extra www's everywhere
+@
+text
+@RCSID := $$Id: Makefile,v 1.3 2004/05/07 18:04:44 zaphod Exp zaphod $$
+NAME := toastxml
+VERSION := $(word 3, $(RCSID))
+TARBALL := $(NAME)-$(VERSION).tar.gz
+DTDURL := http://www.linuxfromscratch.org/blfs/view/stable/pst/DocBook.html
+XSLURL := http://www.linuxfromscratch.org/blfs/view/stable/pst/docbook-xsl.html
+
+all: dtd/commands xsl/commands
+
+install: all
+	(cd dtd && sh -ex < commands)
+	(cd xsl && sh -ex < commands)
+
+clean:
+	rm -fr dtd* xsl*
+
+dist: $(TARBALL);
+
+.PHONY: all install clean dist
+
+.DELETE_ON_ERROR:
+
+dtd.html:
+	wget -O- $(DTDURL) > $@@
+
+xsl.html:
+	wget -O- $(XSLURL) > $@@
+
+dtd.zip: dtd.url
+	wget -O- "`cat $<`" > $@@
+
+xsl.tar.gz: xsl.url
+	wget -O- "`cat $<`" > $@@
+
+%/unpacked: %.zip
+	rm -fr $*
+	mkdir $*
+	unzip $< -d $*
+	: > $@@
+
+%/unpacked: %.tar.gz
+	rm -fr $*
+	mkdir $*
+	tar xzC $* < $<
+	mv $*/*/* $*/
+	: > $@@
+
+%.url: %.html
+	perl -ne 'print($$1) && exit(0) if /href="([^"]+\.(zip|tar\.gz))"/i' $< > $@@
+
+%/commands: %.html %/unpacked
+	perl -0777 -ne 's/\r\n/\n/g; s/\&\#38;/&/g; s!(xmlcatalog[^&]+http:/)/([^w&][^&]+&&\n)!$$1/$$2$$1/www.$$2!g; print "$$1\n" while /\bclass="command"[^>]*>((?!xsltproc )[^<]+)</gi' $< > $@@
+
+$(TARBALL): Makefile
+	rm -f $@@
+	tar czf $@@ $^
+@
+
+
+1.3
+log
+@xsl stuff was unpacking into a subdirectory
+@
+text
+@d1 1
+a1 1
+RCSID := $$Id: Makefile,v 1.2 2004/05/07 17:58:11 zaphod Exp zaphod $$
+d52 1
+a52 1
+	perl -0777 -ne 's/\&\#38;/\&/g; print "$$1\n" while /\bclass="command"[^>]*>((?!xsltproc )[^<]+)</gi' $< > $@@
+@
+
+
+1.2
+log
+@add DocBook XSL stylesheets
+@
+text
+@d1 1
+a1 1
+RCSID := $$Id: Makefile,v 1.1 2004/05/07 01:43:28 zaphod Exp zaphod $$
+d45 1
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@d1 1
+a1 1
+RCSID := $$Id: Makefile,v 1.0 2004/05/06 03:31:29 zaphod Exp zaphod $$
+d5 2
+a6 1
+HTML_URL := http://www.linuxfromscratch.org/blfs/view/stable/pst/DocBook.html
+d8 1
+a8 1
+all: unpack commands
+d11 2
+a12 1
+	(cd unpacked && sh) < commands
+d15 1
+a15 4
+	rm -fr unpack unpacked commands
+
+cleaner: clean
+	rm -fr html archive.zip url
+d23 16
+a38 4
+unpack: archive.zip
+	rm -fr unpacked
+	mkdir unpacked
+	unzip $< -d unpacked
+d41 5
+a45 2
+url: html
+	perl -ne 'print($$1) && exit(0) if /href="([^"]+\.zip)"/i' $< > $@@
+d47 2
+a48 2
+commands: html
+	perl -0777 -ne 's/\&\#38;/\&/g; print "$$1\n" while /\bclass="command"[^>]*>([^<]+)</gi' $< > $@@
+d50 2
+a51 5
+html:
+	wget -O- $(HTML_URL) > $@@
+
+archive.zip: url
+	wget -O- "`cat $<`" > $@@
+d53 1
+a53 1
+$(TARBALL): Makefile html archive.zip url
+@

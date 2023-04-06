@@ -1,0 +1,773 @@
+head	1.13;
+access;
+symbols;
+locks
+	zaphod:1.13; strict;
+comment	@# @;
+
+
+1.13
+date	2006.10.15.22.05.50;	author zaphod;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2005.05.13.06.46.50;	author zaphod;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2005.05.09.20.30.38;	author zaphod;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2004.08.31.04.30.54;	author zaphod;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2004.07.12.04.47.16;	author zaphod;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2003.09.19.04.49.17;	author zaphod;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2003.09.19.02.18.38;	author zaphod;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2003.09.07.03.13.47;	author zaphod;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2003.07.20.04.45.43;	author zaphod;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2003.07.08.05.57.14;	author zaphod;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2003.07.07.05.37.24;	author zaphod;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2003.07.07.05.25.36;	author zaphod;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2003.07.07.03.54.34;	author zaphod;	state Exp;
+branches;
+next	;
+
+
+desc
+@silly replacement for login, mingetty, maybe startx too?
+@
+
+
+1.13
+log
+@add support for multiple X displays, additional X server options
+@
+text
+@#!/usr/bin/perl
+
+=head1 NAME
+
+toastlogin - no-frills passwordless getty/login/xdm replacement
+
+=head1 SYNOPSIS
+
+toastlogin option...
+
+where option is one of:
+
+  --nopw              do not prompt for a password (default)
+  --pw                prompt for a password and verify it before proceeding
+  --user USER         log in as USER without prompting for a username
+  --tty /dev/ttyX     open /dev/ttyX as controlling tty; implies --fork
+  --x                 start an X server; implies --nologin
+  --nox               don't start an X server (default)
+  --prompt PROMPT     use username prompt PROMPT (default: "login: ")
+  --pwprompt PROMPT   use password prompt PROMPT (default: "password: ")
+  --clear             clear screen on empty input after prompt (default)
+  --noclear           don't clear the screen
+  --clearcode STRING  send STRING to clear screen (default: "\ec\e[H\e[2J")
+  --prog PROG         run PROG (default: varies); implies --nologin
+  --outfile FILE      redirect PROG's output to FILE
+  --dir DIR           chdir to DIR (default: USER's home directory)
+  --mailbox PATH      set MAIL env variable to ~/PATH (default: "Mailbox")
+  --xresources FILE   read X resources from FILE (default: ~/.Xresources)
+  --login             start login shell by invoking PROG as -PROG (default)
+  --nologin           don't start login shell; leave PROG's argv[0] alone
+  --fork              fork and start a new process group
+  --nofork            don't fork or start a new process group (default)
+  --help              displays this usage information
+
+=head1 DESCRIPTION
+
+B<toastlogin> is a no-frills replacement for the more traditional
+B<getty>, B<login>, and B<xdm> programs: it allows a Unix user to log in
+to a text or X Windows console.  B<toastlogin> is perhaps most useful
+for automatically logging in a particular user on the physical console
+(either text or X) when the system starts up, with no prompts at all.
+
+Since B<toastlogin> does not prompt for a password by default, even
+for locked accounts, even root, B<toastlogin> must never be installed
+SUID root (or SUID/SGID at all, for that matter).  Instead, it should
+be invoked by some process already running as root, usually during
+system startup.  Furthermore, since some programs that allow remote
+login (possibly including some versions of B<telnetd> or B<sshd>)
+have traditionally relied on a program called B<login> to prompt for a
+password, it is strongly recommended that B<toastlogin> never be renamed,
+copied, or linked to any other name, especially B<login>.  One can't be
+too careful about such things.
+
+Although B<toastlogin> does optionally support both prompting for a
+username and/or password and starting an X server, it should be noted
+that if both options are combined, it will prompt on the text console,
+before starting X, rather than popping up the fancy schmancy grapical
+login widget you might have been expecting.
+
+To have B<init> invoke B<toastlogin> directly, you could put a line like
+this one in F</etc/inittab>:
+
+  1:2345:respawn:/sbin/toastlogin --nofork --tty=/dev/tty1
+
+Add C<--x> and C<--user=I<foo>> if you like.  It's important to use
+C<--nofork> here, since init will respawn B<toastlogin> as soon as
+the main B<toastlogin> process exits, which will be immediately if you
+specify C<--tty> without C<--nofork>.  If you wanted, you could replace
+the C<sbin/toastlogin...> command with a shell script that sets up the
+environment and perhaps does other things before invoking B<toastlogin>,
+but if you do that, be sure to precede the final B<toastlogin> command
+with C<exec>, so that the main B<toastlogin> process will be a direct
+child of init and thus remain a process group leader, which is important
+when combining C<--nofork> and C<--tty>.
+
+For a brief overview of the different B<toastlogin> command-line options
+and what they do, run C<toastlogin --help> (or see above).  For picky
+details of exactly what each option does, you're probably best off
+reading the source; there isn't very much of it.
+
+=head1 ENVIRONMENT
+
+B<toastlogin> sets the following environment variables: LOGNAME, SHELL,
+HOME, PWD.  When invoked with --mailbox, B<toastlogin> also sets MAIL.
+When invoked with --x, B<toastlogin> also sets DISPLAY and XAUTHORITY.
+Note that B<toastlogin> does not unset any environment variables or set
+any other environment variables (including PATH).
+
+=head1 FILES
+
+  ~/Mailbox           default mailbox (see --mailbox)
+  ~/.Xauthority       magic cookie for X server
+  ~/.Xresources       default X resources (see --xresources)
+  ~/.Xsession         default program to run when using --x (see --prog)
+  ~/.Xsession-errors  default output file when using --x (see --outfile)
+  /bin/fvwm           alternate default --prog for --x (for toast linux)
+  /dev/random         source of random bits for .Xauthority
+  /tmp/X11-unix/X0    used to connect to X server
+
+=head1 AVAILABILITY
+
+B<toastlogin> may be downloaded from C<http://toastball.net/toast/login/>
+under the terms of the GNU GPL.
+
+=head1 BUGS
+
+B<toastlogin> completely ignores /etc/groups (or equivalent) when setting
+the user's groups.
+
+B<toastlogin> assumes that the X server it spawns when C<--x> is given
+will be display :0.  If an X server is already running as display :0,
+the C<--x> option won't work as expected.
+
+B<toastlogin> makes plenty of other rash assumptions that are especially
+unlikely to hold true on non-Linux platforms.
+
+=head1 AUTHOR
+
+Jacques Frechet
+
+=head1 COPYRIGHT
+
+This manual is part of B<toastlogin>.  Copyright (C) 2003-2004 Jacques Frechet.
+
+B<toastlogin> is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 2 of the License, or (at
+your option) any later version.
+
+B<toastlogin> is distributed in the hope that it will be useful, but
+WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY
+or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License
+for more details.
+
+You should have received a copy of the GNU General Public License along
+with B<toastlogin>; if not, write to the Free Software Foundation, Inc.,
+59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+
+=cut
+
+use warnings;
+use strict;
+use Getopt::Long;
+use Pod::Usage;
+use POSIX 'setsid';
+use Socket;
+
+$| = 1;
+
+my($pw);
+my($tty);
+my($prompt);
+my($pwprompt);
+my($clear);
+my($clearcode);
+my($user);
+my($dir);
+my($mailbox);
+my($prog);
+my($outfile);
+my($login);
+my($x);
+my($xdisplay);
+my($xargs);
+my($xresources);
+my($fork);
+my($help);
+
+$help = 1 if !@@ARGV || !GetOptions
+(
+  "pw!" => \$pw,
+  "tty:s" => \$tty,
+  "prompt:s" => \$prompt,
+  "pwprompt:s" => \$pwprompt,
+  "clear!" => \$clear,
+  "clearcode:s" => \$clearcode,
+  "user:s" => \$user,
+  "dir:s" => \$dir,
+  "mailbox:s" => \$mailbox,
+  "prog:s" => \$prog,
+  "outfile:s" => \$outfile,
+  "login!" => \$login,
+  "x!" => \$x,
+  "xdisplay:s" => \$xdisplay,
+  "xargs:s" => \$xargs,
+  "xresources:s" => \$xresources,
+  "fork!" => \$fork,
+  "help|?" => \$help
+);
+
+pod2usage if $help;
+die("you're not root!\n") unless $> == 0;
+
+$pw = 1 unless defined($pw);
+$prompt = "login: " unless defined($prompt);
+$pwprompt = "password: " unless defined($pwprompt);
+$clear = 1 unless defined($clear);
+$clearcode = "\033c\033[H\033[2J" unless defined($clearcode);
+$mailbox = "Mailbox" unless defined($mailbox);
+$login = !$prog unless defined($login);
+$fork = 1 if defined($tty) && !defined($fork);
+$xdisplay = 0 unless defined($xdisplay);
+
+die("invalid xdisplay: $xdisplay\n") unless $xdisplay =~ /^\d+$/;
+
+for ($prompt, $pwprompt, $clearcode)
+{
+  s/\\(.)/$1 eq "e" ? "\033" : $1 eq "n" ? "\n" : $1/ge;
+}
+
+if($tty)
+{
+  close(STDIN);
+  close(STDOUT);
+  close(STDERR);
+}
+
+if($fork)
+{
+  my($pid) = fork;
+  die("fork: $!") unless defined($pid);
+  exit(0) if $pid;
+  setsid or die("setsid: $!");
+}
+
+if($tty)
+{
+  open(STDIN, "<", $tty) or die("open $tty for stdin: $!");
+  open(STDOUT, ">", $tty) or die("open $tty for stdout: $!");
+  open(STDERR, ">", $tty) or die("open $tty for stderr: $!");
+}
+
+if($prompt)
+{
+  while(!$user)
+  {
+    print($prompt);
+    $user = <STDIN>;
+    $user =~ s/^\s+//;
+    $user =~ s/\s+$//;
+    print($clearcode) unless $user;
+  }
+}
+
+my($uid, $gid);
+if($user)
+{
+  my($name, $p, $u, $g, $quota, $comment, $gecos, $home, $shell) =
+      getpwnam($user);
+  if($pw)
+  {
+    $p = "x" unless defined($p);
+    system("stty -echo") == 0 or die("stty -echo: $! $?");
+    print($pwprompt);
+    my($pass) = scalar(<STDIN>);
+    print("\n");
+    system("stty echo");
+    chomp($pass);
+    die("invalid login\n") unless crypt($pass, $p) eq $p;
+  }
+  $name or die("no such user: $user\n");
+  ($uid, $gid) = ($u, $g);
+  $ENV{"LOGNAME"} = $user;
+  $ENV{"SHELL"} = $shell;
+  $ENV{"HOME"} = $home;
+  $prog ||= $shell unless $x;
+  $dir ||= $home;
+}
+
+my($home) = $ENV{"HOME"};
+die("you are homeless") unless $home;
+$ENV{"MAIL"} = "$home/$mailbox" if $mailbox;
+
+if($x)
+{
+  # create a new random MIT-MAGIC-COOKIE-1 authentication token
+  local(*RAND);
+  my($randfile) = "/dev/random";
+  my($cookie);
+  open(RAND, "<", $randfile) or die("open $randfile: $!");
+  sysread(RAND, $cookie, 16) == 16 or die("read $randfile: $!");
+  close(RAND) or die("close $randfile: $!");
+  my($xauthority) = "$home/.Xauthority";
+  my($display) = ":$xdisplay.0";
+  my($altdisplay) = "localhost" . $display;
+  my($xsocket) = "/tmp/.X11-unix/X$xdisplay";
+  my($hex) = unpack("H*", $cookie);
+  system("xauth", "-f", $xauthority, "add", $_, ".", $hex) == 0
+      or die("xauth failed") foreach ($display, $altdisplay);
+  chown($uid, $gid, $xauthority) or die("chown $user $xauthority: $!");
+
+  # exec the X server in a child process
+  my(@@xserver) = "X";
+  push(@@xserver, ":$xdisplay");
+  push(@@xserver, "-auth", $xauthority);
+  push(@@xserver, qw[-terminate -nolisten tcp -br]);
+  push(@@xserver, split(/\s+/, $xargs)) if $xargs;
+  my($serverpid) = fork;
+  defined($serverpid) or die("fork: $!");
+  exec(@@xserver) or die("exec @@xserver: $!") unless $serverpid;
+
+  # create dummy connection to X server to prevent early termination
+  local(*XSOCKET);
+  socket(XSOCKET, PF_UNIX, SOCK_STREAM, 0) or die("socket: $!");
+  my($connected);
+  for(1..30)
+  {
+    last if $connected = connect(XSOCKET, sockaddr_un($xsocket));
+    sleep(1);
+  }
+  die("timeout on connect: $!") unless $connected;
+  my($authreq) = "l\0\13\0\0\0\22\0\20\0\0\0MIT-MAGIC-COOKIE-1\0\0$cookie";
+  syswrite(XSOCKET, $authreq) == length($authreq) or die("send req: $!");
+
+  # fork a second child to exec .Xsession;
+  # parent sticks around to kill X server when .Xsession is done
+  my($sessionpid) = fork;
+  defined($sessionpid) or die("fork: $!");
+  if($sessionpid)
+  {
+    waitpid($sessionpid, 0) or warn("waitpid $sessionpid: $!");
+    kill('TERM', $serverpid) or die("kill $serverpid: $!");
+    waitpid($serverpid, 0) or die("waitpid $serverpid: $!");
+    exit(0);
+  }
+
+  # prepare environment for .Xsession
+  close(XSOCKET);
+  $ENV{"DISPLAY"} = $display;
+  $ENV{"XAUTHORITY"} = $xauthority;
+  if(!$prog)
+  {
+    $prog = "$home/.Xsession";
+    $prog = "/bin/fvwm" unless -x($prog);
+    $prog = "xterm" unless -x($prog);
+  }
+  $outfile = "$home/.Xsession-errors" unless defined($outfile);
+  $xresources = "$home/.Xresources" unless defined($xresources);
+}
+
+if(defined($uid))
+{
+  $( = $gid;
+  $) = "$gid $gid";
+  $< = $uid;
+  $> = $uid;
+
+  $> == $uid or die("failed to set uid for $user");
+}
+
+if($outfile)
+{
+  open(STDOUT, ">", $outfile) or die("open $outfile: $!");
+  open(STDERR, ">&STDOUT") or die("dup2 stdout: $!");
+}
+
+chdir($dir) or die("cd $dir: $!") if $dir;
+$ENV{"PWD"} = $dir if $dir;
+system("xrdb", "-merge", $xresources) if $xresources; # ignore error
+exec($prog) or die("exec $prog: $!") unless $login;
+my($firstword) = $prog =~ m!([^\/\s]+)(\s|$)! ? $1 : $prog;
+exec $prog "-$firstword";
+die("exec $prog: $!");
+@
+
+
+1.12
+log
+@rudimentary password support
+@
+text
+@d163 2
+d184 2
+d202 3
+d284 1
+a284 1
+  my($display) = ":0.0";
+d286 1
+a286 1
+  my($xsocket) = "/tmp/.X11-unix/X0";
+d294 1
+d297 1
+@
+
+
+1.11
+log
+@attempt to reset terminal before clearing screen
+@
+text
+@d13 3
+a15 1
+  --user USER         log in as USER without prompting
+d20 1
+d23 1
+a23 1
+  --clearcode STRING  send STRING to clear the screen (default: "\ec\e[H\e[2J")
+d39 10
+a48 16
+to a text or X Windows console.  Because it never prompts for a password,
+even for password-protected or locked accounts, including root, it is
+suitable only for logging in users who are physically sitting in front
+of the machine, never for remote logins.  B<toastlogin> is perhaps
+most useful for automatically logging in a particular user on the
+physical console (either text or X) when the system starts up, with no
+prompts at all.  If that sounds like a convenient idea whose security
+implications are not a problem for you, then perhaps B<toastlogin> is
+worth examining.  If the very thought fills you with rage, it might be
+best to look elsewhere.
+
+For reasons that should be obvious, B<toastlogin> must never be
+installed SUID root (or SUID/SGID at all, for that matter).  Instead,
+it should be invoked by some process already running as root, usually
+during system startup.  Furthermore, since some programs that allow
+remote login (possibly including some versions of B<telnetd> or B<sshd>)
+d54 3
+a56 3
+Although B<toastlogin> does optionally support both prompting for
+a username and starting an X server, it should be noted that if both
+options are combined, it will prompt for a username on the text console,
+d150 1
+d153 1
+d169 1
+d172 1
+d190 1
+d192 1
+d199 1
+a199 1
+for ($prompt, $clearcode)
+d241 1
+a241 1
+  my($name, $pw, $u, $g, $quota, $comment, $gecos, $home, $shell) =
+d243 11
+@
+
+
+1.10
+log
+@rearranged and completed man page
+@
+text
+@d20 1
+a20 1
+  --clearcode STRING  send STRING to clear the screen (default: "\e[H\e[2J")
+d191 1
+a191 1
+$clearcode = "\033[H\033[2J" unless defined($clearcode);
+@
+
+
+1.9
+log
+@when .Xsession is missing, fall back to fvwm (for toast linux) or xterm
+@
+text
+@d5 136
+a140 1
+toastlogin - highly specialized getty/login replacement
+a185 27
+=head1 SYNOPSIS
+
+toastlogin option...
+
+where option is one of:
+
+  --tty /dev/ttyX     open /dev/ttyX as controlling tty; implies --fork
+  --prompt PROMPT     use username prompt PROMPT (default: "login: ")
+  --clear             clear screen on empty input after prompt (default)
+  --noclear           don't clear the screen
+  --clearcode STRING  send STRING to clear the screen (default: "\e[H\e[2J")
+  --user USER         log in as USER without prompting
+  --dir DIR           chdir to DIR (default: USER's home directory)
+  --mailbox PATH      set MAIL env variable to ~/PATH (default: "Mailbox")
+  --prog PROG         run PROG (default: varies); implies --nologin
+  --outfile FILE      redirect PROG's output to FILE
+  --login             start login shell by invoking PROG as -PROG (default)
+  --nologin           leave PROG's argv[0] alone
+  --x                 start an X server; implies --nologin
+  --xresources FILE   read X resources from FILE (default: ~/.Xresources)
+  --nox               don't start an X server
+  --fork              fork and start a new process group
+  --nofork            don't fork or start a new process group
+  --help              displays this usage information
+
+=cut
+
+d335 1
+@
+
+
+1.8
+log
+@wait for X server to complete its shutdown before terminating
+@
+text
+@d200 6
+a205 1
+  $prog ||= "$home/.Xsession";
+@
+
+
+1.7
+log
+@exec X server in child instead of parent; kill it when .Xsession ends
+@
+text
+@d192 1
+@
+
+
+1.6
+log
+@fix early X termination problem; root window starts black
+@
+text
+@a144 1
+local(*XSOCKET);
+d147 1
+a153 1
+
+d163 1
+d167 3
+a169 9
+  my($pid) = fork;
+  defined($pid) or die("fork: $!");
+  exec(@@xserver) or die("exec @@xserver: $!") if $pid;
+
+  $ENV{"DISPLAY"} = $display;
+  $ENV{"XAUTHORITY"} = $xauthority;
+  $prog ||= "$home/.Xsession";
+  $outfile = "$home/.Xsession-errors" unless defined($outfile);
+  $xresources = "$home/.Xresources" unless defined($xresources);
+d171 2
+a172 3
+  # create dummy connection to X server to prevent early termination;
+  # allow children to inherit open filehandle
+  local($^F) = 9999;
+d183 19
+@
+
+
+1.5
+log
+@load .Xresources, clear screen support, minor tweaks to code
+@
+text
+@d14 1
+d145 1
+d158 1
+d166 1
+a166 1
+  push(@@xserver, qw[-terminate -nolisten tcp]);
+d176 14
+@
+
+
+1.4
+log
+@added --mailbox, --outfile, and --x; took away some fail-safe behavior;
+mucked around with various things
+@
+text
+@d19 2
+d28 1
+d36 2
+d45 1
+d57 4
+a60 1
+  --prompt PROMPT     use username prompt PROMPT (default: "\\nlogin: ")
+d69 1
+d80 4
+a83 2
+$prompt ||= "\nlogin: ";
+$mailbox ||= "Mailbox";
+d87 5
+d120 3
+a122 1
+    chomp($user);
+d140 3
+a142 2
+die("you are homeless") unless $ENV{"HOME"};
+$ENV{"MAIL"} = "$ENV{HOME}/$mailbox" if $mailbox;
+d153 1
+a153 1
+  my($xauthority) = "$ENV{HOME}/.Xauthority";
+d170 3
+a172 2
+  $prog ||= "$ENV{HOME}/.Xsession";
+  $outfile ||= "$ENV{HOME}/.Xsession-errors";
+d192 1
+a192 1
+
+@
+
+
+1.3
+log
+@reversed previous change; let --nofork override --tty instead
+@
+text
+@d21 1
+d23 1
+d25 1
+d35 1
+d37 1
+d39 1
+d50 1
+a50 1
+  --tty /dev/ttyX     use /dev/ttyX as controlling tty; implies --fork
+d54 7
+a60 3
+  --prog PROG         run PROG (default: USER's shell); implies --nologin
+  --login             prepend "-" to PROG's argv[0]; chdir / if DIR fails
+  --nologin           leave PROG's argv[0] alone; die if chdir DIR fails
+d71 1
+d107 1
+d110 1
+a110 1
+  my($name, $passwd, $uid, $gid, $quota, $comment, $gecos, $homedir, $shell) =
+d113 40
+d154 2
+a161 7
+
+  $ENV{"SHELL"} = $shell;
+  $ENV{"HOME"} = $homedir;
+  $ENV{"MAIL"} = "$homedir/Mailbox";
+
+  $prog ||= $shell;
+  $dir ||= $homedir;
+d164 1
+a164 1
+if($dir)
+d166 2
+a167 6
+  if(!chdir($dir))
+  {
+    die("cd $dir: $!") unless $login;
+    warn("cd $dir: $!");
+    chdir("/") or die("cd /: $!");
+  }
+d170 6
+a175 13
+if(!$login)
+{
+  exec $prog;
+  die("exec $prog: $!");
+}
+else
+{
+  my($firstword) = $prog =~ m!([^\/\s]+)(\s|$)! ? $1 : $prog;
+  exec $prog "-$firstword";
+  warn("exec $prog: $!");
+  exec {"/bin/sh"} "-sh";
+  die("exec /bin/sh: $!");
+}
+@
+
+
+1.2
+log
+@attempt setsid() whenever --tty is given, even if --nofork is also given
+@
+text
+@d51 2
+a52 2
+  --fork              fork before starting a new process group
+  --nofork            don't fork; may prevent --tty from working
+d62 1
+a62 1
+$fork = 1 if defined($tty);
+d76 1
+a80 1
+  setsid or die("setsid: $!");
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@d51 2
+a52 2
+  --fork              fork and start a new process group
+  --nofork            don't fork or start a new process group
+a75 1
+  setsid or die("setsid: $!");
+d80 1
+@

@@ -1,0 +1,987 @@
+head	1.7;
+access;
+symbols;
+locks
+	zaphod:1.7; strict;
+comment	@# @;
+
+
+1.7
+date	2005.07.25.04.25.28;	author zaphod;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2005.05.09.05.39.17;	author zaphod;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2005.05.09.05.24.31;	author zaphod;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2005.05.09.04.57.02;	author zaphod;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2005.05.09.03.57.19;	author zaphod;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2005.05.08.06.09.15;	author zaphod;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2005.05.08.01.49.09;	author zaphod;	state Exp;
+branches;
+next	;
+
+
+desc
+@toast bootloader
+@
+
+
+1.7
+log
+@some incomplete bits of hash function and win32 executable output
+@
+text
+@#!/usr/bin/perl
+
+use warnings;
+use strict;
+
+###############################################################################
+
+my(@@none) = ();
+my(@@r8) = qw(al cl dl bl ah ch dh bh);
+my(@@r16) = qw(ax cx dx bx sp bp si di);
+my(@@r32) = map("e$_", @@r16);
+my(@@re) = map("E$_", @@r16);
+my(@@rs) = qw(es cs ss ds fs gs);
+my(@@mem) = qw([bx+si] [bx+di] [bp+si] [bp+di] [si] [di] [yyyy] [bx]
+    [bx+si+yy] [bx+di+yy] [bp+si+yy] [bp+di+yy] [si+yy] [di+yy] [bp+yy] [bx+yy]
+    [bx+si+yyyy] [bx+di+yyyy] [bp+si+yyyy] [bp+di+yyyy]
+    [si+yyyy] [di+yyyy] [bp+yyyy] [bx+yyyy]);
+my(@@jcc) = qw(jo jno jb/jnae/jc jnb/jae/jnc jz/je   jnz/jne jbe/jna jnbe/ja
+              js jns jp/jpe     jnp/jpo     jl/jnge jnl/jge jle/jng jnle/jg);
+my(@@acc) = qw(add or adc sbb and sub xor cmp);
+my(@@shift) = qw(rol ror rcl rcr shl shr sal sar);
+my(@@test1) = ("test");
+my(@@test2) = (undef, "test");
+my(@@math) = (undef, undef, "not", "neg", "mul", "imul", "div", "idiv");
+my(@@pop) = qw(pop);
+my(@@mov) = qw(mov);
+my(@@incdec) = qw(inc dec);
+my(@@incdecetc) = qw(inc dec call callf jmp jmpf push);
+
+my(%asm16, %asm32);
+
+sub use16() { \%asm16 }
+sub use32() { \%asm32 }
+
+sub initasm(@@)
+{
+  for([use16, "", "66"], [use32, "66", ""])
+  {
+    my($asm, $pre16, $pre32) = @@$_;
+    while(@@_)
+    {
+      my($src, $hex) = (shift, shift);
+      my($nsrc, $nhex) = ($src, $hex);
+      $nhex =~ s/[A-Z]+//;
+      my(@@kv) = $nsrc =~ s/[A-Z]//g ?
+          ($nsrc, $pre16 . $nhex, lc($src), $pre32 . lc($hex)) : ($src, $hex);
+      while(@@kv)
+      {
+        my($k, $v) = (shift(@@kv), shift(@@kv));
+        ${$asm}{$k} = $v
+            unless exists(${$asm}{$k}) && length(${$asm}{$k}) <= length($v);
+      }
+    }
+  }
+}
+
+sub inchex($;$)
+{
+  my($hex, $inc) = @@_;
+  $inc ||= 1;
+  $_[0] = unpack("H*", chr(hex($hex) + $inc));
+  return $hex;
+}
+
+sub mkrun($\@@$)
+{
+  my($src, $regs, $hex) = @@_;
+  my($hsuffix, @@result) = ($hex =~ s/(x+)$//i) ? $1 : "";
+  for(@@$regs)
+  {
+    for(split(/\//))
+    {
+      my($s) = $src;
+      $s =~ s/_/$_/;
+      push(@@result, $s, $hex . $hsuffix);
+    }
+    inchex($hex);
+  }
+  return @@result;
+}
+
+sub mkrm($\@@$\@@$)
+{
+  my($src, $oregs, $ptrsize, $regs, $hex) = @@_;
+  my($i, $j, @@result, $rm, $oreg) = 0;
+  for $rm (@@mem, @@$regs)
+  {
+    $j = (($i & 0x18) << 3) | ($i & 7);
+    ++$i;
+    for $oreg (@@$oregs)
+    {
+      my($rmhex) = unpack("H*", chr($j));
+      $j += 8;
+      next unless $oreg;
+      my($yy) = $rm;
+      $yy =~ s/[^y]+//g;
+      $rmhex .= $yy;
+      my($s) = $src;
+      $s =~ s/_/$oreg/;
+      $rm =~ /\[/ ? ($s =~ s/\*/$ptrsize ptr $rm/) : ($s =~ s/\*/$rm/);
+      my($h) = $hex;
+      $h =~ s/rm/$rmhex/;
+      push(@@result, $s, $h);
+    }
+  }
+  return @@result;
+}
+
+sub mkrm4($$)
+{
+  my($opcode, $hex) = @@_;
+  return (
+      mkrm("$opcode *, _", @@r8, "byte", @@r8, inchex($hex) . "rm"),
+      mkrm("$opcode *, _", @@re, "Dword", @@re, inchex($hex) . "rm"),
+      mkrm("$opcode _, *", @@r8, "byte", @@r8, inchex($hex) . "rm"),
+      mkrm("$opcode _, *", @@re, "Dword", @@re, inchex($hex) . "rm"),
+      );
+}
+
+sub mkrm6($$)
+{
+  my($opcode, $hex) = @@_;
+  return (mkrm4($opcode, inchex($hex, 4)), 
+      "$opcode al, xx", inchex($hex) . "xx",
+      "$opcode Eax, XXXXxxxx", "${hex}xxxxXXXX");
+}
+
+initasm
+(
+  mkrm6("add", "00"),
+  "push es" => "06",
+  "pop es" => "07",
+  mkrm6("or", "08"),
+  "push cs" => "0e",
+  # 1f: two-byte opcodes
+  mkrm6("adc", "10"),
+  "push ss" => "16",
+  "pop ss" => "17",
+  mkrm6("sbb", "18"),
+  "push ds" => "1e",
+  "pop ds" => "1f",
+  mkrm6("and", "20"),
+  "es" => "26",
+  "daa" => "27",
+  mkrm6("sub", "28"),
+  "cs" => "2e",
+  "das" => "2f",
+  mkrm6("xor", "30"),
+  "ss" => "36",
+  "aaa" => "37",
+  mkrm6("cmp", "38"),
+  "ds" => "3e",
+  "aas" => "3f",
+  mkrun("inc _", @@re, "40"),
+  mkrun("dec _", @@re, "48"),
+  mkrun("push _", @@re, "50"),
+  mkrun("pop _", @@re, "58"),
+  "pushaD" => "60",
+  "popaD" => "61",
+  mkrm("bound _, *", @@re, "Dword", @@none, "62rm"),
+  mkrm("arpl *, _", @@r16, "word", @@r16, "63rm"),
+  "fs" => "64",
+  "gs" => "65",
+  "opsize" => "66",
+  "adsize" => "67",
+  "push XXXXxxxx" => "68xxxxXXXX",
+  mkrm("imul _, *, XXXXxxxx", @@re, "Dword", @@re, "69rmxxxxXXXX"),
+  "push xx" => "6axx",
+  mkrm("imul _, *, xx", @@re, "Dword", @@re, "6brmxx"),
+  "insb" => "6c",
+  "insDw" => "6d",
+  "outsb" => "6e",
+  "outsDw" => "6f",
+  mkrun("_ xx", @@jcc, "70xx"),
+  mkrm("_ *, xx", @@acc, "byte", @@r8, "80rmxx"),
+  mkrm("_ *, XXXXxxxx", @@acc, "Dword", @@re, "81rmxxxxXXXX"),
+  #mkrm("_ *, xx", @@acc, "byte", @@r8, "82rmxx"), # redundant alias
+  mkrm("_ *, xx", @@acc, "Dword", @@re, "83rmxx"),
+  mkrm("test *, _", @@r8, "byte", @@r8, "84rm"),
+  mkrm("test *, _", @@re, "Dword", @@re, "85rm"),
+  mkrm("xchg *, _", @@r8, "byte", @@r8, "86rm"),
+  mkrm("xchg *, _", @@re, "Dword", @@re, "87rm"),
+  mkrm4("mov", "88"),
+  mkrm("mov *, _", @@rs, "word", @@r16, "8crm"),
+  mkrm("lea _, *", @@re, "Dword", @@none, "8drm"),
+  mkrm("mov _, *", @@rs, "word", @@r16, "8erm"),
+  mkrm("_ *", @@pop, "Dword", @@re, "8frm"),
+  "nop" => "90", # xchg ax, ax
+  mkrun("xchg _, ax", @@re, "90"),
+  # 98: cbw, cwde XXX
+  # 99: cwd, cdq XXX
+  "call yyyy:xxxx" => "9ayyyyxxxx",
+  # 9b: wait, fwait XXX
+  "pushf" => "9c",
+  "popf" => "9d",
+  "sahf" => "9e",
+  "lahf" => "9f",
+  "mov al, byte ptr [yyyy]" => "a0yyyy",
+  "mov Eax, Dword ptr [yyyy]" => "a1yyyy",
+  "mov byte ptr [yyyy], al" => "a2yyyy",
+  "mov Dword ptr [yyyy], Eax" => "a3yyyy",
+  "movsb" => "a4",
+  "movsDw" => "a5",
+  "cmpsb" => "a6",
+  "cmpsDw" => "a7",
+  "test al, xx" => "a8xx",
+  "test Eax, XXXXxxxx" => "a9xxxxXXXX",
+  "stosb" => "aa",
+  "stosDw" => "ab",
+  "lodsb" => "ac",
+  "lodsDw" => "ad",
+  "scasb" => "ae",
+  "scasDw" => "af",
+  mkrun("mov _, xx", @@r8, "b0xx"),
+  mkrun("mov _, XXXXxxxx", @@re, "b8xxxxXXXX"),
+  mkrm("_ *, xx", @@shift, "byte", @@r8, "c0rmxx"),
+  mkrm("_ *, xx", @@shift, "Dword", @@re, "c1rmxx"),
+  "ret xxxx" => "c2xxxx",
+  "ret" => "c3",
+  mkrm("les _, *", @@re, "Dword", @@none, "c4rm"), # XXX ptr?
+  mkrm("lds", @@re, "Dword", @@none, "c5rm"), # XXX ptr?
+  mkrm("_ *, xx", @@mov, "byte", @@r8, "c6rmxx"),
+  mkrm("_ *, XXXXxxxx", @@mov, "Dword", @@re, "c7rmxxxxXXXX"),
+#  "enter yyyy, xx" => "c8yyyyxx", # can't use yyyy before comma....
+  "leave" => "c9",
+  "retf xxxx", "caxxxx",
+  "retf" => "cb",
+  "int 3" => "cc",
+  "int xx" => "cdxx",
+  "into" => "ce",
+  "iret" => "cf",
+  mkrm("_ *, 1", @@shift, "byte", @@r8, "d0rm"),
+  mkrm("_ *, 1", @@shift, "Dword", @@re, "d1rm"),
+  mkrm("_ *, cl", @@shift, "byte", @@r8, "d2rm"),
+  mkrm("_ *, cl", @@shift, "Dword", @@re, "d3rm"),
+  "aam xx" => "d4xx",
+  "aad xx" => "d5xx",
+  # d6: salc setalc XXX
+  "xlat" => "d7",
+  # d8-df: floating-point math XXX
+  "loopne xx" => "e0xx",
+  "loopnz xx" => "e0xx",
+  "loope xx" => "e1xx",
+  "loopz xx" => "e1xx",
+  "loop xx", => "e2xx",
+  "jEcxz xx", => "e3xx",
+  "in al, xx" => "e4xx",
+  "in Eax, xx" => "e5xx",
+  "out xx, al" => "e6xx",
+  "out xx, Eax", => "e7xx",
+  "call xxxx", => "e8xxxx",
+  "jmp xxxx", => "e9xxxx",
+  "jmp yyyy:xxxx" => "eaxxxxyyyy",
+  "jmp xx" => "ebxx",
+  "in al, dx", => "ec",
+  "in Eax, dx", "ed",
+  "out dx, al" => "ee",
+  "out dx, Eax", "ef",
+  "lock" => "f0",
+  "int 1" => "f1",
+  "repne" => "f2",
+  "repnz" => "f2",
+  "rep" => "f3",
+  "repe" => "f3",
+  "repz" => "f3",
+  "hlt" => "f4",
+  "cmc" => "f5",
+  mkrm("_ *, xx", @@test1, "byte", @@r8, "f6rmxx"),
+  mkrm("_ xx, *", @@test2, "byte", @@r8, "f6rmxx"),
+  mkrm("_ *", @@math, "byte", @@r8, "f6rm"),
+  mkrm("_ *, XXXXxxxx", @@test1, "Dword", @@re, "f6rmxxxxXXXX"),
+  mkrm("_ XXXXxxxx, *", @@test2, "Dword", @@re, "f6rmxxxxXXXX"),
+  mkrm("_ *", @@math, "Dword", @@re, "f6rm"),
+  "clc" => "f8",
+  "stc" => "f9",
+  "cli" => "fa",
+  "sti" => "fb",
+  "cld" => "fc",
+  "std" => "fd",
+  mkrm("_ *", @@incdec, "byte", @@r8, "ferm"),
+  mkrm("_ *", @@incdecetc, "Dword", @@re, "ffrm"),
+  "db xx" => "xx",
+  "db xxxx" => "xxxx",
+  "db xxxxxxxx" => "xxxxxxxx",
+  "db xxxxxxxxxxxxxxxx" => "xxxxxxxxxxxxxxxx",
+);
+
+sub assemble($$)
+{
+  my($asm, $src) = @@_;
+  my($result) = "";
+  my(@@refs, %labels);
+  for (split(/\n/, $src))
+  {
+    s/[;#].*//;
+    s/\s+/ /g;
+    s/^ //;
+    s/ $//;
+    next unless length;
+    s/ ?([,:\[\]\+\-]) ?/$1/g;
+    s/,/, /g;
+    s/\[/ [/g;
+    $_ = lc($_);
+    if(/^(\w+):$/)
+    {
+      die("duplicate label: $1") if exists($labels{$1});
+      $labels{$1} = length($result);
+      next;
+    }
+    my($x, $y);
+    s<([^\da-f])(([\da-f]{2})+|&(\w+)|&(\w+)-&(\w+))([ ,]]|$)>
+        <$x = [$2,$4,$5,$6]; $1.(defined($3) ? "x" x length($2) : "xx").$7>e;
+    s<([^\da-f])(([\da-f]{2})+|&(\w+)|&(\w+)-&(\w+))([:\]])>
+        <$y = [$2,$4,$5,$6]; $1.(defined($3) ? "y" x length($2) : "yy").$7>e;
+    die("can't parse: $_") unless exists(${$asm}{$_});
+    my($hex) = ${$asm}{$_};
+    for($x, $y)
+    {
+      next unless defined($_);
+      my($literal, $label, $label1, $label2) = @@$_;
+      $label = $label1 unless defined($label);
+      if(defined($label))
+      {
+        $_ = "LL";
+        push(@@refs, [length($result), length($hex), $label, $label2]);
+      }
+      else
+      {
+        $_ = unpack("H*", reverse(pack("H*", $literal)))
+      }
+    }
+    $hex =~ s/x+/$x/ if defined($x);
+    $hex =~ s/y+/$y/ if defined($y);
+    $result .= $hex;
+  }
+
+  for(@@refs)
+  {
+    my($offset, $len, $label, $label2) = @@$_;
+    die("label not found: $label") unless exists($labels{$label});
+    my($off1) = $labels{$label};
+    my($off2) = $offset + $len;
+    if(defined($label2))
+    {
+      die("label not found: $label2") unless exists($labels{$label2});
+      $off2 = $labels{$label2};
+    }
+    die if $offset % 2;
+    die if $off1 % 2;
+    die if $off2 % 2;
+    die if $len % 2;
+    my($value) = ($off1 - $off2) / 2;
+    if($value < -128 || $value > 127)
+    {
+      die("$label is too far away") unless defined($label2);
+      die("$label and $label2 are too far apart");
+    }
+    my($hex) = sprintf("%02x", $value & 0xff);
+    substr($result, $offset, $len) =~ s/LL/$hex/ or die;
+  }
+
+  return pack("H*", $result);
+}
+
+sub testasm($$$)
+{
+  my($asm, $src, $expected) = @@_;
+  my($observed) = unpack("H*", assemble($asm, $src));
+  die("src:\n$src\nexpected: $expected\nobserved: $observed\ntest failed")
+      unless $expected eq $observed;
+}
+
+testasm(use16, "nop ; comment", "90");
+testasm(use16, "nop # comment \n nop", "9090");
+testasm(use16, "mov ax, 1234", "b83412");
+testasm(use16, "add byte ptr [bx+si], al", "0000");
+testasm(use16, "foo: \n jmp &foo", "ebfe");
+testasm(use16, "one: \n add al, &two-&one \n two:", "0402");
+testasm(use16, "one: \n add al, &one-&two \n two:", "04fe");
+
+###############################################################################
+
+sub O_RDONLY { 0 }
+sub FIBMAP { 1 }
+sub FIGETBSZ { 2 }
+
+sub ls($)
+{
+  my($path) = @@_;
+  my($dir);
+  opendir($dir, $path) or die("opendir $path: $!");
+  my(@@names) = (readdir($dir));
+  closedir($dir) or die("closedir $path: $!");
+  return map("$path/$_", sort(grep(!/^\.\.?$/, @@names)));
+}
+
+sub cat($)
+{
+  my($path) = @@_;
+  my($file);
+  local($/) = undef;
+  open($file, "<", $path) or die("open $path: $!");
+  my($text) = readline($file);
+  close($file) or die("close $path: $!");
+  $text =~ s/\n$//;
+  return $text;
+}
+
+sub backticks(@@)
+{
+  my(@@cmd) = @@_;
+  my($file);
+  open($file, "-|", @@cmd) or die("exec $cmd[0]: $!");
+  my(@@result) = (readline($file));
+  close($file) or die("@@cmd: $! $?");
+  return @@result;
+}
+
+sub splitdevno($)
+{
+  my($devno) = @@_;
+  my($major, $minor) = ($devno >> 8, $devno & 0xff);
+  return "$major:$minor";
+}
+
+sub fibmap($)
+{
+  my($filename) = @@_;
+  my($file);
+  sysopen($file, $filename, O_RDONLY) or die("open $filename: $!");
+  my(@@stats) = stat($file) or die("stat $filename: $!");
+  my($dev) = splitdevno($stats[0]);
+  my($size) = $stats[7];
+  my($buf) = pack("I", 0);
+  ioctl($file, FIGETBSZ, $buf) or die("FIGETBSZ $filename: $!");
+  my($bsize) = unpack("I", $buf);
+  die if $bsize % 512;
+  my($bps) = $bsize/512;
+  my(@@sectors);
+  for(0..int(($size-1)/$bsize))
+  {
+    $buf = pack("I", $_);
+    ioctl($file, FIBMAP, $buf) or die("FIBMAP $filename: $!");
+    push(@@sectors, unpack("I", $buf)*$bps+$_) for 0..$bps-1;
+  }
+  pop(@@sectors) for int(($size+511)/512)%$bps..$bps-1;
+  close($file) or die("close $filename: $!");
+  return ($size, $dev, @@sectors);
+}
+
+BEGIN { $ENV{"PATH"} .= ":/sbin:/usr/sbin" } # likely dmsetup locations
+my(%dev);
+sub translate($$)
+{
+  my($dev, $sector) = @@_;
+
+  if(!%dev)
+  {
+    $dev{"initialized"} = 1;
+    my($next, $havedm) = 0x80;
+    for(ls("/sys/block"))
+    {
+      if(m,/[hs]d[a-z]+$,)
+      {
+        my($num) = $next++;
+        my($dev) = cat("$_/dev");
+        $dev{cat("$_/dev")} = ["bios", $num, 0, cat("$_/size")];
+        $dev{cat("$_/dev")} = ["bios", $num, cat("$_/start"), cat("$_/size")]
+            for grep(-d($_) && -r("$_/dev"), ls($_));
+      }
+      elsif(m,/dm-\d+$,)
+      {
+        $dev{cat("$_/dev")} = ["dm"];
+      }
+    }
+  }
+
+  exists($dev{$dev}) or die("unsupported device: $dev");
+  my($first, @@rest) = @@{$dev{$dev}};
+  
+  if($first eq "bios")
+  {
+    my($num, $start, $size) = @@rest;
+    die if $sector >= $size;
+    return ($num, $start + $sector);
+  }
+
+  if($first eq "dm")
+  {
+    for(backticks("dmsetup", "ls"))
+    {
+      /^(.*)\s+\((\d+), (\d+)\)$/ or die("unexpected dmsetup ls output: $_");
+      my($dmname, $major, $minor) = ($1, $2, $3);
+      $dev{"$major:$minor"} = ["dmname", $dmname];
+    }
+    ($first, @@rest) = @@{$dev{$dev}};
+  }
+
+  if($first eq "dmname")
+  {
+    my(@@table);
+    push(@@table, [split]) for backticks("dmsetup", "table", @@rest);
+    ($first, @@rest) = @@{$dev{$dev} = ["dmtable", @@table]};
+  }
+
+  if($first eq "dmtable")
+  {
+    for(@@rest)
+    {
+      my($start, $size, $type, @@destargs) = @@$_;
+      if($sector >= $start && $sector < $start+$size)
+      {
+        if($type eq "linear")
+        {
+          my($rdev, $offset) = @@destargs;
+          return &translate($rdev, $sector - $start + $offset)
+        }
+        elsif($type eq "striped")
+        {
+          warn("untested code for device mapper target striped");
+          my($stripes, $chunksize, @@stripeargs) = @@destargs;
+          die unless $stripes == scalar(@@stripeargs)/2;
+          my($ss) = $sector - $start;
+          my($chunk) = int($ss/$chunksize);
+          my($ic) = $ss % $chunksize;
+          my($stripe) = $chunk % $stripes;
+          my($schunk) = int($chunk / $stripes);
+          my($rdev, $offset) = @@destargs[$stripe*2, $stripe*2+1];
+          return &translate($rdev, $schunk*$chunksize + $ic + $offset);
+        }
+        else
+        {
+          die("unsupported device mapper target type: $type");
+        }
+      }
+    }
+  }
+
+  die("unable to translate device $dev sector $sector");
+}
+
+sub rangelist(@@)
+{
+  return () unless @@_;
+  my($lastdisk, $lastsect) = @@{shift(@@_)};
+  my($startsect) = $lastsect;
+  my(@@result);
+  for(@@_, [])
+  {
+    my($disk, $sect) = @@$_;
+    if(!defined($disk) || $disk != $lastdisk || $sect != $lastsect+1)
+    {
+      push(@@result, [$lastdisk, $startsect, $lastsect-$startsect+1]);
+      $startsect = $sect;
+    }
+    ($lastdisk, $lastsect) = ($disk, $sect);
+  }
+  return @@result;
+}
+
+sub hash64($)
+{
+  my($data) = @@_;
+  length($data) % 512 == 0 or die;
+  my($eax, $edx, $ecx) = (0, 0, length($data) / 4);
+  for(unpack("V*", $data))
+  {
+    $eax = ($eax + $_) & 0xffffffff;
+    $eax = (($eax >> 25) | ($eax << 7)) & 0xffffffff;
+    $edx = (($edx >> 2) | ($edx << 30)) & 0xffffffff;
+    $edx -= $ecx--;
+    my($ebx) = $edx;
+    $edx += $eax;
+    $eax ^= $ebx;
+  }
+  return pack("V*", $eax, $edx)
+}
+
+###############################################################################
+
+my($code) = q[
+  pop si # disk data offset
+  push cs
+  pop ds # disk data segment
+loop:
+  mov dl, byte ptr [si] # drive number or 0 if we're done
+  cmp dl, 00
+  jz &done
+  inc si
+  push si
+  mov ah, 42 # extended read from disk
+  int 13
+  jc &error
+  mov ax, 092e # print a dot
+  mov bx, 0007 # page 0, standard gray on black
+  mov cx, 0001 # print once
+  int 10
+  pop si
+  add si, word ptr [si]
+  jmp &loop
+error:
+  mov ax, 0921 # print an exclamation mark
+  mov bx, 000c # page 0, bright red
+  mov cx, 0001 # print once
+  int 10
+hang:
+  jmp &hang
+done:
+  cli
+  mov sp, 9000
+  mov ax, 1000
+  mov ss, ax
+  mov ds, ax
+  mov es, ax
+  mov fs, ax
+  mov gs, ax
+  jmp 1020:0000
+];
+
+sub realmodesectors($)
+{
+  my($kernel) = @@_;
+  my($file);
+  open($file, "<", $kernel) or die("open $kernel: $!");
+  my($buf);
+  read($file, $buf, 1024);
+  my($size) = -s($file);
+  close($file);
+  length($buf) == 1024 or die("invalid kernel image: $kernel");
+  my($result) = unpack("x497 C", $buf);
+  $result >= 2 && $size > 512*$result or die("invalid kernel image: $kernel");
+  return $result;
+}
+
+sub bootcode($)
+{
+  my($kernel) = @@_;
+  my($realsectors) = realmodesectors($kernel);
+  my($bytes, $dev, @@fibmap) = fibmap($kernel);
+  my(@@realmap) =
+      rangelist(map([translate($dev, $_)], @@fibmap[0..$realsectors-1]));
+  my(@@protectedmap) =
+      rangelist(map([translate($dev, $_)], @@fibmap[$realsectors..$#fibmap]));
+  my($diskdata) = "";
+  my($segment) = 0x1000;
+  my($offset) = 0;
+  for(@@realmap)
+  {
+    my($disk, $sectofs, $len) = @@$_;
+    $diskdata .= pack("Cv4V2", $disk, 16, $len, $segment, $offset,
+        $sectofs % (2**32), int($sectofs / (2**32)));
+    $offset += 512*$len;
+  }
+  $offset = 0x100000; # start of high memory
+  for(@@protectedmap)
+  {
+    my($disk, $sectofs, $len) = @@$_;
+    $diskdata .= pack("Cv2V5", $disk, 24, $len, -1,
+        $sectofs % (2**32), int($sectofs / (2**32)), $offset, 0);
+    $offset += 512*$len;
+  }
+  $diskdata .= chr(0);
+
+  return pack("C v/a* a*", 0xe8, $diskdata, assemble(use16, $code));
+}
+
+sub mbr($;$)
+{
+  my($bootcode, $mbr) = @@_;
+  $bootcode .= "\x00" while length($bootcode) < 440;
+  die("boot code is too long (kernel image too fragmented)")
+      if length($bootcode) != 440;
+  $mbr = "\x00" x 512 unless defined($mbr);
+  length($mbr) == 512 or die("mbr must be 512 bytes");
+  substr($mbr, 0, length($bootcode)) = $bootcode;
+  substr($mbr, 510, 2) = "\x55\xaa";
+  return $mbr;
+}
+
+sub win32hello()
+{
+  my($doscode) = q[
+    top:
+      push cs
+      pop ds
+      mov ah, 09
+      xor dx, dx
+      mov dl, &end-&top
+      int 21
+      mov ax, 4c00
+      int 21
+    end:
+  ];
+  my($dosmsg) = 'Hello World\x0d\x0a$';
+#  return pack("a2v13x32V a160 a4v2V3v2 vC2V9v6V4v2V6V32 a8V6v2V",
+#      "MZ", 0x90, 3, 0, 4, 0, 0xffff, 0, 0xb8, 0, 0, 0, 0x40, 0, 0xe0,
+#      assemble(use16, $doscode) . $dosmsg,
+#      "PE", 0x014c, 1, 0, 0, 0, 0xe0, 0x010f,
+#      0x010b, 7, 10, [size of code], 0, 0, [entry point], 0x1000, 0x9000,
+#      0x01000000, 0x1000, 0x200, 5, 1, 5, 1, 4, 0, 0, [size of image],
+#      [size of headers], [checksum], 2, 0, 0x40000, 0x11000, 0x100000, 0x1000,
+#      0, 16,
+#      [directory entries],
+#      ".text", [virt size], 0x1000, [size], [offset], 0, 0, 0, 0, 0xe0000020,
+#      [whatever comes next -- some directory, or code...?]);
+}
+
+print mbr(bootcode(($_))) for @@ARGV;
+@
+
+
+1.6
+log
+@try to add support for 32-bit assembly
+@
+text
+@d561 18
+d680 28
+@
+
+
+1.5
+log
+@make a pretend mbr, sort of
+@
+text
+@d30 4
+a33 1
+my(%asm);
+d37 1
+a37 1
+  while(@@_)
+d39 2
+a40 6
+    my($src, $hex) = (shift, shift);
+    my($nsrc, $nhex) = ($src, $hex);
+    $nhex =~ s/[A-Z]+//;
+    my(@@kv) = $nsrc =~ s/[A-Z]//g ?
+        ($nsrc, $nhex, lc($src), "66" . lc($hex)) : ($src, $hex);
+    while(@@kv)
+d42 11
+a52 2
+      my($k, $v) = (shift(@@kv), shift(@@kv));
+      $asm{$k} = $v unless exists($asm{$k}) && length($asm{$k}) <= length($v);
+d288 1
+a288 1
+sub assemble($)
+d290 1
+a290 1
+  my($src) = @@_;
+d315 2
+a316 2
+    die("can't parse: $_") unless exists($asm{$_});
+    my($hex) = $asm{$_};
+d365 1
+a365 1
+sub testasm($$)
+d367 2
+a368 2
+  my($src, $expected) = @@_;
+  my($observed) = unpack("H*", assemble($src));
+d373 7
+a379 7
+testasm("nop ; comment", "90");
+testasm("nop # comment \n nop", "9090");
+testasm("mov ax, 1234", "b83412");
+testasm("add byte ptr [bx+si], al", "0000");
+testasm("foo: \n jmp &foo", "ebfe");
+testasm("one: \n add al, &two-&one \n two:", "0402");
+testasm("one: \n add al, &one-&two \n two:", "04fe");
+d646 1
+a646 1
+  return pack("C v/a* a*", 0xe8, $diskdata, assemble($code));
+@
+
+
+1.4
+log
+@offset, then segment!
+@
+text
+@d641 14
+a654 1
+print bootcode($_) for @@ARGV;
+@
+
+
+1.3
+log
+@untested support for dm striped target; now emits object code
+@
+text
+@d245 1
+a245 1
+  "jmp yyyy:xxxx" => "eayyyyxxxx",
+@
+
+
+1.2
+log
+@add device-mapper support (linear target only)
+@
+text
+@d443 1
+d452 1
+a452 1
+    my($next, $havedm) = 0;
+d502 1
+a502 1
+      my($start, $size, $type, $rdev, $offset) = @@$_;
+d505 22
+a526 3
+        die("unsupported device mapper target type: $type")
+            unless $type eq "linear";
+        return &translate($rdev, $sector - $start + $offset)
+d594 1
+a594 1
+sub bootsect()
+d596 22
+a618 2
+  my($disk) = 0x80;
+  my($sectors) = 4; # byte at offset 0x01f1 in kernel image
+d621 7
+a627 3
+  my($sectofs) = 123456789;
+  $diskdata .= pack("Cv4V2", $disk, 16, $sectors, $segment, $offset,
+      $sectofs & 0xffffffff, $sectofs >> 32);
+d629 7
+a635 2
+  $diskdata .= pack("Cv2V5", $disk, 24, $sectors, -1,
+      $sectofs & 0xffffffff, $sectofs >> 32, $offset, 0);
+d638 1
+a638 16
+  my($result) = pack("C v/a* a*", 0xe8, $diskdata, assemble($code));
+  return $result;
+}
+
+###############################################################################
+
+for(@@ARGV)
+{
+  my($size, $dev, @@sectors) = fibmap($_);
+  my($nsect) = scalar(@@sectors);
+  print("$_: device $dev, $size bytes, $nsect sectors\n");
+  for(rangelist(map([translate($dev, $_)], @@sectors)))
+  {
+    my($disk, $offset, $len) = @@$_;
+    print("  disk=$disk offset=$offset len=$len\n");
+  }
+d641 1
+a641 3
+#print("$_ -> $asm{$_}\n") for sort keys %asm;
+#print assemble(join("", <>));
+#print bootsect;
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@d401 10
+a417 40
+my($initdevices, %sys, %dev);
+
+sub getdev($)
+{
+  my($path) = @@_;
+  my(@@stats) = stat($path);
+  return $dev{splitdevno($stats[6])} = $_ if -b(_);
+  return unless -d(_) && !-l($path);
+  &getdev($_) for ls($path);
+}
+
+sub initdevices()
+{
+  return if $initdevices;
+  $initdevices = 1;
+  getdev("/dev");
+  my($next) = 0;
+  for(ls("/sys/block"))
+  {
+    if(/[hs]d[a-z]+$/)
+    {
+      my($num) = $next++;
+      my($dev) = cat("$_/dev");
+      $sys{cat("$_/dev")} = [$num, 0, cat("$_/size")];
+      $sys{cat("$_/dev")} = [$num, cat("$_/start"), cat("$_/size")]
+          for grep(-d($_) && -r("$_/dev"), ls($_));
+    }
+  }
+}
+
+sub translate($@@)
+{
+  my($dev, @@sectors) = @@_;
+  initdevices;
+  exists($sys{$dev}) or die("unsupported device: $dev");
+  my($num, $start, $size) = @@{$sys{$dev}};
+  $_ >= $size and die for @@sectors;
+  return ($num, map($start+$_, @@sectors));
+}
+
+d440 72
+a511 1
+  return ($dev, @@sectors);
+d517 2
+a518 2
+  my($start) = shift;
+  my($last) = $start;
+d520 1
+a520 1
+  for(@@_, undef)
+d522 2
+a523 1
+    if(!defined($_) || $_ != $last+1)
+d525 2
+a526 2
+      push(@@result, $start, $last-$start+1);
+      $start = $_;
+d528 1
+a528 1
+    $last = $_;
+d597 8
+a604 6
+  my($dev, @@sectors) = fibmap($_);
+  my($sectors) = join(" ", rangelist(@@sectors));
+  print("$_: dev=$dev sectors=$sectors\n");
+  ($dev, @@sectors) = translate($dev, @@sectors);
+  $sectors = join(" ", rangelist(@@sectors));
+  print("$_: dev=$dev sectors=$sectors\n");
+@
