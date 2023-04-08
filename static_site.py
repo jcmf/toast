@@ -73,6 +73,7 @@ class Page:
 
     @functools.cached_property
     def header_dict(self):
+        header = self.response[:self.header_len]
         result = {}
         for line in header.decode('utf8').splitlines():
             k, v = line.split(':', 1)
