@@ -53,7 +53,14 @@ def get_script():
         check=True,
         stdout=subprocess.PIPE,
     )
-    return proc.stdout.replace(b'/home/zaphod/toast/', f'{os.path.abspath(mydir)}/'.encode('utf8'))
+    result = proc.stdout
+    result = result.replace(b'/home/zaphod/toast/', f'{os.path.abspath(mydir)}/'.encode('utf8'))
+
+    # prevent www script from trying (and failing) to get its own mtime;
+    # we're going to ignore Last-Modified anyway so it doesn't matter:
+    result = result.replace(b'stat($0)', b'(0) x 13')
+
+    return result
 
 
 class Page:
@@ -84,7 +91,7 @@ class Page:
     def out_path(self):
         mime_type = self.header_dict.get('content-type')
         suffix = mimetypes.guess_extension(mime_type) or '' if mime_type else ''
-        if self.url.endswith(suffix):
+        if self.url.endswith(suffix) or suffix == '.tar' and self.url.endswith('.tar.gz'):
             suffix = ''
         assert self.url.startswith('/'), url
         index = 'index' if self.url.endswith('/') else ''
@@ -92,7 +99,19 @@ class Page:
 
     @property
     def links(self):
-        return ()  # XXX TODO implement
+        if self.header_dict.get('content-type') != 'text/html':
+            return
+        prefix = re.sub(r'[^/]+$', '', self.url)
+        assert prefix.endswith('/'), (self.url, prefix)
+        html = self.body.decode('utf8')
+        for m in re.finditer(r'''<[^<>]+\shref\s*=\s*['"]([^<>'"#]+)(?:#[^<>'"]+)?['"][^<>]*>''', html):
+            target = m.group(1)
+            if target.startswith('mailto:'):
+                continue
+            assert '/' not in target, (self.url, m.group(0), target)
+            assert '#' not in target, (self.url, m.group(0), target)
+            assert ':' not in target, (self.url, m.group(0), target)
+            yield f'{prefix}{target}'
 
 
 class Fetcher:
@@ -119,6 +138,8 @@ class Fetcher:
         return Page(url=url, response=proc.stdout)
 
     def emit_html(self, urls=URLS):
+        if os.path.exists(outdir):
+            shutil.rmtree(outdir)
         seen = set(urls)
         pending = list(reversed(urls))
         while pending:
