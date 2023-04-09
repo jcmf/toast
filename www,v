@@ -1,10 +1,15 @@
-head	1.22;
+head	1.23;
 access;
 symbols;
 locks
-	zaphod:1.22; strict;
+	zaphod:1.23; strict;
 comment	@# @;
 
+
+1.23
+date	2023.04.09.22.28.52;	author zaphod;	state Exp;
+branches;
+next	1.22;
 
 1.22
 date	2023.04.09.00.58.13;	author zaphod;	state Exp;
@@ -122,12 +127,9 @@ desc
 @
 
 
-1.22
+1.23
 log
-@parens around qw in for were optional for a while but are required nowadays;
-versions 1.223 through 1.399 of toast relied on this behavior;
-patch them just enough to generate tarballs (tarball contents unchanged)
-https://stackoverflow.com/questions/18768380/disable-perl-warnings-for-missing-qw-outer-parentheses
+@move some things around to head off static site MultiViews ambiguity
 @
 text
 @#!/usr/bin/perl
@@ -219,7 +221,7 @@ qq[      <tr>
         <td>$comments</td>
         <td><a href="$name-$ver.tar.gz">tgz</a>
             <a href="man-$ver">man</a>
-            <a href="$name-$ver">src</a>];
+            <a href="$name-src-$ver">src</a>];
       $rows .= qq[
             <a href="diff-$ver">diff</a>] unless $ver eq "$major.$minor";
       $rows .= qq[</td>
@@ -299,7 +301,7 @@ Expires: -1
 <html>
   <head>
     <title>$name</title>
-    <link rel="stylesheet" type="text/css" href="${root}toast.css" />
+    <link rel="stylesheet" type="text/css" href="${root}style.css" />
     <link rel="alternate" type="application/rss+xml" href="rss-15.xml" />
   </head>
   <body>
@@ -488,7 +490,7 @@ sub manpage($$$)
   my($ver) = checkver(shift);
   my($root) = shift;
   openver($name, $ver);
-  my($text) = progoutput("pod2html --title='man $name' --css=${root}toast.css");
+  my($text) = progoutput("pod2html --title='man $name' --css=${root}style.css");
   die unless $text;
   $text =~ s|<DT><STRONG>(.*)</STRONG><BR>|<DT>$1</DT>|gm;
   $text =~ s|<li></li>|<li>|g;
@@ -542,7 +544,7 @@ Last-Modified: $vertime
 <html>
   <head>
     <title>diff $name-$from $name-$to</title>
-    <link rel="stylesheet" type="text/css" href="${root}toast.css" />
+    <link rel="stylesheet" type="text/css" href="${root}style.css" />
   </head>
   <body>
 $body
@@ -599,13 +601,13 @@ sub main()
 {
   my($name, $base, $root) = ("toast", "", "");
   my($path) = $ENV{"PATH_INFO"} || "";
-  return css if $path =~ m|^/toast.css$|;
+  return css if $path =~ m|^/style.css$|;
   ($name, $path, $base, $root, $minor) = (fullname($1), $2, "$1/", "../", 1)
       if $path =~ m|^/(\w+)(/[^/]*)$| && isname($1) && $1 ne $name;
   return pkgpage($name, $root) if $path =~ m|^/$|;
   return tarball($name, $2) if $path =~ m|^/$name(-(\d+\.\d+))?\.tar\.gz$|;
   return manpage($name, $2, $root) if $path =~ m|^/man(-(\d+\.\d+))?$|;
-  return source($name, $2, $root) if $path =~ m|^/$name(-(\d+\.\d+))?$|;
+  return source($name, $2, $root) if $path =~ m|^/$name(?:-src)?(-(\d+\.\d+))?$|;
   return diff($name, $2, $3, $root)
       if $path =~ m|^/diff-((\d+\.\d+)-)?(\d+\.\d+)$|;
   return pkgpage($name, $root, "rss", $1)
@@ -620,6 +622,35 @@ sub main()
 
 chdir("/tmp"); # because pod2html seems to create temporary files
 main;
+@
+
+
+1.22
+log
+@parens around qw in for were optional for a while but are required nowadays;
+versions 1.223 through 1.399 of toast relied on this behavior;
+patch them just enough to generate tarballs (tarball contents unchanged)
+https://stackoverflow.com/questions/18768380/disable-perl-warnings-for-missing-qw-outer-parentheses
+@
+text
+@d90 1
+a90 1
+            <a href="$name-$ver">src</a>];
+d170 1
+a170 1
+    <link rel="stylesheet" type="text/css" href="${root}toast.css" />
+d359 1
+a359 1
+  my($text) = progoutput("pod2html --title='man $name' --css=${root}toast.css");
+d413 1
+a413 1
+    <link rel="stylesheet" type="text/css" href="${root}toast.css" />
+d470 1
+a470 1
+  return css if $path =~ m|^/toast.css$|;
+d476 1
+a476 1
+  return source($name, $2, $root) if $path =~ m|^/$name(-(\d+\.\d+))?$|;
 @
 
 
