@@ -1,10 +1,15 @@
-head	1.21;
+head	1.22;
 access;
 symbols;
 locks
-	zaphod:1.21; strict;
+	zaphod:1.22; strict;
 comment	@# @;
 
+
+1.22
+date	2023.04.09.00.58.13;	author zaphod;	state Exp;
+branches;
+next	1.21;
 
 1.21
 date	2010.01.10.22.05.27;	author zaphod;	state Exp;
@@ -117,9 +122,12 @@ desc
 @
 
 
-1.21
+1.22
 log
-@tweak sendbug
+@parens around qw in for were optional for a while but are required nowadays;
+versions 1.223 through 1.399 of toast relied on this behavior;
+patch them just enough to generate tarballs (tarball contents unchanged)
+https://stackoverflow.com/questions/18768380/disable-perl-warnings-for-missing-qw-outer-parentheses
 @
 text
 @#!/usr/bin/perl
@@ -466,8 +474,9 @@ sub tarball($;$)
     local($_);
     while(<STDIN>)
     {
-      print;
       $code .= $_;
+      s/(for \$ext )(qw[^\n]+)/$1($2)/;  # parens no longer optional, sigh
+      print;
       print $code if /^__END__$/;
     }
   }
@@ -611,6 +620,17 @@ sub main()
 
 chdir("/tmp"); # because pod2html seems to create temporary files
 main;
+@
+
+
+1.21
+log
+@tweak sendbug
+@
+text
+@d345 2
+a347 1
+      $code .= $_;
 @
 
 

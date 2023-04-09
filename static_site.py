@@ -13,6 +13,7 @@ import sys;
 RCS_URL = f'https://ftp.gnu.org/gnu/rcs/rcs-5.10.1.tar.lz'
 
 URLS = ['/toast/']
+SKIP_URLS = ['/toast/toast-1.273.tar.gz']
 
 mydir = os.path.dirname(__file__)
 outdir = os.path.join(mydir, 'site_root')
@@ -137,18 +138,22 @@ class Fetcher:
         )
         return Page(url=url, response=proc.stdout)
 
-    def emit_html(self, urls=URLS):
+    def emit_html(self, urls=URLS, skip_urls=SKIP_URLS, verbose=True):
         if os.path.exists(outdir):
             shutil.rmtree(outdir)
-        seen = set(urls)
+        seen = set([*urls, *skip_urls])
         pending = list(reversed(urls))
         while pending:
             url = pending.pop()
+            if verbose:
+                sys.stderr.write(f'{url} -> ')
             page = self.fetch_page(url)
+            if verbose:
+                sys.stderr.write(f'{page.out_path}\n')
             os.makedirs(os.path.dirname(page.out_path), exist_ok=True)
             with open(page.out_path, 'wb') as f:
                 f.write(page.body)
-            for u in page.links:
+            for u in reversed(list(page.links)):
                 if u in seen:
                     continue
                 seen.add(u)
