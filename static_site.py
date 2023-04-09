@@ -13,8 +13,16 @@ import urllib.parse
 
 RCS_URL = f'https://ftp.gnu.org/gnu/rcs/rcs-5.10.1.tar.lz'
 
-URLS = ['/toast/', '/toast/linux/', '/toast/init/', '/toast/login/']
-SKIP_URLS = ['/toast/toast-1.273.tar.gz']
+URLS = [
+    '/toast/',
+    '/toast/toast',
+    '/toast/linux/',
+    '/toast/init/',
+    '/toast/login/',
+]
+SKIP_URLS = [
+    '/toast/toast-1.273.tar.gz',
+]
 
 mydir = os.path.dirname(__file__)
 outdir = os.path.join(mydir, 'site_root')
