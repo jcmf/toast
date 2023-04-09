@@ -1,18 +1,19 @@
 #!/usr/bin/python3
 
-import functools;
-import mimetypes;
-import os;
-import re;
-import shlex;
-import shutil;
-import subprocess;
-import sys;
+import functools
+import mimetypes
+import os
+import re
+import shlex
+import shutil
+import subprocess
+import sys
+import urllib.parse
 
 
 RCS_URL = f'https://ftp.gnu.org/gnu/rcs/rcs-5.10.1.tar.lz'
 
-URLS = ['/toast/']
+URLS = ['/toast/', '/toast/linux/', '/toast/init/', '/toast/login/']
 SKIP_URLS = ['/toast/toast-1.273.tar.gz']
 
 mydir = os.path.dirname(__file__)
@@ -102,17 +103,13 @@ class Page:
     def links(self):
         if self.header_dict.get('content-type') != 'text/html':
             return
-        prefix = re.sub(r'[^/]+$', '', self.url)
-        assert prefix.endswith('/'), (self.url, prefix)
-        html = self.body.decode('utf8')
-        for m in re.finditer(r'''<[^<>]+\shref\s*=\s*['"]([^<>'"#]+)(?:#[^<>'"]+)?['"][^<>]*>''', html):
-            target = m.group(1)
+        for m in re.finditer(rb'''<[^<>]+\shref\s*=\s*['"]([^<>'"#]+)(?:#[^<>'"]+)?['"][^<>]*>''', self.body):
+            target = m.group(1).decode('utf8')
             if target.startswith('mailto:'):
                 continue
-            assert '/' not in target, (self.url, m.group(0), target)
             assert '#' not in target, (self.url, m.group(0), target)
             assert ':' not in target, (self.url, m.group(0), target)
-            yield f'{prefix}{target}'
+            yield urllib.parse.urljoin(self.url, target)
 
 
 class Fetcher:
